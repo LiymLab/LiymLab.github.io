@@ -1,7 +1,7 @@
-name: "Zunder Lab @ UVa"
-description: "This is the official web page for the Eli Zunder Lab at UVa."
+name: "Rege Lab "
+description: "This is the official web page for Mayuri Rege at Ruia College, Mumbai."
 
-url: "http://zunderlab.com"
+url: "https://regelab.github.io"
 
 paginate: 5
 paginate_path: "news/page:num"
