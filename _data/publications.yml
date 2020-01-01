@@ -1,17 +1,4 @@
 # THE WEIRDEST BUG: using escapes requires single-quotes instead of double...
-- citation: 'Frei AP\*, Bava FA\*, **Zunder ER**, Hsieh EW, Chen SY, Nolan GP, Gherardini PF. Highly multiplexed simultaneous detection of RNAs and proteins in single cells. *Nature Methods*. 2016. \*contributed equally'
-  date: 201601
-  image: '/static/img/pub/frei_nm_2016.jpg'
-  pmid: 26808670
-  pdf: '/static/pdf/Frei 2016 Nature Methods.pdf'
-  links:
-    - name: "Nolan Lab"
-      url: 'http://web.stanford.edu/group/nolan/'
-    - name: "PLAYRDesign Software"
-      url: 'https://github.com/nolanlab/PLAYRDesign'
-    - name: "Nature Education Bio 2.0 Blog: Rapid RNA analysis at a single cell level: a PLAYR's story"
-      url: 'http://www.nature.com/scitable/blog/bio2.0/rapid_rna_analysis_at_a'
-
 - citation: 'Ji Hun Kim\*, **Mayuri Rege**\*, Jacqueline Valeri, Margaret C Dunagin, Aryeh Metzger, Katelyn R Titus, Thomas G Gilgenast, Wanfeng Gong, Jonathan A Beagan, Arjun Raj, Jennifer E Phillips-Cremins. LADL: light-activated dynamic looping for endogenous gene expression control *Nature Methods*. 2019. \*contributed equally'
   date: 201906
   image: '/static/img/pub/LADL_loop.gif'
@@ -20,5 +7,12 @@
   links:
     - name: "Cremins Lab"
       url: 'http://creminslab.com'
-    - name: "Highlighted in Nature Review Genetics: Optoepigenetics for 3D genome engineering "
+    - name: "*Highlighted in Nature Review Genetics*: Optoepigenetics for 3D genome engineering "
       url: 'https://www.nature.com/articles/s41576-019-0154-y'
+      
+- citation: 'Mayuri Rege, Jennifer E. Phillips-Cremins. Dynamic Looping Interactions: Setting the 3D Stage for the Macrophage *Molecular Cell*. 2017.
+  date: 201906
+  image: '/static/img/pub/Molecular_Cell_thumb.jpg'
+  pmid: 28938095
+  pdf: '/static/pdf/Molecular_Cell_2017.pdf'
+
