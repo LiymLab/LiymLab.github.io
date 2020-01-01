@@ -19,13 +19,13 @@
 - citation: 'Lijian Yu*, **Mayuri Rege**\*, Craig L Peterson, Michael R Volkert. RNA polymerase II depletion promotes transcription of alternative mRNA species. **BMC Molecular Biology**\. 2016. *contributed equally'
   date: 2016
   image: '/static/img/pub/BMC_thumb.jpg'
-  pmid: 28938095
+  pmid: 27578267
   pdf: '/static/pdf/BMC_Mol_Bio_2016.pdf'
   
-- citation: 'Mayuri Rege, Vidya Subramanian, Chenchen Zhu, Tsung-Han S Hsieh, Assaf Weiner, Nir Friedman, Sandra Clauder-Münster, Lars M Steinmetz, Oliver J Rando, Laurie A Boyer, Craig L Peterson. Chromatin dynamics and the RNA exosome function in concert to regulate transcriptional homeostasis. **Cell Reports**\. 2015.
+- citation: 'Mayuri Rege, Vidya Subramanian, Chenchen Zhu, Tsung-Han S Hsieh, Assaf Weiner, Nir Friedman, Sandra Clauder-Münster, Lars M Steinmetz, Oliver J Rando, Laurie A Boyer, Craig L Peterson. Chromatin dynamics and the RNA exosome function in concert to regulate transcriptional homeostasis. **Cell Reports**\. 2015.'
   date: 2015
   image: '/static/img/pub/CellReports_thumb.jpg'
-  pmid: 26586442 
-  pdf: '/static/pdf/BMC_Mol_Bio_2016.pdf'
+  pmid: 26586442
+  pdf: '/static/pdf/Cell_Reports_2015.pdf'
   
 
