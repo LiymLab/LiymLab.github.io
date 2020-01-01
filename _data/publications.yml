@@ -12,7 +12,7 @@
     - name: "Nature Education Bio 2.0 Blog: Rapid RNA analysis at a single cell level: a PLAYR's story"
       url: 'http://www.nature.com/scitable/blog/bio2.0/rapid_rna_analysis_at_a'
 
-- citation: 'Ji Hun Kim\*, Mayuri Rege\*, Jacqueline Valeri, Margaret C Dunagin, Aryeh Metzger, Katelyn R Titus, Thomas G Gilgenast, Wanfeng Gong, Jonathan A Beagan, Arjun Raj, Jennifer E Phillips-Cremins. LADL: light-activated dynamic looping for endogenous gene expression control *Nature Methods*. 2019. \*contributed equally'
+- citation: 'Ji Hun Kim\*, **Mayuri Rege**\*, Jacqueline Valeri, Margaret C Dunagin, Aryeh Metzger, Katelyn R Titus, Thomas G Gilgenast, Wanfeng Gong, Jonathan A Beagan, Arjun Raj, Jennifer E Phillips-Cremins. LADL: light-activated dynamic looping for endogenous gene expression control *Nature Methods*. 2019. \*contributed equally'
   date: 201906
   image: '/static/img/pub/LADL_loop.mp4'
   pmid: 31235883
