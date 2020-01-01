@@ -20,6 +20,12 @@
   date: 2016
   image: '/static/img/pub/BMC_thumb.jpg'
   pmid: 28938095
-  links: 'https://bmcmolbiol.biomedcentral.com/articles/10.1186/s12867-016-0074-8'
+  pdf: '/static/pdf/BMC_Mol_Bio_2016.pdf'
+  
+- citation: 'Mayuri Rege, Vidya Subramanian, Chenchen Zhu, Tsung-Han S Hsieh, Assaf Weiner, Nir Friedman, Sandra Clauder-Münster, Lars M Steinmetz, Oliver J Rando, Laurie A Boyer, Craig L Peterson. Chromatin dynamics and the RNA exosome function in concert to regulate transcriptional homeostasis. **Cell Reports**\. 2015.
+  date: 2015
+  image: '/static/img/pub/CellReports_thumb.jpg'
+  pmid: 26586442 
+  pdf: '/static/pdf/BMC_Mol_Bio_2016.pdf'
   
 
