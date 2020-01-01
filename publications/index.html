@@ -20,7 +20,7 @@ group: publications
 			{% if publication.pmcid %}
 			<li>PMCID: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{publication.pmcid}}" alt = "pubmed central link: {{publication.pmcid}}"> {{publication.pmcid}}</a></li>
 			{% endif %}
-			<li><a href="{{publication.pdf}}" alt = "PDF"> Full Text</a></li>
+			<li><a href="{{publication.pdf}}" alt = "PDF"> [pdf]</a></li>
 			{% if publication.geo %}
 			<li>Deposited GEO Dataset: <a href="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={{publication.geo}}"> {{publication.geo}}</a></li>
 			{% endif %}
