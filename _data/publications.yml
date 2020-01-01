@@ -10,13 +10,13 @@
     - name: "*Highlighted in Nature Review Genetics*: Optoepigenetics for 3D genome engineering "
       url: 'https://www.nature.com/articles/s41576-019-0154-y'
       
-- citation: '**Mayuri Rege**\, Jennifer E. Phillips-Cremins. Dynamic Looping Interactions: Setting the 3D Stage for the Macrophage. **Molecular Cell**\. 2017.'
+- citation: '**Mayuri Rege**, Jennifer E. Phillips-Cremins. Dynamic Looping Interactions: Setting the 3D Stage for the Macrophage. **Molecular Cell**\. 2017.'
   date: 201709
   image: '/static/img/pub/Molecular_Cell_thumb.jpg'
   pmid: 28938095
   pdf: '/static/pdf/Mol_cell_2018.pdf'
  
-- citation: 'Lijian Yu*, **Mayuri Rege**\*, Craig L Peterson, Michael R Volkert. RNA polymerase II depletion promotes transcription of alternative mRNA species. **BMC Molecular Biology**\. 2016.'
+- citation: 'Lijian Yu*, **Mayuri Rege**\*, Craig L Peterson, Michael R Volkert. RNA polymerase II depletion promotes transcription of alternative mRNA species. **BMC Molecular Biology**\. 2016. *contributed equally'
   date: 2016
   image: '/static/img/pub/BMC_thumb.jpg'
   pmid: 28938095
