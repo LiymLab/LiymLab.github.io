@@ -1,5 +1,5 @@
 # THE WEIRDEST BUG: using escapes requires single-quotes instead of double...
-- citation: 'Ji Hun Kim\*, <b>Mayuri Rege</b>\*, Jacqueline Valeri, Margaret C Dunagin, Aryeh Metzger, Katelyn R Titus, Thomas G Gilgenast, Wanfeng Gong, Jonathan A Beagan, Arjun Raj, Jennifer E Phillips-Cremins. LADL: light-activated dynamic looping for endogenous gene expression xzcontrol. **Nature Methods**. 2019. | *contributed equally '
+- citation: 'Ji Hun Kim\*, <b>Mayuri Rege</b>\*, Jacqueline Valeri, Margaret C Dunagin, Aryeh Metzger, Katelyn R Titus, Thomas G Gilgenast, Wanfeng Gong, Jonathan A Beagan, Arjun Raj, Jennifer E Phillips-Cremins. LADL: light-activated dynamic looping for endogenous gene expression control. **Nature Methods**. 2019. *contributed equally '
   date: 201906
   image: '/static/img/pub/LADL_loop.gif'
   pmid: 31235883
