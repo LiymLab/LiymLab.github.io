@@ -11,7 +11,7 @@ group: contact
 
 <div class="col-md-4">
 
-  <h4>Mayuri Rege</h4>
+  <h4>Dr. Mayuri Rege</h4>
   DST-INSPIRE Faculty  <br>
   Department of Microbiology  <br>
   Ramnarain Ruia Autnomous College <br>
