@@ -3,11 +3,12 @@ title: Contact
 ---
 
 
-### Contact the Zunder Lab
+### Contact the Rege Lab
 
-Eli Zunder, Ph.D.
-Assistant Professor
-Department of Biomedical Engineering
-University of Virginia
+Mayuri Rege, PhD
+DST-INSPIRE Faculty
+Department of Microbiology
+Ramnarain Ruia Autnomous College
+Matunga, Mumbai- 400019, India
 
-email: eli.zunder (#!) virginia.edu
+email: mayurirege [at] ruiacollege [dot] edu
