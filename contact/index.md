@@ -1,5 +1,5 @@
 ---
-title: Contact the Zunder Lab
+title: Contact the Rege Lab
 layout: default
 group: contact
 ---
