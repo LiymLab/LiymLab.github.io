@@ -20,7 +20,7 @@
   #pmid: 28938095
   #pdf: '/static/pdf/Mol_cell_2018.pdf'
  
-- citation: 'Lijian Yu*, **Mayuri Rege**\*, Craig L Peterson, Michael R Volkert. RNA polymerase II depletion promotes transcription of alternative mRNA species. **BMC Molecular Biology**\. 2016. *contributed equally'
+- citation: 'Lijian Yu*, **Mayuri Rege**\*, Craig L Peterson, Michael R Volkert. RNA polymerase II depletion promotes transcription of alternative mRNA species. **BMC Molecular Biology**\. 2016.<br> ***contributed equally**'
   #date: 2016
   #image: '/static/img/pub/BMC_thumb.jpg'
   #pmid: 27578267
