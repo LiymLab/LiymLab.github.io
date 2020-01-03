@@ -1,5 +1,5 @@
 # THE WEIRDEST BUG: using escapes requires single-quotes instead of double...
-- citation: 'Ji Hun Kim\*, **Mayuri Rege**\*, Jacqueline Valeri, Margaret C Dunagin, Aryeh Metzger, Katelyn R Titus, Thomas G Gilgenast, Wanfeng Gong, Jonathan A Beagan, Arjun Raj, Jennifer E Phillips-Cremins. LADL: light-activated dynamic looping for endogenous gene expression control. **Nature Methods**. 2019. \*contributed equally '
+- citation: 'Ji Hun Kim\*, **Mayuri Rege**\*, Jacqueline Valeri, Margaret C Dunagin, Aryeh Metzger, Katelyn R Titus, Thomas G Gilgenast, Wanfeng Gong, Jonathan A Beagan, Arjun Raj, Jennifer E Phillips-Cremins. LADL: light-activated dynamic looping for endogenous gene expression xzcontrol. **Nature Methods**. 2019. \*contributed equally '
   date: 201906
   image: '/static/img/pub/LADL_loop.gif'
   pmid: 31235883
@@ -9,7 +9,9 @@
     #  url: 'http://creminslab.com'
     #- name: "*Highlighted in Nature Review Genetics*: Optoepigenetics for 3D genome engineering "
     #  url: 'https://www.nature.com/articles/s41576-019-0154-y'
-      
+    
+- citation: '**Highlighted in Nature Review Genetics**: Optoepigenetics for 3D genome engineering. https://www.nature.com/articles/s41576-019-0154-y' and 
+
 - citation: '**Mayuri Rege**, Jennifer E. Phillips-Cremins. Dynamic Looping Interactions: Setting the 3D Stage for the Macrophage. **Molecular Cell**\. 2017.'
   date: 201709
   image: '/static/img/pub/Molecular_Cell_thumb.jpg'
@@ -27,12 +29,27 @@
   image: '/static/img/pub/CellReports_thumb.jpg'
   pmid: 26586442
   pdf: '/static/pdf/Cell_Reports_2015.pdf'
-  
-  
-- citation: **Mayuri Rege**. 'RNA Exosome & Chromatin: The Yin & Yang of Transcription: A Dissertation. 2015.'
+    
+- citation: '**Mayuri Rege**. 'RNA Exosome & Chromatin: The Yin & Yang of Transcription: A Dissertation. 2015.'
   date: 2015
   #image: '/static/img/pub/CellReports_thumb.jpg'
   #pmid: 26586442
   #pdf: '/static/pdf/Cell_Reports_2015.pdf'
   
+- citation: '**Mayuri Rege**, Craig L Peterson. SWI/SNF remodels SIR3 heterochromatin during transcription. **The FASEB Journal**\. 2013.'
+  date: 2013
+  #image: '/static/img/pub/CellReports_thumb.jpg'
+  #pmid: 
+  #pdf: '/static/pdf/Cell_Reports_2015.pdf'  
+  
+- citation: 'Sulabha Pathak, **Mayuri Rege**, Nithya J Gogtay, Umesh Aigal, Surya Kant Sharma, Neena Valecha, Gyan Bhanot, Nilima A Kshirsagar, Shobhona Sharma. Age-dependent sex bias in clinical malarial disease in hypoendemic regions.  **PLoS One**\. 2012.'
+  date: 2012
+  #image: '/static/img/pub/CellReports_thumb.jpg'
+  #pmid: 22558172
+  #pdf: '/static/pdf/Cell_Reports_2015.pdf'
 
+- citation: 'Angika Basant, Mayuri Rege, Shobhona Sharma, Haripalsingh M Sonawat. **Malaria Journal**, 2010. '
+  date: 2010
+  #image: '/static/img/pub/CellReports_thumb.jpg'
+  #pmid: 22558172
+  #pdf: '/static/pdf/Cell_Reports_2015.pdf'
