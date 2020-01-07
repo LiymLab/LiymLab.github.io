@@ -9,7 +9,10 @@ group: research
 
 Gene regulation is achieved using a variety of mechanisms. These include switching genes on and off using transcription factors, histone modifications and long range chromatin interactions that can regulate cell fate. 
 
-We study gene regulation n eukaryotic model systems. We also engineer novel biological tools inspired from nature that regulate genes for use in basic and applied sciences. 
+We study gene regulation in eukaryotic model systems. We also engineer novel biological tools inspired from nature that regulate genes for use in basic and applied sciences. 
+
+We address these problems using a combination of interdisciplinary approaches including genetic engineering, optogenetics and synthetic biology.
+
 
 
 <br><br>
