@@ -3,8 +3,7 @@ title: Rege Lab @ Ruia
 layout: home
 group: home
 ---
-
-<h2> # Welcome to the Rege Lab! <\h2>
+<h1>Welcome to the Rege Lab!</h1>
 
 We are part of the [Department of Microbiology](https://www.ruiacollege.edu/Department/Deptindex.aspx?page=a&ItemID=caeca&nDeptID=ee) in the [Ramnarain Ruia Autonomous College](http://www.ruiacollege.edu/).
 
