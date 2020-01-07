@@ -4,7 +4,7 @@ layout: home
 group: home
 ---
 
-# Welcome to the Rege Lab!
+<h2> # Welcome to the Rege Lab! <\h2>
 
 We are part of the [Department of Microbiology](https://www.ruiacollege.edu/Department/Deptindex.aspx?page=a&ItemID=caeca&nDeptID=ee) in the [Ramnarain Ruia Autonomous College](http://www.ruiacollege.edu/).
 
