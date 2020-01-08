@@ -1,6 +1,6 @@
 ---
 title: Mayuri presents work at UM-DAE CBS
-author: Eli Zunder
+author: 
 layout: post
 group: news
 ---
