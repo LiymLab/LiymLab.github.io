@@ -1,9 +1,9 @@
 ---
-title: Corey Joins the Lab!
+title: Mayuri presents work at UM-DAE CBS
 author: Eli Zunder
 layout: post
 group: news
 ---
- <img src="/static/img/news/Corey_Joins.jpg" alt="Corey Joins!" class="img-responsive">
+ <img src="/static/img/news/CBS.jpg" class="img-responsive">
 
-After rotating in November and December last year, Corey Williams has decided to join the lab!  Welcome Corey!
+Invited to present the lab's work in the Science Club run by the undergraduates at the [UM-DAE CBS](https://www.cbs.ac.in/research/research-biology). An electric atomsphere and excellent questions from bright young minds.
