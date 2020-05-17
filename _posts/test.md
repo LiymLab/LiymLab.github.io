@@ -4,7 +4,7 @@ author:
 layout: post
 group: news
 ---
-Honoured and priviledged to be awarded this prestigious grant from the Dept. of Biotechnology, india. 
+Honoured and priviledged to be awarded this prestigious grant from the Dept. of Biotechnology, India. 
 
 <blockquote cite="http://dbtindia.gov.in/schemes-programmes/building-capacities/awards/innovative-young-bio-technologist-award-iyba"
 The Innovative Young Biotechnologist Award (IYBA), initiated in 2005, is a career-oriented award to
