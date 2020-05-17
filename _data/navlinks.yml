@@ -31,5 +31,5 @@
 #   group: links
 
 - name: private
-  <!-- link: "https://sites.google.com/site/zunderlab/" -->
+  link: "https://sites.google.com/site/zunderlab/"
   group: private
