@@ -1,0 +1,7 @@
+---
+title: IYBA award ceremony in Delhi
+layout: post
+group: news
+---
+Felicitated by [Dr. Harsh Vardhan] (https://twitter.com/drharshvardhan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) and [Dr. Renu Swarup] (https://twitter.com/RenuSwarup) for being awarded the Har Gobind Khorana- Innovative Young Biotechnologist Award (IYBA) 2019 award from Dept. of Biotechnology, India. 
+<img src="/static/img/news/IYBA_pic_unofficial2.jpg" alt="IYBA for Mayuri" class="img-responsive">
