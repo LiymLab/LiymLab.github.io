@@ -9,6 +9,10 @@
 - name: publications
   link: "/publications"
   group: publications
+  
+- name: teaching
+  link: "/courses"
+  group: courses
 
 - name: members
   link: "/members"
@@ -27,5 +31,5 @@
 #   group: links
 
 - name: private
-  link: "https://sites.google.com/site/zunderlab/"
+  <!-- link: "https://sites.google.com/site/zunderlab/" -->
   group: private
