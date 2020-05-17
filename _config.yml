@@ -1,11 +1,14 @@
 name: "Rege Lab "
-description: "This is the official web page for Mayuri Rege at Ruia College, Mumbai."
+description: "This is the official web page for Mayuri Rege's lab at Ruia College."
 
 url: "https://regelab.github.io"
 
 paginate: 5
+plugins: [jekyll-paginate]
 paginate_path: "news/page:num"
 
 permalink: pretty
 highlighter: rouge
 markdown: kramdown
+kramdown: 
+  parse_block_html: true
