@@ -12,5 +12,3 @@ The Innovative Young Biotechnologist Award (IYBA), initiated in 2005, is a caree
 in frontier areas of biotechnology."
 </blockquote>
 
-<img src="/static/img/news/IMG_17882.JPG" class="img-responsive" height="500"> 
-<img src="/static/img/news/CBS_students.jpg" class="img-responsive">
