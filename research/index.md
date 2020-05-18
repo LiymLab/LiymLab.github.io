@@ -1,7 +1,7 @@
 ---
-layout: gridlay
 title: research
-subtitle: Ramani Lab Research
+layout: gridlay
+group: research
 ---
 
 # **research interests**
