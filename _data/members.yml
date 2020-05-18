@@ -16,6 +16,25 @@
   email: mugdhabelwalkar [at] gmail.com
   description: "Mugdha obtained her Bachelors' in Microbiology from Ruia college and her Masters from MSU, Baroda where she worked on Plant Growth Promoting Rhizobacteria. <br> <br> She was an instructor for the student team from Ruia that won the Gold medal at iGEM-2018."
 
+- name: Chinmay Palkar
+  image: /static/img/members/chinmay.jpg
+  position: Master Project Student 
+  description: "Adapting chromoproteins as affordable reporter systems"
+  
+- name: Anagha Panchal
+  image: /static/img/members/anagha.jpg
+  position: Master Project Student 
+  description: "Exploring use of tannases against Paan stains"
+
+- name: Mansi Gawande
+  image: /static/img/members/mansi.jpg
+  position: Master Project Student 
+  description: "Kill switches – their comparison and improvement"
+
+- name: Pratibha Bhalekar
+  image: /static/img/members/pratibha.jpg
+  position: Master Project Student 
+  description: "Exploring properties of locally sourced Pichia strains"
 
 
 
