@@ -20,10 +20,11 @@ body {
   background-color: #003882;
   border: 0 !important;
   margin-bottom: 0 !important;
+  position: fixed; /* Set the navbar to fixed position */
 }
 
 .navbar-default .navbar-brand {
-  font-family: "Lucida Bright", Georgia, serif;
+  font-family: "Lucida Bright", Georgia, sans-serif;
 
   color: #f6f6f6;
 }
