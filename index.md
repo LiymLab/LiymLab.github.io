@@ -3,9 +3,7 @@ title: Rege Lab @ Ruia
 layout: home
 group: home
 ---
-<h1>Welcome to the Rege Lab!</h1>
-
-We are part of the [Department of Microbiology](https://www.ruiacollege.edu/Department/Deptindex.aspx?page=a&ItemID=caeca&nDeptID=ee) in the [Ramnarain Ruia Autonomous College](http://www.ruiacollege.edu/).
+<h2>Welcome to the Rege Lab!</h2>
 
 Research in our laboratory is focused on understanding various aspects of **gene regulation**.  Using a combination of **genome engineering, synthetic biology and nuclear biology**, we explore novel properties of microbes and yeast. 
 
