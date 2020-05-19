@@ -13,7 +13,7 @@ Mayuri has designed and taught a number of courses for undergraduate/ post gradu
 ![Courses table](/static/img/teaching courses.jpg)<br>
 ![Courses table](/static/img/teaching courses 2.jpg)<br>
 
-<img src="/static/img/teaching courses.jpg" alt="List of Courses" style="width:550px;height:362px;">
+<img src="/static/img/teaching courses.jpg" alt="List of Courses" style="width:660px;height:435px;">
 
 <hr>
 
