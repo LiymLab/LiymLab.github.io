@@ -11,6 +11,8 @@ group: courses
 Mayuri has designed and taught a number of courses for undergraduate/ post graduate students at Ruia College. 
 
 ![Courses table](/static/img/teaching courses.jpg)<br>
+![Courses table](/static/img/teaching courses 2.jpg)<br>
+
 <img src="/static/img/teaching courses.jpg" alt="List of Courses" style="width:550px;height:362px;">
 
 <hr>
