@@ -1,5 +1,5 @@
 
-## Lab Alumni
+## Alumni
 
 
 
