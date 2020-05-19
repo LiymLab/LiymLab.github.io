@@ -1,7 +1,5 @@
 
-## Alumni
-
-
+<h2><b>alumni</b></h2>
 
 {% for alum in site.data.alumni %}
 <hr>
