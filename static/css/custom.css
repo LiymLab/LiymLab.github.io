@@ -22,7 +22,7 @@ body {
   margin-bottom: 0 !important;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 75%; /* Full width */
+  width: 100%; /* Full width */
 }
 
 .navbar-default .navbar-brand {
