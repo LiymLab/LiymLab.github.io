@@ -1,19 +1,20 @@
 ---
-title: Teaching Lab
+title: Teaching 
 layout: default
 group: courses
 ---
 
-# Rege Lab Lab Courses
+# courses
 
-Hands on Mol Bio course at UPenn  
+Mayuri has designed and taught a number of courses for undergraduate/ post graduate students at Ruia College. 
 
-List Courses taught in Ruia
+![Courses table](/static/img/teaching courses.jpg)
 
-The Rege lab is supportive of learning through research experiences, and has participated in a number of courses for undergraduate student. These programs challenge them as they conduct plan experiments, get hands-on training and analyze data to answer interesting new questions.
+In addition to this, she encourages hands on projects that challenge students as they plan and conduct experiments, and analyze data to answer interesting new questions.
 
-<!--
-- [Macro Methods 2019](/methods_2019)
-- [Macro Methods 2020](/methods)
--->
+[Learning from failure is a major philosophy of the lab](https://indiabioscience.org/columns/journey-of-a-yi/fail-faster-fail-better)
+
+Previously, she conducted the Molecular biology lab workshop in the Cremins lab at UPenn along with Jackie Valeri.
+<blockquote class="twitter-tweet"><p lang="und" dir="ltr"> <a href="https://t.co/0cRR1wtF9W">pic.twitter.com/0cRR1wtF9W</a></p>&mdash; Jenn Cremins (@CreminsLab) <a href="https://twitter.com/CreminsLab/status/871833269276463104?ref_src=twsrc%5Etfw">June 5, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
