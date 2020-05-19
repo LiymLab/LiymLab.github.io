@@ -11,7 +11,7 @@ group: courses
 Mayuri has designed and taught a number of courses for undergraduate/ post graduate students at Ruia College as listed below. <br>
 <img src="/static/img/teaching courses.jpg" alt="List of Courses" style="width:600px;height:396px;">
 <hr>
-#### **Project -based learning**
+#### **Project-based learning**
 Mayuri encourages students to independently plan and conduct experiments, analyze data to answer interesting new questions and helps them learn from their failures<br>
 [Read her article about this philosophy](https://indiabioscience.org/columns/journey-of-a-yi/fail-faster-fail-better).
 <hr>
