@@ -1,6 +1,6 @@
 ---
 title: Research in the Zunder Lab
-layout: gridlay
+layout: members
 group: research
 ---
 <h2><b>research</b></h2>
