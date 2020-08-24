@@ -1,33 +1,19 @@
 ---
 title: Research Interests
-layout: researchaims
+layout: default
 group: research
 ---
 <h2><b>research</b></h2>
 
 <hr>
-{% for person in site.data.research %}
+#### **Chromatin Dynamics**
+test description 1 <br>
+<img src="/static/img/teaching courses.jpg" alt="List of Courses" style="width:600px;height:396px;">
 <hr>
-<!-- The paddingtop and margin-top edits allow anchors to link properly. -->
-< div id = "{{person.name}}" class="row" >
-    <div class="col-sm-4">
-        <img class="img-responsive" src="{{person.image}}" {% if person.altimage %} onmouseover="this.src='{{person.altimage}}';" onmouseout="this.src='{{person.image}}';" {% endif %} alt="{{person.name}}"><br>
-        <strong>{{person.name}}</strong> <br>
-        {{person.position}} <br>
-        <em>{{person.email}}</em> <br>
-        {% if person.website %}
-          <a href= "{{person.website}}">{{person.website}}</a> <br>
-        {% endif %}
-        {% if person.scholar %}
-          <a href= "http://scholar.google.com/citations?user={{person.scholar}}"> Scholar Citations </a> <br>
-        {% endif %}
-        {% if person.twitter %}
-          <a href= "http://twitter.com/{{person.twitter}}"> @{{person.twitter}} </a> <br>
-        {% endif %}
-    </div>
-    <div class="col-sm-8">
-        <p class="text-justify">{{person.description | markdownify}}</p>
-    </div>  
-</div>
-{% endfor %}
+#### **Synthetic Biology**
+test description 2 <br>
+[Read her article about this philosophy](https://indiabioscience.org/columns/journey-of-a-yi/fail-faster-fail-better).
+<hr>
+#### **Bioengineering for Social Good**
+test description 3 [Cremins lab at UPenn](http://creminslab.com/) along with [Jackie Valeri](https://twitter.com/jackievalerisci).
 
