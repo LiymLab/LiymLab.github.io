@@ -1,5 +1,5 @@
 ---
-title: Research in the Zunder Lab
+title: Research Interests
 layout: gridlay
 group: research
 ---
