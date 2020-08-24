@@ -1,4 +1,8 @@
 # THE WEIRDEST BUG: using escapes requires single-quotes instead of double...
+- citation: '**Mayuri Rege**, Jessica L. Feldman, Nicholas L. Adkins, and Craig L. Peterson. SWI/SNF antagonizes SIR heterochromatin to promote transcription of genes expressed dur-ing mitotic exit in Saccharomyces cerevisiae. **bioRxiv 2020.03.24.006205**, 2020.'
+
+- citation: 'Jacob Beal, Natalie G. Farny, Traci Haddock-Angelli, Vinoo Selvarajah, Geoff S. Baldwin, Russell Buckley-Taylor, Markus Gershater, Daisuke Kiga, John Marken, Vishal Sanchania, Abigail Sison, Christopher T. Workman, and the iGEM Interlab Study Contributors (**iGEM Ruia-Mumbai** team was one of the study contributors). Robust Estimation of Bacterial Cell Count from Optical Density. Accepted at **Communications Biology**; bioRxiv 803239, 2020'
+
 - citation: 'Ji Hun Kim\*, <b>Mayuri Rege</b>\*, Jacqueline Valeri, Margaret C Dunagin, Aryeh Metzger, Katelyn R Titus, Thomas G Gilgenast, Wanfeng Gong, Jonathan A Beagan, Arjun Raj, Jennifer E Phillips-Cremins. LADL: light-activated dynamic looping for endogenous gene expression control. **Nature Methods**. 2019. ***contributed equally** <br> <br>
      -- Highlighted by <a href="https://www.nature.com/articles/s41576-019-0154-y">Nature Review Genetics</a>: Optoepigenetics for 3D genome engineering. <br>
      -- Covered by <a href="https://www.sciencedaily.com/releases/2019/07/190724125721.htm">Science Daily</a>: LADL uses light to serve up on-demand genome folding. <br>
@@ -32,18 +36,6 @@
   #pmid: 26586442
   #pdf: '/static/pdf/Cell_Reports_2015.pdf'
     
-- citation: '**Mayuri Rege**. RNA Exosome & Chromatin: The Yin & Yang of Transcription: A Dissertation. 2015.'
- # date: 2015
-  #image: '/static/img/pub/CellReports_thumb.jpg'
-  #pmid: 26586442
-  #pdf: '/static/pdf/Cell_Reports_2015.pdf'
-  
-- citation: '**Mayuri Rege**, Craig L Peterson. SWI/SNF remodels SIR3 heterochromatin during transcription. **The FASEB Journal**\. 2013.'
- # date: 2013
-  #image: '/static/img/pub/CellReports_thumb.jpg'
-  #pmid: 
-  #pdf: '/static/pdf/Cell_Reports_2015.pdf'  
-  
 - citation: 'Sulabha Pathak, **Mayuri Rege**, Nithya J Gogtay, Umesh Aigal, Surya Kant Sharma, Neena Valecha, Gyan Bhanot, Nilima A Kshirsagar, Shobhona Sharma. Age-dependent sex bias in clinical malarial disease in hypoendemic regions.  **PLoS One**\. 2012.'
  # date: 2012
   #image: '/static/img/pub/CellReports_thumb.jpg'
@@ -54,4 +46,10 @@
  # date: 2010
   #image: '/static/img/pub/CellReports_thumb.jpg'
   #pmid: 22558172
+  #pdf: '/static/pdf/Cell_Reports_2015.pdf'
+  
+#- citation: '**Mayuri Rege**. RNA Exosome & Chromatin: The Yin & Yang of Transcription: A Dissertation. 2015.'
+ # date: 2015
+  #image: '/static/img/pub/CellReports_thumb.jpg'
+  #pmid: 26586442
   #pdf: '/static/pdf/Cell_Reports_2015.pdf'
