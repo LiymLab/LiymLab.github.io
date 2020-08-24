@@ -1,5 +1,5 @@
 ---
-title: Research Intrests
+title: Research Interests
 layout: researchaims
 group: research
 ---
