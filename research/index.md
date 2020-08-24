@@ -1,8 +1,9 @@
 ---
+title: Research in the Zunder Lab
 layout: gridlay
-title: research
-subtitle: Ramani Lab Research
+group: research
 ---
+<h2><b>research</b></h2>
 
 # **research interests**
 {% for project in site.data.research %}
