@@ -3,8 +3,16 @@ title: Research in the Zunder Lab
 layout: default
 group: research
 ---
+<h2><b>research</b></h2>
 
-## Research in the Zunder lab is focused on discovering the mechanisms that control stem cell fate.
-
-
-### Our research takes advantage of the close parallels between *in vitro* stem cell differentiation and *in vivo* development. Our *in vitro* experiments can provide insight into stem cell behavior during normal development and disease, and our *in vivo* experiments can provide insight into the derivation of clinically relevant cell types for regenerative therapy.
+<hr>
+#### **Chromatin Dynamics**
+test description 1 <br>
+<img src="/static/img/teaching courses.jpg" alt="List of Courses" style="width:600px;height:396px;">
+<hr>
+#### **Synthetic Biology**
+test description 2 <br>
+[Read her article about this philosophy](https://indiabioscience.org/columns/journey-of-a-yi/fail-faster-fail-better).
+<hr>
+#### **Bioengineering for Social Good**
+test description 3 [Cremins lab at UPenn](http://creminslab.com/) along with [Jackie Valeri](https://twitter.com/jackievalerisci).
