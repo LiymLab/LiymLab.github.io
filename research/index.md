@@ -1,5 +1,5 @@
 ---
-title: Research Interests
+title: Research
 layout: default
 group: research
 ---
