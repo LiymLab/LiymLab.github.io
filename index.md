@@ -3,7 +3,7 @@ title: Rege Lab @ Ruia
 layout: home
 group: home
 ---
-<h3>*welcome*</h3>
+<!-- <h1>Welcome</h1> -->
 
 Research in the Rege lab is focused on understanding various aspects of **gene regulation**.  Using a combination of **genome engineering, synthetic biology and genetics**, we explore novel properties of microbes and yeast. 
 
