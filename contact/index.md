@@ -1,24 +1,22 @@
 ---
-title: Contact the Rege Lab
+title: Contact the Liym Lab
 layout: default
 group: contact
 ---
 
-# Contact the Rege Lab
+# Contact the Liym Lab
 
 
 <div class="row">
 
 <div class="col-md-4">
 
-  <h4>Dr. Mayuri Rege</h4>
-  DST-INSPIRE Faculty  <br>
-  Department of Microbiology  <br>
-  Ramnarain Ruia Autnomous College <br>
-  Matunga, Mumbai- 400019, India <br>
-  email: mayurirege [at] ruiacollege [dot] edu <br>
+  <h4>Dr. Yumei </h4>
+  School of Biology and Basic Medical Sciences <br>
+  Soochow University <br>
+  No. 199, Renai Road, Suzhou Industrial Park, Jiangsu, China <br>
+  email: ymli12@suda.edu.cn <br>
   
-
 </div>
 
 </div>
