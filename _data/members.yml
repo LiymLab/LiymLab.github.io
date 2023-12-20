@@ -21,20 +21,23 @@
 
 - name: Junpeng Zhou
   image: 
-  position: 
-  description: 
+  position: 20234221006[at]stu.suda.edu.cn
+  description: "Junpeng Zhou ,comes from Nanjing,Jiangsu.He graduated from Xuzhou Medical University, where he majored in bioinformatics. Now in Li's Lab, he mainly works on the project of the deconvolution to the methylation levels in different cell types."
 
 - name: JingQi Li
   image: 
   position: Master Student 
-  description: 
+  email: 20234221033[at]stu.suda.edu.cn
+  description: "Jingqi Li is a master's student at LYM Lab (2023-present), working on processing data and expanding the lab's computational resources. She's interested in the application of high-throughput sequencing technology in the field of genetics and reproduction. Jingqi Li obtained her bachelor's degree from Suzhou University of Science and Technology, majoring in Biotechnology. "
 
 - name: Ling Zheng
   image: 
   position: Visiting student
+  email:
   description: 
 
  - name: Keyao Zhu
   image: static/img/members/keyaozhu.png
   position: Visiting student
-  description:"Currently, I am an undergraduate student at Bioinformatics Pasteurien College, Suzhou Medical College, Soochow University. My research interests include Understanding gene regulation in cancer biology from epigenetic and transcriptomic perspectives, Computational Systems Biology, and Deep Learning in the Life Sciences."  
+  email: 2130408024[at]stu.suda.edu.cn
+  description: "Currently, I am an undergraduate student at Bioinformatics Pasteurien College, Suzhou Medical College, Soochow University. My research interests include Understanding gene regulation in cancer biology from epigenetic and transcriptomic perspectives, Computational Systems Biology, and Deep Learning in the Life Sciences."  
