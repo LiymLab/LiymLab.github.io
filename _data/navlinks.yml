@@ -10,17 +10,9 @@
   link: "/publications"
   group: publications
   
-- name: teaching
-  link: "/courses"
-  group: courses
-
 - name: members
   link: "/members"
   group: members
-
-- name: news
-  link: "/news"
-  group: news
 
 # name: contact
 # link: "/contact"
