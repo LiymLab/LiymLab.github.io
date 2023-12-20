@@ -14,9 +14,9 @@
   link: "/members"
   group: members
 
-# name: contact
-# link: "/contact"
-# group: contact
+# - name: contact
+#   link: "/contact"
+#   group: contact
 
 # - name: links
 #   link: "/links"
@@ -26,6 +26,6 @@
   link: "/position"
   group: position
 
-# name: private
-# link: "https://sites.google.com/site/zunderlab/"
-# group: private
+# - name: private
+#   link: "https://sites.google.com/site/zunderlab/"
+#   group: private
