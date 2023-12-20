@@ -15,7 +15,7 @@ group: contact
   School of Biology and Basic Medical Sciences <br>
   Soochow University <br>
   No. 199, Renai Road, Suzhou Industrial Park, Jiangsu, China <br>
-  email: ymli12@suda.edu.cn <br>
+  email: ymli12[ at ]suda.edu.cn <br>
   
 </div>
 
