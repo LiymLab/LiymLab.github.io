@@ -1,7 +1,7 @@
-name: "Rege Lab "
-description: "This is the official web page for Mayuri Rege's lab at Ruia College."
+name: "Liym Lab "
+description: "This is the official web page for Yumei Li's lab at Soochow University."
 
-url: "https://regelab.github.io"
+url: "https://liymlab.github.io/"
 
 paginate: 5
 plugins: [jekyll-paginate]
