@@ -22,6 +22,10 @@
 #   link: "/links"
 #   group: links
 
+- name: postion
+  link: "/position"
+  group: position
+
 # name: private
 # link: "https://sites.google.com/site/zunderlab/"
 # group: private
