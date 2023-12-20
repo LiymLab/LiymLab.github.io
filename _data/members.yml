@@ -1,40 +1,35 @@
-- name: Mayuri Rege
-  image: /static/img/Mayuri_Fall.jpg
-  position: Principal Investigator
-  email: mayurirege [at] ruiacollege.edu
-  scholar: "90C-PWkAAAAJ"
-  twitter: "MayuriRege"
-  description: "Mayuri received her Masters in Biology from [T.I.F.R](https://www.tifr.res.in/) in Mumbai. She received her PhD from [UMass, Worcester](http://https://www.umassmed.edu/) in 2015. There, she worked with [Dr. Craig Peterson](https://www.umassmed.edu/petersonlab/) to understand the effect of chromatin remodeling enzymes and chromatin dynamics on non-coding RNA transcription. <br><br>
+- name: Yumei Li
+  image: 
+  position: 
+  email: 
+  scholar: 
+  twitter: 
+  description:  <br><br>
   
-  Mayuri did her postdoc in [Jennifer Phillips-Cremins](http://http://creminslab.com/)' lab in the Bioengineering Dept at [Univ. of Pennsylvania](http://https://be.seas.upenn.edu/). There, she developed a tool to form 3D genome contacts using light as an inducer. <br><br>
-
-  In September 2017, Mayuri started her lab as a DST-INSPIRE Faculty in the Department of Microbiology at [Ruia College](http://ruiacollege.edu/)."
-
-- name: Mugdha Belwalkar
-  image: /static/img/members/mugdha.jpg
-  position: Graduate Student <br>(Joint with Dr. Anushree Lokur)
-  email: mugdhambelwalkar [at] gmail.com
-  description: "Mugdha obtained her Bachelors' in Microbiology from Ruia college and her Masters from MSU, Baroda where she worked on Plant Growth Promoting Rhizobacteria. <br> <br> She was an instructor for the student team from Ruia that won the Gold medal at iGEM-2018."
-
-- name: Chinmay Palkar
-  image: /static/img/members/chinmay.jpg
-  position: Master Project Student 
-  description: "Chinmay completed his Bachelor's from Royal College of Arts, Commerce and Science. <br> He is adapting chromoproteins for use as affordable reporter systems."
+- name: Tongyue Sun
+  image: 
+  position: 000
+  email: 000
+  description: 000
+  position: 000
+  description: "000"
   
-- name: Anagha Panchal
-  image: /static/img/members/anagha.jpg
-  position: Master Project Student 
-  description: "Exploring use of tannases against Paan stains"
+- name: Zhaoying Liu
+  image: 
+  position: 
+  description: 
 
-- name: Mansi Gawande
-  image: /static/img/members/mansi.jpg
-  position: Master Project Student 
-  description: "Kill switches – their comparison and improvement"
+- name: Junpeng Zhou
+  image: 
+  position: 
+  description: 
 
-- name: Pratibha Bhalekar
-  image: /static/img/members/pratibha.jpg
-  position: Master Project Student 
-  description: "Exploring properties of locally sourced Pichia strains"
+- name: JingQi Li
+  image: 
+  position: Master Student 
+  description: 
 
-
-
+- name: Ling Zheng
+  image: 
+  position: Visiting student
+  description: 
