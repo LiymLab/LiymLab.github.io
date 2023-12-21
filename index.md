@@ -5,4 +5,4 @@ group: home
 ---
 <!-- <h1>Welcome</h1> -->
 
-Research in the Liym lab is focused on 
+Research in the Liym lab is focused on Bioinformatics and Computational Biomedicine
