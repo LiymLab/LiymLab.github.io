@@ -1,10 +1,10 @@
 - name: Prof. Yumei Li
-  image: 
-  position: 
-  email: 
-  scholar: 
-  twitter: 
-  description:  <br><br>
+  image: static/img/members/yumeili.jpg
+  position: Professor
+  email: ymli12[at]suda.edu.cn
+  scholar: https://scholar.google.com/citations?user=DTb9YvMAAAAJ
+  # twitter: 
+  description:  'Prof. Yumei Li !'
   
 - name: Tongyue Sun
   image: 
@@ -37,7 +37,7 @@
   description: 
 
  - name: Keyao Zhu
-  image: static/img/members/keyaozhu.png
+  image: static/img/members/keyaozhu.jpg
   position: Visiting student
   email: 2130408024[at]stu.suda.edu.cn
   description: "Currently, I am an undergraduate student at Bioinformatics Pasteurien College, Suzhou Medical College, Soochow University. My research interests include Understanding gene regulation in cancer biology from epigenetic and transcriptomic perspectives, Computational Systems Biology, and Deep Learning in the Life Sciences."  
