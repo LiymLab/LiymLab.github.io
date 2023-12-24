@@ -1,2 +1,3 @@
-source 'https://liymlab.github.io'
+source 'https://rubygems.org'
 gem 'github-pages'
+gem 'rdiscount'
