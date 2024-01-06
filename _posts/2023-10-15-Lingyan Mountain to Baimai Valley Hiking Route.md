@@ -1,5 +1,5 @@
 ---
-title: Lingyan Mountain to Baimai Valley Hiking
+title: Lingyan Mountain to Baimai Valley Hiking Route
 author: Tongyue Sun
 layout: post
 group: news
