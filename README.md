@@ -1,4 +1,4 @@
-# fraser-lab.github.io
+# LiymLab.github.io
 ====================
 
 Technologies this website uses:  
