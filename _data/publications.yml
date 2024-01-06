@@ -1,55 +1,62 @@
 # THE WEIRDEST BUG: using escapes requires single-quotes instead of double...
-- citation: '**Mayuri Rege**, Jessica L. Feldman, Nicholas L. Adkins, and Craig L. Peterson. SWI/SNF antagonizes SIR heterochromatin to promote transcription of genes expressed during mitotic exit in Saccharomyces cerevisiae. **bioRxiv 2020.03.24.006205**, 2020. <a href="https://www.biorxiv.org/content/10.1101/2020.03.24.006205v1">[pdf]</a>'
 
-- citation: 'Jacob Beal, Natalie G. Farny, Traci Haddock-Angelli, Vinoo Selvarajah, Geoff S. Baldwin, Russell Buckley-Taylor, Markus Gershater, Daisuke Kiga, John Marken, Vishal Sanchania, Abigail Sison, Christopher T. Workman, and the **iGEM Interlab Study Contributors** (**iGEM Ruia-Mumbai** team was one of the study contributors). Robust Estimation of Bacterial Cell Count from Optical Density. Accepted at **Communications Biology**, 2020. <a href="https://www.biorxiv.org/content/10.1101/803239v1">[pdf]</a>'
+#Style Guide: Publications
+# citation - double quotes, to avoid breaking on names with apostrophes
+# all other sections - indent with 2 spaces, strings in single quotes
 
-- citation: 'Ji Hun Kim\*, <b>Mayuri Rege</b>\*, Jacqueline Valeri, Margaret C Dunagin, Aryeh Metzger, Katelyn R Titus, Thomas G Gilgenast, Wanfeng Gong, Jonathan A Beagan, Arjun Raj, Jennifer E Phillips-Cremins. LADL: light-activated dynamic looping for endogenous gene expression control. **Nature Methods**. 2019. ***contributed equally**. <a href="/static/pdf/Nature_Methods_2019.pdf">[pdf]</a> <br> <br>
-     -- Highlighted by <a href="https://www.nature.com/articles/s41576-019-0154-y">Nature Review Genetics</a>: Optoepigenetics for 3D genome engineering. <br>
-     -- Covered by <a href="https://www.sciencedaily.com/releases/2019/07/190724125721.htm">Science Daily</a>: LADL uses light to serve up on-demand genome folding. <br>
-     -- <a href="https://www.biorxiv.org/content/10.1101/349340v2">bioRxiv Preprint</a> highlighted by <a href="https://prelights.biologists.com/highlights/ladl-light-activated-dynamic-looping-endogenous-gene-expression-control/">preLights</a>'
-  
-  date: 201906
-  image: '/static/img/pub/LADL_loop.gif'
-  pmid: 31235883
-  pdf: '/static/pdf/Nature_Methods_2019.pdf'
-  links:
-    - name: "Cremins Lab"
-      url: 'http://creminslab.com'
-    - name: "*Highlighted in Nature Review Genetics*: Optoepigenetics for 3D genome engineering "
-      url: 'https://www.nature.com/articles/s41576-019-0154-y'
-    
-- citation: '**Mayuri Rege**, Jennifer E. Phillips-Cremins. Dynamic Looping Interactions: Setting the 3D Stage for the Macrophage. **Molecular Cell**\. 2017. <a href="/static/pdf/Mol_cell_2018.pdf">[pdf]</a>'
-  #date: 201709
-  #image: '/static/img/pub/Molecular_Cell_thumb.jpg'
-  #pmid: 28938095
-  #pdf: '/static/pdf/Mol_cell_2018.pdf'
- 
-- citation: 'Lijian Yu*, **Mayuri Rege**\*, Craig L Peterson, Michael R Volkert. RNA polymerase II depletion promotes transcription of alternative mRNA species. **BMC Molecular Biology**\. 2016.<br> ***contributed equally**. <a href="/static/pdf/BMC_Mol_Bio_2016.pdf">[pdf]</a>'
-  #date: 2016
-  #image: '/static/img/pub/BMC_thumb.jpg'
-  #pmid: 27578267
-  #pdf: '/static/pdf/BMC_Mol_Bio_2016.pdf'
-  
-- citation: '**Mayuri Rege**, Vidya Subramanian, Chenchen Zhu, Tsung-Han S Hsieh, Assaf Weiner, Nir Friedman, Sandra Clauder-Münster, Lars M Steinmetz, Oliver J Rando, Laurie A Boyer, Craig L Peterson. Chromatin dynamics and the RNA exosome function in concert to regulate transcriptional homeostasis. **Cell Reports**\. 2015. <a href="/static/pdf/Cell_Reports_2015.pdf">[pdf]</a>'
- # date: 2015
-  #image: '/static/img/pub/CellReports_thumb.jpg'
-  #pmid: 26586442
-  #pdf: '/static/pdf/Cell_Reports_2015.pdf'
-    
-- citation: 'Sulabha Pathak, **Mayuri Rege**, Nithya J Gogtay, Umesh Aigal, Surya Kant Sharma, Neena Valecha, Gyan Bhanot, Nilima A Kshirsagar, Shobhona Sharma. Age-dependent sex bias in clinical malarial disease in hypoendemic regions.  **PLoS One**\. 2012. <a href="/static/pdf/PlosOne_2012.pdf">[pdf]</a>'
- # date: 2012
-  #image: '/static/img/pub/CellReports_thumb.jpg'
-  #pmid: 22558172
-  #pdf: '/static/pdf/Cell_Reports_2015.pdf'
+#Names of lab members should be bolded using the following convention: **Surname FM**.
+#If there are multiple lab members in a row, include them in one set of double asterisk pairs.
+#Use &#42; to add an asterisk denoting co-first/corresponding author. Otherwise, bolding of names using **Surname FM** will break.
+#For readability of code, start a new line around 140 characters.
+#All images and PDFs should be named using the following convention: surname_YYYY
 
-- citation: 'Angika Basant, **Mayuri Rege**, Shobhona Sharma, Haripalsingh M Sonawat. **Malaria Journal**, 2010. <a href="/static/pdf/Malaria_Journal_2010.pdf">[pdf]</a>'
- # date: 2010
-  #image: '/static/img/pub/CellReports_thumb.jpg'
-  #pmid: 22558172
-  #pdf: '/static/pdf/Cell_Reports_2015.pdf'
-  
-#- citation: '**Mayuri Rege**. RNA Exosome & Chromatin: The Yin & Yang of Transcription: A Dissertation. 2015.'
- # date: 2015
-  #image: '/static/img/pub/CellReports_thumb.jpg'
-  #pmid: 26586442
-  #pdf: '/static/pdf/Cell_Reports_2015.pdf'
+#Leave PMID and PMCID blank until an ID is assigned.
+
+#Do not include additional subsections if they are not relevant
+#to a publication (PDB, data, Zenodo, etc).
+
+#Order of links: GitHub/Data/Server, Lab Websites (alphabetical order), Facility, Twitter, F1000, News Articles
+#Put article strings in single quotes since they are separated by a colon -- i.e. CNN: Article Name.
+
+#Example Publication
+# - <citation>: "Surname FM, **Fraser JS.** Title of article. *Submitted - Preprint on Biorxiv*. YYYY."
+#   date: 'YYYYMM'
+#   image: '/static/img/pub/surname_YYYY.png'
+#   pmid: '########'
+#   pmcid: 'PMC#######'
+#   biorxiv: 'YYYY.MM.DD.######'
+#   pdf: '/static/pdf/publications/surname_YYYY.pdf'
+#   pdbs:
+#     - PDB_ID
+#   paired_maps_and_models:
+#     - pdb: PDB_ID
+#       emdb: '#####'
+#   data:
+#     - '10.11577/1602169'
+#   zenodo:
+#     - code: '3555658'
+#       description: qPTxM code snapshot
+#   links:
+#     - name: Fujimori lab  @ UC San Francisco
+#       url: https://fujimorilab.ucsf.edu
+#     - name: Gonen lab @ UC Los Angeles
+#       url: https://cryoem.ucla.edu/
+#     - name: SACLA XFEL
+#       url: http://xfel.riken.jp/eng/
+#     - name: qPTxM code on GitHub
+#       url: https://github.com/fraser-lab/qptm
+#     - name: Celebratory Tweetstorm by first author First Surname
+#       url: https://twitter.com/LifeHasOrder/status/1172327493451145218
+#     - name: Celebratory Tweetstorm by corresponding author First Surname
+#       url: https://twitter.com/mctucsf/status/1172334750205218816
+---
+# - citation: "Riesenberg, BP; Gandy, EJ; Kennedy, AS; Hunt, EG; Hurst, KE; Sedlacek, EL; Gao, P; Emanuele, MK; Modliszewski, J; Green, JM; Milner, JJ; **Wiseman, RL**; Thaxton, J (2023) Adaptive IRE1 Signaling Elicits T Cell Metabolic Remodeling and Tumor Control, *bioRXIV*"
+#   date: '2023'
+#   image: '/static/img/pub/2023ThaxtonbioRXIV.png'
+#   pmid:
+#   biorxiv: '2023.11.16.567431'
+#   pdf: 'https://www.biorxiv.org/content/10.1101/2023.11.16.567431v1.full.pdf'
+#   links:
+#     - name: Thaxton Lab @ UNC
+#       url: https://www.thaxtonimmuno.com/
+

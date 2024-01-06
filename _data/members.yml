@@ -1,43 +1,178 @@
-- name: Prof. Yumei Li
-  image: static/img/members/yumeili.jpg
+- name: Yumei Li
+  image: /static/img/mem_img/yumeili.jpg
+  # pronouns: she/her/hers
   position: Professor
-  email: ymli12[at]suda.edu.cn
-  scholar: https://scholar.google.com/citations?user=DTb9YvMAAAAJ
-  # twitter: 
-  description:  'Prof. Yumei Li !'
+  email: ymli12 [AT] suda.edu.cn
+  # twitter: LabWiseman
+  scholar: DTb9YvMAAAAJ
+  # orcid: 0000-0001-9287-6840
+  description: "
+  Dr. Yumei Li is a Distinguished Professor in the Department of Bioinformatics at the School of Biology and Basic Medical Sciences of Soochow University. She has published 18 peer-reviewed papers in internationally renowned journals, including PNAS, Molecular Cell, Circulation Research, and Genome Biology, which has been featured by journals such as Circulation Research.
+
+
+  **Honors:**                                           \nJiangsu Distinguished Professor, China                                           \nGeorge E. Hewitt Foundation postdoctoral fellowship, USA
+
+
+  **Previous experiences:**                                           \n11/2019-01/2023	   \n*Postdoctoral fellow*                                           \nDivision of Computational Biomedicine,                                            \nDepartment of Biological Chemistry,                                            \nSchool of Medicine,                                            \nUniversity of California, Irvine                                           \nMentor: Prof. Wei Li
   
-- name: Tongyue Sun
-  image: 
-  position: 000
-  email: 000
-  description: 000
-  position: 000
-  description: "000"
   
+  \n09/2014-07/2019	    \nPh.D. in Bioinformatics  \nInstitute of Molecular Medicine,  \nPeking University  \nMentor: Prof. Chuan-Yun Li
+  
+  
+  09/2010-07/2014	      \nB.S. in Biological Science,  \nCollege of Life Sciences,  \nNankai University"
+  
+
+
 - name: Zhaoying Liu
-  image: 
-  position: 
-  description: 
+  image: /static/img/mem_img/zhaoyingliu.jpg
+  # pronouns: she/her/hers
+  position: Research Assistant
+  email: zhaoyingliu [AT] suda.edu.cn
+  description: "Zhaoying Liu graduated from Nanjing Agricultural University with a master’s degree in 2022 and then worked as a bioinformatics engineer for a year. His main interest is in molecular detection of pathogens and liquid biopsy of tumors.       \n**Awards:**    \nNanjing Agricultural University President's Scholarship  \nOutstanding Master's Degree Graduates
+"
+
+- name: Tongyue Sun
+  image: /static/img/mem_img/tongyuesun.jpg
+  # pronouns: she/her/hers
+  position: Research Assistant
+  email: tysun [AT] suda.edu.cn
+  description: "Tongyue Sun is currently serving as a Research Assistant in the LYM Lab, under the mentorship of Prof. Li. His primary field of work is bioinformatics, with a particular interest in AI4Science.      \nPrior to joining the LYM Lab, Tongyue obtained his Master&apos;s degree from the University of Sussex.      \n**Awards:**     \nScholarship for Academic Achievement       2021-2023"
+
+- name: Jingqi Li
+  image: /static/img/mem_img/jingqili.jpg
+  # pronouns: she/her/hers
+  position: Master's student
+  email: 20234221033 [AT] stu.suda.edu.cn
+  description: "Jingqi Li is a master's student at LYM Lab (2023-present), working on processing data and expanding the lab's computational resources. She's interested in the application of high-throughput sequencing technology in the field of genetics and reproduction. Jingqi Li obtained her bachelor's degree from Suzhou University of Science and Technology, majoring in Biotechnology."
 
 - name: Junpeng Zhou
-  image: 
-  position: 20234221006[at]stu.suda.edu.cn
+  image: /static/img/mem_img/junpengzhou.jpg
+  # pronouns: she/her/hers
+  position: Master's student
+  email: 20234221006 [AT] stu.suda.edu.cn
   description: "Junpeng Zhou ,comes from Nanjing,Jiangsu.He graduated from Xuzhou Medical University, where he majored in bioinformatics. Now in Li's Lab, he mainly works on the project of the deconvolution to the methylation levels in different cell types."
 
-- name: JingQi Li
-  image: 
-  position: Master Student 
-  email: 20234221033[at]stu.suda.edu.cn
-  description: "Jingqi Li is a master's student at LYM Lab (2023-present), working on processing data and expanding the lab's computational resources. She's interested in the application of high-throughput sequencing technology in the field of genetics and reproduction. Jingqi Li obtained her bachelor's degree from Suzhou University of Science and Technology, majoring in Biotechnology. "
-
 - name: Ling Zheng
-  image: 
-  position: Visiting student
-  email:
-  description: 
+  image: /static/img/mem_img/lingzheng.jpg
+  # pronouns: she/her/hers
+  position: Visiting Student
+  email: tysun [AT] suda.edu.cn
+  description: "Ling Zheng Graduated from the China University of Geosciences (Wuhan); during her post-graduate studies, her research mainly focused on synthetic biology and geological microbiology.   \nIn the LYM lab, she has a strong interest in learning various technologies related to bioinformatics. Learning computer programming is challenging and exciting for her.
+Outside the lab, She will learn new traditional crafts, Which she can quietly spend her free time doing, such as weaving or embroidery; sometimes, she climbs nearby mountains with friends."
+  
+- name: Jinqi Yuan
+  image: /static/img/mem_img/jinqiyuan.jpg
+  # pronouns: she/her/hers
+  position: Visiting Student
+  email: 2030416025 [AT] stu.suda.edu.cn
+  description: "Jinqi Yuan is currently an undergraduate of Soochow University, where she is actively engaged in the evaluation of cfDNA benchmark project at the LYM Lab . She expresses a keen interest in delving deeper into the domains of diagnosis and identification specifically related to cfDNA."
 
- - name: Keyao Zhu
-  image: static/img/members/keyaozhu.jpg
-  position: Visiting student
-  email: 2130408024[at]stu.suda.edu.cn
-  description: "Currently, I am an undergraduate student at Bioinformatics Pasteurien College, Suzhou Medical College, Soochow University. My research interests include Understanding gene regulation in cancer biology from epigenetic and transcriptomic perspectives, Computational Systems Biology, and Deep Learning in the Life Sciences."  
+- name: Yacheng Zhu
+  image: /static/img/mem_img/yachengzhu.jpg
+  # pronouns: she/her/hers
+  position: Visiting Student
+  email: 2030416004 [AT] stu.suda.edu.cn
+  description: "I am Zhu Yacheng, a senior student majoring in bioinformatics at Soochow University, from Dongtai, Jiangsu Province. I joined Professor Li’s team in July 2023 and I have helped complete a project about benchmark. 
+I’m interested in finding meaningful information from sequencing data to guide the diagnosis, treatment and the prevention of various complex diseases.
+"
+
+- name: Shen Yang
+  image: /static/img/mem_img/shenyang.jpg
+  # pronouns: she/her/hers
+  position: Visiting Student
+  email: 2030416038 [AT] stu.suda.edu.cn
+  description: "Yang Shen, from Shandong Province. He wants to learn more skills and knowledge in the field of Bioinformatics. He hopes to be good at computer language and biology 😶 in the future
+His hobby is playing games 🤗. He is an OP and farmer p . He is good at Opposing path in games😻
+"
+
+- name: Keyao Zhu
+  image: /static/img/mem_img/keyaozhu.jpg
+  # pronouns: she/her/hers
+  position: Visiting Student
+  email: 2130408024 [AT] stu.suda.edu.cn
+  description: "Currently, I am an undergraduate student at Bioinformatics Pasteurien College, Suzhou Medical College, Soochow University.       \nMy research interests include Understanding gene regulation in cancer biology from epigenetic and transcriptomic perspectives, 
+  Computational Systems Biology, and Deep Learning in the Life Sciences.                                                        \n**Awards:**       \nFirst Prize of 2022 National College Students Mathematical Modeling Competition in Jiangsu Province.       \n2023 American Undergraduate Mathematical Modeling Contest Meritorious Winner."
+
+
+
+# - name: Jie Sun, PhD
+#   image: /static/img/members/Jie.jpg
+#   pronouns: she/her/hers
+#   position: Postdoctoral fellow (with Enrique Saez)
+#   email: jiesun (at) scripps.edu
+#   description: "Jie Sun is a postdoctoral associate in the Wiseman and Saez labs studying on how the pharmacological activation of IRE1/XBP1s affects the pathology of nonalcoholic steatohepatitis (NASH) in multiple tissues. She obtained her PhD degree in Model Animal Research Center of Nanjing University, China. During her PhD, she studied on the physiology of smooth muscle contraction and the pathology of smooth muscle-related diseases. Using genetic modified mice, she found that a myosin light chain phosphatase (MLCP) inhibitory protein, CPI-17, is required for GPCR-induced calcium-sensitizied vascular smooth muscle contraction and genesis of obesity-related hypertension. Outside of lab, Jie enjoys hiking and reading."
+
+# - name: Prerona Bora, PhD
+#   image: /static/img/members/Prerona.png
+#   pronouns: she/her/hers
+#   position: Postdoctoral fellow
+#   email: pbora (at) scripps.edu
+#   description: "Prerona is a postdoctoral associate in the Wiseman lab working towards elucidating the mechanism of action of IRE1/XBP1s activators. In early 2022, she graduated with a PhD from the Indian Institute of Science Education and Research (IISER), Pune, India. During her PhD she has worked on the synthesis and evaluation of organic compounds as tools to probe the role of reactive sulphur species in conditions of oxidative stress and inflammation. She hails from the beautiful Northeastern state of Assam in India, famous for its one-horned rhinos and tea. Apart from being an avid tea drinker, she loves doing yoga, enjoys outdoor hikes and run.
+
+
+#   Prerona is supported by Hewitt Foundation postdoctoral fellowship"
+
+# - name: Caroline Stanton
+#   image: /static/img/members/Caroline2.jpg
+#   pronouns: she/her/hers
+#   position: Graduate Student (with Mike Bollong)
+#   email: cstanton (at) scripps.edu
+#   description: "Caroline is a graduate student in the Wiseman and Bollong labs working to identify novel inhibitors of the NLPR3 Inflammasome, a protein complex implicated in a number of diseases, through high-throughput screening. She is also investigating the relationship between fructolysis and the oxidative stress response with implications in treating liver disease. Caroline graduated from University of North Carolina at Chapel Hill with a bachelor’s degree in Chemistry and a second major Vocal Performance. During her undergraduate she worked in the lab of Leslie Hicks where she studied the TOR pathway in C. reinhardtii using mass spectrometry-based proteomics. She also participated in REUs at the University of Notre Dame and Vanderbilt University where she worked on a therapeutic monoclonal antibody trap in the Bruening Lab, and crystallized proteins from C. difficile in the Lacy Lab, respectively. Outside of lab, Caroline enjoys singing opera, reading, and going for walks on the beach."
+
+# - name: Nicole Madrazo
+#   image: /static/img/members/Nicole1.png
+#   pronouns: she/her/hers
+#   position: Graduate Student
+#   email: nmadrazo (at) scripps.edu
+#   description: "Nicole is a graduate student in the Wiseman lab. Using genomics, bioinformatics, and biochemistry, she is interested in finding novel targets of the ATF6 pathway, and probing the mechanism of action of IRE1 activator molecules. After graduating from UC Berkeley in 2019, she became a lab technician in Elçin Ünal’s lab. She studied how redox state affects S. cerevisiae lifespan, and assisted in the development of a cDNA screen to identify meiosis-specific genes with rejuvenative potential. During her free time, Nicole enjoys cooking, hiking, and dancing."
+
+# - name: Dan Fuentes
+#   image: /static/img/members/Dan1.jpeg
+#   pronouns: he/him/his
+#   position: Graduate Student (with Danielle Grotjahn)
+#   email: dfuentes (at) scripps.edu
+#   description: "Dan earned his undergraduate degree in Biochemistry from California State University, Los Angeles. He completed his honors thesis in the Zurita-Lopez lab, studying histone tail post-translational modifications using biochemical techniques. He then went on to work as a research assistant in the Rodriguez lab at University of California, Los Angeles. There, he utilized structural and biochemical techniques to study broadly neutralizing antibodies against New World Hemorrhagic Fever Arena Viruses. Dan is now a joint PhD student in the Grotjahn and Wiseman Labs at Scripps Research Institute, where he uses cryo-electron tomography and biochemical approaches to investigate the molecular mechanisms that regulate mitochondrial morphology in response to cellular stress. Outside of research, Dan enjoys skating, photography, grubbing with the homies, and hanging out with his cat and doggo.
+
+
+#   Dan is supported by a predoctoral fellowship from [NSF](https://www.nsf.gov/)."
+
+# - name: Sergei Kutseikin
+#   image: /static/img/members/Sergei1.jpeg
+#   pronouns: he/him/his
+#   position: Graduate Student (with Enrique Saez)
+#   email: skutseikin (at) scripps.edu
+#   description: "Sergei is a graduate student in the Wiseman and Saez labs studying the mechanisms of how mild pharmacological activation of IRE1/XBP1s signaling pathways can affect insulin production in beta cells. Sergei graduated from Novosibirsk State University in Russia with a bachelor’s degree in chemistry. His undergraduate thesis research was focused on synthesizing organic radical contrast agents for improved tumor identification on MRI. After graduation, he worked as a research assistant, working on new cancer immunotherapy approaches. Outside of the lab, Sergei spends his free time reading, cooking, and hiking."
+
+# - name: Chavin Buasakdi
+#   image: /static/img/members/Chavin2.jpeg
+#   pronouns: he/him/his
+#   position: Graduate Student
+#   email: cbuasakdi (at) scripps.edu
+#   description: "Chavin is a graduate student in the Wiseman lab working to identify which pharmacologic activator of unfolded protein response protects against neurodegenerative diseases such as neuropathy and Alzheimer's. Chavin graduated from the University of Wisconsin-Madison with a bachelor's degree in chemistry and biology and a master's degree in bacteriology. His research experience at Madison involved the metabolomic and lipidomic studies of bacterial biofilm during its formation and bacteriophage infection in the lab of Daniel Amador-Noguez. Outside of the lab, Chavin enjoys a variety of activities outdoors and indoors- photography, hiking, ice skating, skiing, cooking, playing games, and playing electric guitar.
+
+
+#   Chavin is a part of the Skaggs-Oxford program and is supported by the Royal Thai Government fellowship."
+
+# - name: Emanuel Irizarry
+#   image: /static/img/members/Emanual.jpeg
+#   pronouns: he/him/his
+#   position: Graduate Student (with Katja Lamia)
+#   email: eirizarry (at) scripps.edu
+#   description: "Emanuel is a graduate student in the Wiseman and Lamia labs studying how circadian rhythms affect drug efficacy, emphasizing on metabolic drugs. Emanuel graduated from the University of Puerto Rico at Mayaguez (UPRM) and Antillean University with a bachelor’s degree in chemistry and biology, respectively. During his undergrad, he conducted research in various labs at UPRM and participated in summer undergraduate research programs at Rutgers University and Scripps Research, acquiring a broad research background. His research experience ranges from characterizing explosives using novel spectroscopy approaches to quantitatively analyzing pharmaceutical drug biodegradation using quantitative electrochemical techniques and analyzing how circadian rhythm disruption links to enhanced tumorigenesis. During his free time, he enjoys hiking, camping, swimming, cooking, and playing piano and flute music."
+
+# - name: Sophia Krasny
+#   image: /static/img/members/Sophia.png
+#   pronouns: she/her/hers
+#   position: Undergraduate Intern
+#   email: skrasny (at) scripps.edu
+#   description: "Sophia is an undergraduate student at Northeastern University and will be graduating in 2024 with a B.S. in Behavioral Neuroscience and a minor in Philosophy. As a research intern, she is studying HRI and its role in the ISR. Sophia is working with and learning from Nicole, while also taking directives from other lab members to assist the Wiseman lab in their effort to unveil critical mechanisms regulating the ISR. Sophia is interested in learning more about stress-induced molecular mechanisms, and their implications for neurodegenerative diseases. Outside of lab, Sophia can be found running, surfing, reading, or baking."
+
+# - name: Sam Oviedo
+#   image: /static/img/members/Sam.jpg
+#   pronouns: she/her/hers
+#   position: Graduate Student
+#   email: soviedo (at) scripps.edu
+#   description: "My name is Sam, so Sam I am, and I’m in the Grotjahn and Wiseman fam. I’m from the Alamo, so all you know, I came to Scripps to learn and grow. Mitochondria are key, for you and me, and I love to mess with them and see. Sometimes they’re long, sometimes they’re stout, and sometimes they’re angry and just kind of shout. It’s my hope, with my trusty ‘scope, to map these changes as mitochondria cope. The pictures are gorgeous, and sometimes glorious, and I’ll continue to take them until I’m victorious. Give me some time, and you will find, the continued development of my mind. I’m excited to be here, but I’ll never show it, but if you talk with me, you’ll most certainly know it.
+
+
+#   Sam is supported by a predoctoral fellowship from [NSF](https://www.nsf.gov/), although she would really want a Dr. Seuss fellowship."

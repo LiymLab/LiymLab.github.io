@@ -1,8 +1,165 @@
-# - name: Tongyue Sun
-#   position: Research Assistant
-#   startdate: 2023.4
-#   enddate: 2024.1
-#   current: TBD
-  
+# - name: Jessica Rosarda, PhD (and Elsie)
+#   position: Graduate student
+#   startdate: 2017
+#   enddate: 2023
+#   current: Assistant Professor @ Uniformed Services University
 
+# - name: Lara Ibrahim, PhD
+#   position: Graduate student
+#   startdate: 2018
+#   enddate: 2023
+#   current: Research Scientist @ Belharra
 
+# - name: Jaleh Mesgarzadeh, PhD
+#   position: Graduate student
+#   startdate: 2018
+#   enddate: 2023
+#   current: Research Scientist @ Belharra
+
+# - name: Valerie Perea, PhD
+#   position: Graduate student
+#   startdate: 2018
+#   enddate: 2023
+#   current: Postdoc
+
+# - name: Bibiana Rius, PhD
+#   position: Postdoctoral fellow
+#   startdate: 2018
+#   enddate: 2022
+#   current: Research Scientist @ Elsie
+
+# - name: Albert Song, PhD
+#   position: Graduate Student
+#   startdate: 2017
+#   enddate: 2022
+#   current: Medical School @ UCSD
+
+# - name: Belle Romine, PhD
+#   position: Graduate Student
+#   startdate: 2017
+#   enddate: 2021
+#   current: Consultant
+
+# - name: Dorian Rosen, PhD
+#   position: Postdoctoral fellow
+#   startdate: 2019
+#   enddate: 2021
+#   current: Science Writer
+
+# - name: Vivian Dolina, PhD
+#   position: Postdoctoral fellow
+#   startdate: 2016
+#   enddate: 2021
+#   current: Research Scientist @ Takeda
+
+# - name: Aparajita Madhavan, PhD
+#   position: Graduate Student
+#   startdate: 2015
+#   enddate: 2021
+#   current: Research Scientist @ Vividion
+
+# - name: Ethan Smith-Cohen
+#   position: AYRIU intern
+#   startdate: 2020
+#   enddate: 2021
+#   current: Senior @ Oberlin College
+
+# - name: Mia Shin, PhD
+#   position: Graduate Student
+#   startdate: 2017
+#   enddate: 2021
+#   current: Research Scientist @ Sanofi
+
+# - name: Julia Grandjean, PhD
+#   position: Graduate Student
+#   startdate: 2016
+#   enddate: 2020
+#   current: Research Scientist @ Protego
+
+# - name: Justine Lebeau, PhD
+#   position: Postdoctoral fellow
+#   startdate: 2015
+#   enddate: 2020
+#   current: Research Scientist @ Bristol-Meyers-Squibb
+
+# - name: Cristina Puchades, PhD
+#   position: Graduate student (with Gabe Lander)
+#   startdate: 2015
+#   enddate: 2019
+#   current: Postdoctoral Fellow - Cheng lab @ UCSF
+
+# - name: Lauren Cech
+#   position: Post-bac
+#   startdate: 2018
+#   enddate: 2019
+#   current: Graduate student @ UCSF
+
+# - name: Lars Plate, PhD
+#   position: Postdoctoral fellow
+#   startdate: 2013
+#   enddate: 2017
+#   current: Assistant Professor @ Vanderbilt
+#   lab: https://my.vanderbilt.edu/plateresearch/
+
+# - name: Kai-Chun Chen, PhD
+#   position: Postdoctoral fellow
+#   startdate: 2015
+#   enddate: 2017
+#   current: Scientist @ Encodia
+
+# - name: Song Qu, PhD
+#   position: Graduate student
+#   startdate: 2011
+#   enddate: 2016
+#   current: IP Portfolio Management and Licensing Associate @ Cedars-Sinai
+
+# - name: Jaclyn Saunders
+#   position: Graduate student
+#   startdate: 2012
+#   enddate: 2017
+#   current: Scientist @ Semba Biosciences
+
+# - name: T. Kelly Rainbolt, PhD
+#   position: Graduate student
+#   startdate: 2010
+#   enddate: 2016
+#   current: Postdoctoral fellow - Frydman lab @ Stanford
+
+# - name: John Chen, PhD
+#   position: Graduate student
+#   startdate: 2013
+#   enddate: 2015
+#   current: Postdoctoral Fellow - Kampmann lab @ UCSF
+
+# - name: Christina Cooley, PhD
+#   position: Postdoctoral fellow
+#   startdate: 2011
+#   enddate: 2015
+#   current: Assistant professor @ Trinity
+#   lab: https://inside.trinity.edu/directory/ccooley
+
+# - name: Joseph C. Genereux, PhD
+#   position: Postdoctoral fellow
+#   startdate: 2010
+#   enddate: 2015
+#   current: Assistant professor @ UC-Riverside
+#   lab: https://genereuxlab.ucr.edu/
+
+# - name: Estella Gustilo, PhD
+#   position: Postdoctoral fellow
+#   startdate: 2009
+#   enddate: 2012
+#   current: Adjunct assistant professor @ CUNY
+
+# - name: Neli Atanassova, PhD
+#   position: Postdoctoral Fellow
+#   startdate: 2009
+#   enddate: 2012
+#   current: Project manager @ AstraZeneca
+
+# - name: Matt Shoulders, PhD
+#   position: Postdoctoral fellow
+#   startdate: 2010
+#   enddate: 2012
+#   current: Associate professor @ MIT
+#   lab: https://shoulderslab.mit.edu/

@@ -2,17 +2,25 @@
   link: "/"
   group: home
 
-- name: research
-  link: "/research"
-  group: research
+# - name: research
+#   link: "/research"
+#   group: research
 
 - name: publications
   link: "/publications"
   group: publications
-  
+
 - name: members
   link: "/members"
   group: members
+
+- name: news
+  link: "/news"
+  group: news
+
+- name: join
+  link: "/join"
+  group: join
 
 # - name: contact
 #   link: "/contact"
@@ -22,10 +30,6 @@
 #   link: "/links"
 #   group: links
 
-- name: postion
-  link: "/position"
-  group: position
-
 # - name: private
-#   link: "https://sites.google.com/site/zunderlab/"
+#   link: "https://sites.google.com/a/fraserlab.com/ucsf-private/"
 #   group: private

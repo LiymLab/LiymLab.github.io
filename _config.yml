@@ -1,13 +1,26 @@
-name: "Li Lab "
+# name: "Wiseman Lab"
+# description: "This is the official web page for the R. Luke Wiseman Lab at Scripps Research."
 
-url: "https://LiymLab.github.io"
+# url: "http://wisemanlab.github.io"
+
+# paginate: 5
+# plugins: [jekyll-paginate]
+# paginate_path: "news/page:num"
+
+# permalink: pretty
+# markdown: kramdown
+# kramdown: 
+#   parse_block_html: true
+name: "LYM Lab"
+description: "This is the official web page for the LYM Lab at Soochow University."
+
+url: "http://liymlab.github.io"
 
 paginate: 5
 plugins: [jekyll-paginate]
 paginate_path: "news/page:num"
 
 permalink: pretty
-highlighter: rouge
 markdown: kramdown
 kramdown: 
   parse_block_html: true
