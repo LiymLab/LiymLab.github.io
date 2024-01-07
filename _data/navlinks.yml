@@ -1,4 +1,4 @@
-- name: home
+- name: Home
   link: "/"
   group: home
 
@@ -6,19 +6,19 @@
 #   link: "/research"
 #   group: research
 
-- name: publications
+- name: Publications
   link: "/publications"
   group: publications
 
-- name: members
+- name: Members
   link: "/members"
   group: members
 
-- name: news
+- name: Lab News & Lifestyle
   link: "/news"
   group: news
 
-- name: join
+- name: Join
   link: "/join"
   group: join
 
