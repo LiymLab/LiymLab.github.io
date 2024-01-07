@@ -59,6 +59,7 @@
 #   links:
 #     - name: Thaxton Lab @ UNC
 #       url: https://www.thaxtonimmuno.com/
+
 - citation: "**Yumei Li**, Jianfeng Xu, Chaorong Chen, Zhenhai Lu, Desen Wan, Diange Li, Jason S. Li, Allison J. Sorg, Curt C. Roberts, Shivani Mahajan, Maxime A. Gallant, Itai Pinkoviezky, Ya Cui, David J. Taggart, Wei Li. Multimodal Epigenetic Sequencing Analysis (MESA) of Cell-free DNA for Non-invasive Colorectal Cancer Detection. *Genome Medicine. Accepted*"
 date: '2023'
 #image: '/static/img/pub/2023ThaxtonbioRXIV.png'
