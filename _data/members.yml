@@ -50,7 +50,7 @@
   # pronouns: she/her/hers
   position: Master's student
   email: 20234221006 [AT] stu.suda.edu.cn
-  description: "Junpeng Zhou ,comes from Nanjing,Jiangsu.He graduated from Xuzhou Medical University, where he majored in bioinformatics. Now in Li's Lab, he mainly works on the project of the deconvolution to the methylation levels in different cell types."
+  description: "Junpeng Zhou ,comes from Nanjing,Jiangsu.He graduated from Xuzhou Medical University, where he majored in bioinformatics."
 
 - name: Ling Zheng
   image: /static/img/mem_img/lingzheng.jpg
@@ -65,16 +65,15 @@ Outside the lab, She will learn new traditional crafts, Which she can quietly sp
   # pronouns: she/her/hers
   position: Visiting Student
   email: 2030416025 [AT] stu.suda.edu.cn
-  description: "Jinqi Yuan is currently an undergraduate of Soochow University, where she is actively engaged in the evaluation of cfDNA benchmark project at the LYM Lab . She expresses a keen interest in delving deeper into the domains of diagnosis and identification specifically related to cfDNA."
+  description: "Jinqi Yuan is currently an undergraduate student at the LYM lab at Soochow University. She is currently working as an intern under Professor Li to improve her skills. She plans to further her research in diagnosis and identification in the future."
 
 - name: Yacheng Zhu
   image: /static/img/mem_img/yachengzhu.jpg
   # pronouns: she/her/hers
   position: Visiting Student
   email: 2030416004 [AT] stu.suda.edu.cn
-  description: "I am Zhu Yacheng, a senior student majoring in bioinformatics at Soochow University, from Dongtai, Jiangsu Province. I joined Professor Li’s team in July 2023 and I have helped complete a project about benchmark. 
-I’m interested in finding meaningful information from sequencing data to guide the diagnosis, treatment and the prevention of various complex diseases.
-"
+  description: "I am Zhu Yacheng, a senior undergraduate student majoring in bioinformatics at Soochow University, from Dongtai, Jiangsu Province.  I joined Professor Li’s team in July 2023 and I have participated in some specific projects. 
+I’m interested in Noninvasive diagnosis of disease, looking forward to finding meaningful information from sequencing data to guide the diagnosis, treatment and the prevention of various complex diseases."
 
 - name: Shen Yang
   image: /static/img/mem_img/shenyang.jpg
