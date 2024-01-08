@@ -71,7 +71,7 @@
   pmid: '35292087'
   pdf: 'https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-022-02648-4.pdf'
 
-- citation: "Deepanwita Sengupta\*, Liyong Zeng\*, **Yumei Li\***, Simone Hausmann, Debopam Ghosh, Gang Yuan, Thuyen N Nguyen, Ruitu Lyu, Marcello Caporicci, Ana Morales Benitez, Garry L Coles, Vladlena Kharchenko, Iwona Czaban, Dulat Azhibek, Wolfgang Fischle, Mariusz Jaremko, Ignacio I Wistuba, Julien Sage, Łukasz Jaremko, Wei Li, Pawel K Mazur, Or Gozani. NSD2 dimethylation at H3K36 promotes lung adenocarcinoma pathogenesis. *Molecular Cell*"
+- citation: "Deepanwita Sengupta, Liyong Zeng, **Yumei Li**, Simone Hausmann, Debopam Ghosh, Gang Yuan, Thuyen N Nguyen, Ruitu Lyu, Marcello Caporicci, Ana Morales Benitez, Garry L Coles, Vladlena Kharchenko, Iwona Czaban, Dulat Azhibek, Wolfgang Fischle, Mariusz Jaremko, Ignacio I Wistuba, Julien Sage, Łukasz Jaremko, Wei Li, Pawel K Mazur, Or Gozani. NSD2 dimethylation at H3K36 promotes lung adenocarcinoma pathogenesis. *Molecular Cell*"
   date: '2021'
   image: '/static/img/pub/MolecularCell.png'
   pmid: '34555356'
