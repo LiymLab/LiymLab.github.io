@@ -1,23 +1,14 @@
----
-title: Publications from the LYM Lab
-layout: default
-group: publications
----
-
 <h1>Featured Publications</h1>
 <div class="container-fluid">
-    <p><a href="https://scholar.google.com/citations?user=DTb9YvMAAAAJ">Google Scholar Profile</a> for a full publication list.</p>
+	<p><a href="https://scholar.google.com/citations?user=DTb9YvMAAAAJ">Google Scholar Profile</a> for a full publication list.</p>
 {% for publication in site.data.publications %}
 <hr>
-<div class="row d-flex align-items-start" style="padding-top: 60px; margin-top: -60px;" id="{{publication.pmid}}">
-    <div class="col-sm-4 order-1">
-        <img class="img-fluid mb-3" src="{{publication.image}}" alt="Key Figure" style="max-height: 200px;">
-    </div>
-    <div class="col-sm-8 order-2">
-		<div style="font-size: 120% !important;">
-			{{ publication.citation | append: " (" | append: publication.date | append: ")" | markdownify }}
-		</div>        
-		<ul class="mt-3">
+<div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{publication.pmid}}">
+<div style="font-size: 120% !important;">{{ publication.citation | markdownify }}</div>
+	<div class="col-sm-6">
+		<img class = "img-fluid" src = "{{publication.image}}" alt = "Key Figure" style="max-height: 200px;">
+	</div>
+	<ul class="col-sm-6">
 			<strong>Access the paper</strong>
 			<!--PMID-->
 			{% if publication.pmid %}
@@ -103,11 +94,8 @@ group: publications
 			{% for link in publication.links %}
 			<li><a href="{{link.url}}" alt="{{link.name}}">{{link.name}}</a></li>
 			{% endfor %} -->
-        </ul>
-    </div>
+	</ul>
 </div> <br>
 {% endfor %}
 </div>
-            
-
 
