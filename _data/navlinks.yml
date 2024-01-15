@@ -14,11 +14,11 @@
   link: "/members"
   group: members
 
-- name: Lab News & Lifestyle
+- name: Lab News & Life
   link: "/news"
   group: news
 
-- name: Join
+- name: Join Us
   link: "/join"
   group: join
 
