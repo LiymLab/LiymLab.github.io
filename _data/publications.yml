@@ -60,37 +60,37 @@
 #     - name: Thaxton Lab @ UNC
 #       url: https://www.thaxtonimmuno.com/
 
-- citation: "<u>Yumei Li\*</u>, Jianfeng Xu\*, Chaorong Chen\*, Zhenhai Lu, Desen Wan, Diange Li, Jason S. Li, Allison J. Sorg, Curt C. Roberts, Shivani Mahajan, Maxime A. Gallant, Itai Pinkoviezky, Ya Cui, David J. Taggart#, Wei Li#. Multimodal Epigenetic Sequencing Analysis (MESA) of Cell-free DNA for Non-invasive Colorectal Cancer Detection. *Genome Medicine*"
+- citation: "<u>Yumei Li<span> *</span></u>, Jianfeng Xu<span> *</span>, Chaorong Chen<span> *</span>, Zhenhai Lu, Desen Wan, Diange Li, Jason S. Li, Allison J. Sorg, Curt C. Roberts, Shivani Mahajan, Maxime A. Gallant, Itai Pinkoviezky, Ya Cui, David J. Taggart#, Wei Li#. Multimodal Epigenetic Sequencing Analysis (MESA) of Cell-free DNA for Non-invasive Colorectal Cancer Detection. *Genome Medicine*"
   date: '2024'
   image: '/static/img/pub/GenomeMedicine.png'
   #pmid: ''
   pdf: 'https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-023-01280-6'
   
-- citation: "Yumei Li\*, Xinzhou Ge\*, Fanglue Peng, Wei Li#, Jingyi Jessica Li#. Exaggerated false positives by popular differential expression methods when analyzing human population samples. *Genome Biology*"
+- citation: "Yumei Li<span> *</span>, Xinzhou Ge<span> *</span>, Fanglue Peng, Wei Li#, Jingyi Jessica Li#. Exaggerated false positives by popular differential expression methods when analyzing human population samples. *Genome Biology*"
   date: '2022'
   image: '/static/img/pub/GenomeBiology.png'
   pmid: '35292087'
   pdf: 'https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-022-02648-4.pdf'
 
-- citation: "Deepanwita Sengupta\*, Liyong Zeng\*, Yumei Li\*, Simone Hausmann, Debopam Ghosh, Gang Yuan, Thuyen N Nguyen, Ruitu Lyu, Marcello Caporicci, Ana Morales Benitez, Garry L Coles, Vladlena Kharchenko, Iwona Czaban, Dulat Azhibek, Wolfgang Fischle, Mariusz Jaremko, Ignacio I Wistuba, Julien Sage, Łukasz Jaremko, Wei Li#, Pawel K Mazur#, Or Gozani#. NSD2 dimethylation at H3K36 promotes lung adenocarcinoma pathogenesis. *Molecular Cell*"
+- citation: "Deepanwita Sengupta<span> *</span>, Liyong Zeng<span> *</span>, Yumei Li<span> *</span>, Simone Hausmann, Debopam Ghosh, Gang Yuan, Thuyen N Nguyen, Ruitu Lyu, Marcello Caporicci, Ana Morales Benitez, Garry L Coles, Vladlena Kharchenko, Iwona Czaban, Dulat Azhibek, Wolfgang Fischle, Mariusz Jaremko, Ignacio I Wistuba, Julien Sage, Łukasz Jaremko, Wei Li#, Pawel K Mazur#, Or Gozani#. NSD2 dimethylation at H3K36 promotes lung adenocarcinoma pathogenesis. *Molecular Cell*"
   date: '2021'
   image: '/static/img/pub/MolecularCell.png'
   pmid: '34555356'
   pdf: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8571016/pdf/nihms-1738209.pdf'
 
-- citation: "Yumei Li\*, Qing Sunny Shen\*, Qi Peng\*, Wanqiu Ding, Jie Zhang, Xiaoming Zhong, Ni A An, Mingjun Ji, Wei-Zhen Zhou, Chuan-Yun Li#. Polyadenylation- related isoform switching in human evolution revealed by full-length transcript structure. *Briefings in Bioinformatics*"
+- citation: "Yumei Li<span> *</span>, Qing Sunny Shen<span> *</span>, Qi Peng<span> *</span>, Wanqiu Ding, Jie Zhang, Xiaoming Zhong, Ni A An, Mingjun Ji, Wei-Zhen Zhou, Chuan-Yun Li#. Polyadenylation- related isoform switching in human evolution revealed by full-length transcript structure. *Briefings in Bioinformatics*"
   date: '2021'
   image: '/static/img/pub/bib.png'
   pmid: '33973996'
   pdf: 'https://academic.oup.com/bib/article-pdf/22/6/bbab157/41088916/bbab157.pdf'
 
-- citation: "Yumei Li\*, Shanshan Ai\*, Xianhong Yu\*, Chen Li, Xin Li, Yanzhu Yue, Yusheng Wei, Chuan-Yun Li#, Aibin He#. Replication-independent histone turnover underlines the epigenetic homeostasis in adult heart. *Circulation Research*"
+- citation: "Yumei Li<span> *</span>, Shanshan Ai<span> *</span>, Xianhong Yu<span> *</span>, Chen Li, Xin Li, Yanzhu Yue, Yusheng Wei, Chuan-Yun Li#, Aibin He#. Replication-independent histone turnover underlines the epigenetic homeostasis in adult heart. *Circulation Research*"
   date: '2019'
   image: '/static/img/pub/res.2019.125.issue-2.jpeg'
   pmid: '31104571'
   pdf: 'https://www.ahajournals.org/doi/reader/10.1161/CIRCRESAHA.118.314366'
 
-- citation: "Yumei Li\*, Chen Li\*, Shuxian Li, Qi Peng, Ni A. An, Aibin He#, Chuan-Yun Li#. Human exonization through differential nucleosome occupancy. *PNAS*"
+- citation: "Yumei Li<span> *</span>, Chen Li<span> *</span>, Shuxian Li, Qi Peng, Ni A. An, Aibin He#, Chuan-Yun Li#. Human exonization through differential nucleosome occupancy. *PNAS*"
   date: '2018'
   image: '/static/img/pub/pnas.2018.115.issue-35.largecover.jpeg'
   pmid: '30104384'
