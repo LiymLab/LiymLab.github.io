@@ -64,7 +64,7 @@
   date: '2023'
   image: '/static/img/pub/GenomeMedicine.png'
   #pmid: ''
-  pdf: 'https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-023-01280-6.pdf'
+  pdf: 'https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-023-01280-6'
   
 - citation: "**Yumei Li**, Xinzhou Ge, Fanglue Peng, Wei Li, Jingyi Jessica Li. Exaggerated false positives by popular differential expression methods when analyzing human population samples. *Genome Biology*"
   date: '2022'
