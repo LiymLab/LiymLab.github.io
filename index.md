@@ -4,8 +4,7 @@ layout: home
 group: home
 ---
 
-# Welcome to the     
-# LYM Lab!
+## Welcome to the LYM Lab!
 {: .display-3}
 
 We are part of the Department of Bioinformatics at [Soochow University](https://www.suda.edu.cn/).
