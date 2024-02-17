@@ -1,7 +1,3 @@
-
-### Lab Alumni (gone but not forgotten)
-
-
 {% for alum in site.data.alumni %}
 <hr>
 <div id = "{{alum.name}}" style="padding-top: 60px; margin-top: -60px;">
