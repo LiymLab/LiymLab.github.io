@@ -15,3 +15,5 @@ We are actively seeking prospective master’s applicant with a burning passion 
 
 # Undergraduate Interns
 We are eagerly anticipating your application, and should you possess a strong and sustained interest in our research domain, coupled with the commitment to regularly engage in lab-based project work amidst your daily academic pursuits, you will be highly regarded as a priority candidate for this internship opportunity!
+
+Please contact us via email ymli12[AT]suda.edu.cn if you're interested!
