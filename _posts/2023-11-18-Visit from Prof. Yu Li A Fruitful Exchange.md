@@ -1,5 +1,5 @@
 ---
-title: Visit from Prof. Yu Li: A Fruitful Exchange
+title: Visit from Prof. Yu Li:A Fruitful Exchange
 author: Zhaoying Liu
 layout: post
 group: news
