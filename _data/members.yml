@@ -28,7 +28,7 @@
   # pronouns: she/her/hers
   position: Research Assistant
   email: zhaoyingliu [AT] suda.edu.cn
-  description: "Zhaoying Liu graduated from Nanjing Agricultural University with a master’s degree in 2022 and then worked as a bioinformatics engineer for a year. His main interest is in molecular detection of pathogens and liquid biopsy of tumors.       \n**Awards:**    \nNanjing Agricultural University President's Scholarship  \nOutstanding Master's Degree Graduates
+  description: "Zhaoying Liu graduated from Nanjing Agricultural University with a master’s degree in 2022 and then worked as a bioinformatics engineer for a year. His main interest is in molecular detection of pathogens and liquid biopsy of cancer.       \n**Awards:**    \nNanjing Agricultural University President's Scholarship  \nOutstanding Master's Degree Graduates
 "
 
 - name: Jingqi Li
@@ -43,16 +43,8 @@
   # pronouns: she/her/hers
   position: Master's student
   email: 20234221006 [AT] stu.suda.edu.cn
-  description: "Junpeng Zhou ,comes from Nanjing,Jiangsu.He graduated from Xuzhou Medical University, where he majored in bioinformatics."
-
-- name: Ling Zheng
-  image: /static/img/mem_img/lingzheng.jpg
-  # pronouns: she/her/hers
-  position: Visiting Student
-  email: zhengling0728 [AT] 163.com
-  description: "Ling Zheng Graduated from the China University of Geosciences (Wuhan); during her post-graduate studies, her research mainly focused on synthetic biology and geological microbiology.   \nIn the LYM lab, she has a strong interest in learning various technologies related to bioinformatics. Learning computer programming is challenging and exciting for her.
-Outside the lab, She will learn new traditional crafts, Which she can quietly spend her free time doing, such as weaving or embroidery; sometimes, she climbs nearby mountains with friends."
-  
+  description: "Junpeng Zhou comes from Jiangsu, and he obtained his bachelor's degree from Xuzhou Medical University. Currently, he is pursuing a master's degree at the LYM Lab, where he aspires to learn more about bioinformatics and epigenetics. During his free time, he enjoys running and listening to music.He is a big fans of Taylor Swift and Ed Sheeran."
+ 
 - name: Jinqi Yuan
   image: /static/img/mem_img/jinqiyuan.jpg
   # pronouns: she/her/hers
