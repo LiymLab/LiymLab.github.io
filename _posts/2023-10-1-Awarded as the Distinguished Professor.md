@@ -1,5 +1,5 @@
 ---
-title:  Awarded as the Distinguished Professor
+title: Distinguished Professor Award
 author: Junpeng Zhou
 layout: post
 group: news
