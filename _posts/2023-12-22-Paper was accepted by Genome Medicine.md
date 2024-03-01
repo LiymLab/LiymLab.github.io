@@ -1,4 +1,4 @@
-  ---
+---
 title: Paper was accepted by Genome Medicine
 author: Junpeng Zhou
 layout: post
