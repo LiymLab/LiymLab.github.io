@@ -23,7 +23,7 @@
   
 
 - name: Jingqi Li
-  image: /static/img/mem_img/jingqili.jpg
+  image: /static/img/mem_img/jingqili2.jpg
   # pronouns: she/her/hers
   position: Master's student
   email: 20234221033 [AT] stu.suda.edu.cn
@@ -41,22 +41,15 @@
   # pronouns: she/her/hers
   position: Master's student
   email: 20244221081 [AT] stu.suda.edu.cn
-  description: "Jinqi Yuan is currently an undergraduate student at Soochow University. Currently serving as an intern at LYM lab, she is participating in relevant projects to enhance her research capabilities. Her research pursuits are firmly anchored in the area of cancer diagnostics and identification."
+  description: "Jinqi Yuan is a master's student at LYM Lab (2024-present), Undergraduate at Soochow University, from Nantong, Jiangsu, currently studying hard under the guidance of Professor Li, with the expectation of improving my research capabilities."
 
 - name: Shen Yang
   image: /static/img/mem_img/shenyang.jpg
   # pronouns: she/her/hers
   position: Master's student
-  email: 2030416038 [AT] stu.suda.edu.cn
+  email: 20244221082 [AT] stu.suda.edu.cn
   description: "Yang Shen, from Shandong Province. He wants to learn more skills and knowledge in the field of Bioinformatics. He hopes to be good at computer language and biology 😶 in the future. His hobby is playing games 🤗. He is an OP and farmer p . He is good at Opposing path in games😻
 "
-
-- name: Yacheng Zhu
-  image: /static/img/mem_img/yachengzhu.jpg
-  # pronouns: she/her/hers
-  position: Visiting Student
-  email: 2030416004 [AT] stu.suda.edu.cn
-  description: "I am Zhu Yacheng, a senior undergraduate student majoring in bioinformatics at Soochow University, from Dongtai, Jiangsu Province.  I joined Professor Li’s team in July 2023 and I have participated in some specific projects. I’m interested in noninvasive diagnosis of disease, looking forward to finding meaningful information from sequencing data to guide the diagnosis, treatment and the prevention of various complex diseases."
 
 - name: Keyao Zhu
   image: /static/img/mem_img/keyaozhu.jpg
