@@ -50,6 +50,7 @@
 #     - name: Celebratory Tweetstorm by corresponding author First Surname
 #       url: https://twitter.com/mctucsf/status/1172334750205218816
 
+# 
 - citation: "Xinzhou Ge^, <u>Yumei Li^</u>, Wei Li#, Jingyi Jessica Li#. Response to "Neglecting normalization impact in semi-synthetic RNA-seq data simulation generates artificial false positives" and "Winsorization greatly reduces false positives by popular differential expression methods when analyzing human population samples". *Genome Biology*"
   date: '2024'
   image: '/static/img/pub/GenomeBiology.png'
