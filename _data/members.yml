@@ -21,7 +21,12 @@
   
   09/2010-07/2014	      \nB.S. in Biological Science,  \nCollege of Life Sciences,  \nNankai University"
   
-
+- name: Xiaoqian Huang
+  image: /static/img/mem_img/hxq.png
+  position: Ph.D student
+  #email: 20234221033 [AT] stu.suda.edu.cn
+  description: "Xiaoqian Huang, a Ph.D. student (Class of 2024) at the LYM Lab. Her research interests include epigenomics and single-cell omics, with an educational background in probability theory and mathematical statistics. Under the guidance of Professor Li, she is committed to better employing bioinformatics methods to integrate high-throughput, multi-omics data for bioinformatics analysis research."
+  
 - name: Jingqi Li
   image: /static/img/mem_img/jingqili2.jpg
   # pronouns: she/her/hers
