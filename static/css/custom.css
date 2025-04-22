@@ -58,6 +58,7 @@ pre {
 
 
 code { 
+  background-color: rgba(175, 184, 193, 0.2);
   border-radius: 2px;
   padding: 0.2em 0.4em;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
