@@ -48,7 +48,9 @@
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+
 pre {
+  background-color: transparent;
   border-radius: 4px;       
   padding: 12px;            
   border: 1px solid #e1e4e8;  
@@ -57,7 +59,7 @@ pre {
 
 
 code { 
-  background-color: rgba(175, 184, 193, 0.2);
+  background-color: transparent;
   border-radius: 2px;
   padding: 0.2em 0.4em;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
