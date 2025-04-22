@@ -50,8 +50,8 @@
 
 pre {
   background-color: #f6f8fa; 
-  border-radius: 6px;       
-  padding: 16px;            
+  border-radius: 4px;       
+  padding: 12px;            
   border: 1px solid #e1e4e8;  
   overflow: auto;           
 }
