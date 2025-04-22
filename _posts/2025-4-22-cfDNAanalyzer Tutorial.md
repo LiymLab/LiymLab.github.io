@@ -1,4 +1,4 @@
-<h2>Table of Contents</h2>
+<summary><h2>Table of Contents</h2></summary>
 
 <a href="#Section 1: Visualization for the extracted features">Section 1: Visualization for the extracted features</a>
   <li>
