@@ -1,6 +1,7 @@
 <summary><h2>Table of Contents</h2></summary>
 
 <a href="#Section 1: Visualization for the extracted features">Section 1: Visualization for the extracted features</a>
+  <ur>
   <li>
   <a href="##Section 1.1:  Copy Number Alterations (CNA)">Section 1.1: Copy Number Alterations (CNA)</a></li>
   <li>
@@ -13,24 +14,29 @@
     <a href="##Section 1.5: Promoter Fragmentation Entropy (PFE)">Section 1.5: Promoter Fragmentation Entropy (PFE)</a></li>
   <li>
     <a href="##Section 1.6: Nucleosome Profile (NP)">Section 1.6: Nucleosome Profile (NP)</a></li>
+  </ul>
 
 
 <a href="#Section 2: Optimized feature selection and downstream analysis">Section 2: Optimized feature selection and downstream analysis</a> 
+  <ul>
   <li>
   <a href="##Section 2.1: Feature selection">Section 2.1: Feature selection</a></li>
   <li>
   <a href="##Section 2.2: PCA analysis">Section 2.2: PCA analysis</a></li>
   <li>
   <a href="##Section 2.3: Functional enrichment analysis">Section 2.3: Functional enrichment analysis</a></li>
+  </ul>
 
 
 <a href="#Section 3: Performance of different features in cancer detection and classification">Section 3: Performance of different features in cancer detection and classification</a>
+  <ul>
   <li>
     <a href="##Section 3.1: Cancer prediction probabilities among features">Section 3.1: Cancer prediction probabilities among features</a></li>
   <li>
     <a href="##Section 3.2: Performance of cfDNA signatures for prediction of different cancer stages">Section 3.2: Performance of cfDNA signatures for prediction of different cancer stages</a></li>
   <li>
     <a href="##Section 3.3: Create scoring system in features based on meachine learning metrics and usability">Section 3.3: Create scoring system in features based on meachine learning metrics and usability</a></li>
+  </ul>
 
 
 
