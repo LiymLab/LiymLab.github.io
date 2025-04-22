@@ -1,4 +1,3 @@
-/* 强制清除所有语法高亮相关背景 */
 .highlight,
 .highlight pre,
 .highlight code,
@@ -7,6 +6,8 @@
   background-color: transparent !important;
   border: none !important;
 }
+
+
 @media (min-width: 992px) {
    .collapse {
        display: none !important;
