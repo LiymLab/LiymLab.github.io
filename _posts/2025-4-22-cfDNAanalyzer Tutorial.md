@@ -12,7 +12,8 @@
             <li><a href="##Section 1.6: Nucleosome Profile (NP)">Section 1.6: Nucleosome Profile (NP)</a></li>
         </ul>
     </li>
-    
+</ul>
+<ul>
     <li>
         <a href="#Section 2: Optimized feature selection and downstream analysis">Section 2: Optimized feature selection and downstream analysis</a> 
         <ul>
@@ -21,8 +22,8 @@
             <li><a href="##Section 2.3: Functional enrichment analysis">Section 2.3: Functional enrichment analysis</a></li>
         </ul>
     </li>
-   
-    
+</ul>
+<ul>    
     <li>
         <a href="#Section 3: Performance of different features in cancer detection and classification">Section 3: Performance of different features in cancer detection and classification</a>
         <ul>
