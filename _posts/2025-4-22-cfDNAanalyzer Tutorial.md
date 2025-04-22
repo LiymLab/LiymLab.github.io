@@ -1,7 +1,6 @@
 <summary><h2>Table of Contents</h2></summary>
 <li>
   <a href="#Section 1: Visualization for the extracted features">Section 1: Visualization for the extracted features</a>
-
   <ul> 
   <li>
   <a href="##Section 1.1:  Copy Number Alterations (CNA)">Section 1.1: Copy Number Alterations (CNA)</a></li>
@@ -16,7 +15,6 @@
   <li>
     <a href="##Section 1.6: Nucleosome Profile (NP)">Section 1.6: Nucleosome Profile (NP)</a></li>
   </ul>
-
 <li>
   <a href="#Section 2: Optimized feature selection and downstream analysis">Section 2: Optimized feature selection and downstream analysis</a>
 
