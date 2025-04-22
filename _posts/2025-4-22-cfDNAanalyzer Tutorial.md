@@ -1,4 +1,4 @@
-<summary><h2>Table of Contents</h2></summary>
+<ul><summary><h2>Table of Contents</h2></summary></ul>
 
 <ul>
     <li>
