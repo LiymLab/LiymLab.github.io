@@ -48,9 +48,12 @@
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+<style>
 pre code {
   background-color: transparent !important; 
-  padding: 0 !important;      
+  padding: 0 !important;  
+  text-indent: 0 !important;
+  margin-left: 0 !important;     
 }
 
 pre {
@@ -58,7 +61,7 @@ pre {
   border: 1px solid #e1e4e8 !important;  
   border-radius: 6px !important;    
 }
-
+</style>
 
 
 /*
