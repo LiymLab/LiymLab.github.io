@@ -48,6 +48,29 @@
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+pre {
+  background-color: #f6f8fa; 
+  border-radius: 6px;       
+  padding: 16px;            
+  border: 1px solid #e1e4e8;  
+  overflow: auto;           
+}
+
+
+code {
+  background-color: rgba(175, 184, 193, 0.2); 
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+
+.highlight {
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  margin-bottom: 16px; 
+}
+
 
 /*
 body {
@@ -123,25 +146,3 @@ body {
 */
 
 
-pre {
-  background-color: #f6f8fa; 
-  border-radius: 6px;       
-  padding: 16px;            
-  border: 1px solid #e1e4e8;  
-  overflow: auto;           
-}
-
-
-code {
-  background-color: rgba(175, 184, 193, 0.2); 
-  border-radius: 3px;
-  padding: 0.2em 0.4em;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-}
-
-
-.highlight {
-  background-color: #f6f8fa;
-  border-radius: 6px;
-  margin-bottom: 16px; 
-}
