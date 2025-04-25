@@ -8,11 +8,11 @@ group: news
 
 <ul>
     <li>
-        <a href="#Section 1: Visualization for the extracted features">Section 1: Visualization for the extracted features</a>
+        <a href="###Section 1: Visualization for the extracted features">Section 1: Visualization for the extracted features</a>
         <ul>
-            <li><a href="##Section 1.1:  Copy Number Alterations (CNA)">Section 1.1: Copy Number Alterations (CNA)</a></li>
-            <li><a href="##Section 1.2: Fragmentation Profile (FP)">Section 1.2: Fragmentation Profile (FP)</a></li>
-            <li><a href="##Section 1.3: End Motif frequency and diversity (EM)">Section 1.3: End Motif frequency and diversity (EM)</a></li>
+            <li><a href="####Section 1.1:  Copy Number Alterations (CNA)">Section 1.1: Copy Number Alterations (CNA)</a></li>
+            <li><a href="####Section 1.2: Fragmentation Profile (FP)">Section 1.2: Fragmentation Profile (FP)</a></li>
+            <li><a href="####Section 1.3: End Motif frequency and diversity (EM)">Section 1.3: End Motif frequency and diversity (EM)</a></li>
             <li><a href="##Section 1.4: Nucleosome Occupancy and Fuzziness (NOF), Windowed Protection Score (WPS), Orientation-aware CfDNA Fragmentation (OCF), End Motif frequency and diversity for Regions (EMR), Fragmentation Profile for Regions (FPR)">Section 1.4: NOF, WPS, OCF, EMR, FPR</a></li>
             <li><a href="##Section 1.5: Promoter Fragmentation Entropy (PFE)">Section 1.5: Promoter Fragmentation Entropy (PFE)</a></li>
             <li><a href="##Section 1.6: Nucleosome Profile (NP)">Section 1.6: Nucleosome Profile (NP)</a></li>
@@ -42,14 +42,14 @@ group: news
 
 
 
-# Section 1: Visualization for the extracted features
+### Section 1: Visualization for the extracted features
 
 cfDNAanalyzer can extract a variety of features. In this section, we have visualized these features to help users better explore the full landscape of cfDNA characteristics.
 
-## Section 1.1: Copy Number Alterations (CNA)
+#### Section 1.1: Copy Number Alterations (CNA)
 In this part, we will visualize the file `/Features/CNA.csv` in the output directory.
 
-### Library the neccesary packages
+##### Library the neccesary packages
 ```R
 library(ggplot2)
 library(tidyr)
