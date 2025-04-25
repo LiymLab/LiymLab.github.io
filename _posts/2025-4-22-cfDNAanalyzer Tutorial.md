@@ -40,9 +40,21 @@ group: news
     </li>
 </ul>
 
+* [Section 1: Visualization for the extracted features](#section-1-Visualization-for-the-extracted-features)
+    * [Section 1.1: System requirement](#section-11-system-requirement)
+    * [Section 1.2: Create environment and Install Dependencies](#section-12-create-environment-and-install-dependencies)
+    * [Section 1.3: Activate Environment and Use cfDNApipe](#section-13-activate-environment-and-use-cfdnapipe)
+* [Section 2: cfDNApipe Highlights](#section-2-cfdnapipe-highlights)
+    * [Section 2.1: Dataflow Graph for WGS and WGBS Data Processing](#section-21-dataflow-graph-for-wgs-and-wgbs-data-processing)
+    * [Section 2.2: Reference Auto Download and Building](#section-22-reference-auto-download-and-building)
+    * [Section 2.3: Output Folder Arrangement](#section-23-output-folder-arrangement)
+    * [Section 2.4: Breakpoint Detection](#section-24-breakpoint-detection)
+    * [Section 2.5: Other Mechanisms](#section-25-other-mechanisms)
+* [Section 3: A Quick Tutorial for Analysis WGBS data](#section-3-a-quick-tutorial-for-analysis-wgbs-data)
+    * [Section 3.1: Set Global Reference Configures](#section-31-set-global-reference-configures)
+    * [Section 3.2: Execute build-in WGBS Analysis Pipeline](#section-32-execute-build-in-wgbs-analysis-pipeline)
 
-
-<div id="#Section 1: Visualization for the extracted features">Section 1: Visualization for the extracted features</div>
+# Section 1: Visualization for the extracted features
 
 cfDNAanalyzer can extract a variety of features. In this section, we have visualized these features to help users better explore the full landscape of cfDNA characteristics.
 
