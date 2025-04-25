@@ -42,7 +42,7 @@ group: news
 
 
 
-<div id="Section 1: Visualization for the extracted features">Section 1: Visualization for the extracted features</div>
+<div id="# Section 1: Visualization for the extracted features">Section 1: Visualization for the extracted features</div>
 
 cfDNAanalyzer can extract a variety of features. In this section, we have visualized these features to help users better explore the full landscape of cfDNA characteristics.
 
