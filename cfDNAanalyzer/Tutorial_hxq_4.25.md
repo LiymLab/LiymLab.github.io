@@ -135,7 +135,7 @@ Users can get the following figure.
         style="
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
-            max-width: 100%;
+            max-width: 95%;
         " 
         src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.1.png"
         alt=""
