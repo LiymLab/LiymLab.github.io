@@ -229,7 +229,17 @@ g <- ggplot(rst, aes(x=combine, y=centeredRatio, group=sample, color=color)) +
 
 Users can get the following figure.
 
-<img src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.2.png" alt="Section 1.2.png" width="200" />
+<div style="text-align: center; margin: 20px 0;">
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.2.png"
+        width="800px"
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
+</div>
 
 
 ### Section 1.3: Find genomic motif differences with feature EM
@@ -314,7 +324,17 @@ g <- ggplot(FREQ, aes(x = average_cancer, y = average_healthy)) +
 ```
 Users can get the following figure.
 
-<img src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.3.png" alt="Section 1.3.png" width="200" />
+<div style="text-align: center; margin: 20px 0;">
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.3.png"
+        width="800px"
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
+</div>
 
 
 ### Section 1.4: Compare feature similarities and find redundant information with feature NOF, WPS, OCF, EMR and FPR
@@ -408,7 +428,17 @@ corrplot(average_matrix,
 ```
 Users can get the following figure.
 
-<img src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.4.png" alt="Section 1.4.png" width="200" />
+<div style="text-align: center; margin: 20px 0;">
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.4.png"
+        width="800px"
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
+</div>
 
 
 ### Section 1.5: Infer genes' expression levels with feature PFE
@@ -546,7 +576,17 @@ p = ggplot(df_over, aes(x = group, y = value)) +
 ```
 Users can get the following figure.
 
-<img src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.5.png" alt="Section 1.5.png" width="200" />
+<div style="text-align: center; margin: 20px 0;">
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.5.png"
+        width="800px"
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
+</div>
 
 
 ### Section 1.6: Analyze differences in nucleosome organization with feature NP
@@ -601,7 +641,17 @@ g <- ggplot(data = df_long, aes(x = Column1, y = Value, color = Group)) +
 ```
 Users can get the following figure.
 
-<img src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.6.png" alt="Section 1.6.png" width="200" />
+<div style="text-align: center; margin: 20px 0;">
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.6.png"
+        width="800px"
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
+</div>
 
 
 ## Section 2: Optimizing feature selection for machine learning models
@@ -718,7 +768,17 @@ else:
 ```
 Users can get the following figure.
 
-<img src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%202.2.png" alt="Section 2.2.png" width="200" />
+<div style="text-align: center; margin: 20px 0;">
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%202.2.png"
+        width="800px"
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
+</div>
 
 
 ## Section 3: Performance of different features in cancer detection and classification
@@ -762,7 +822,18 @@ corrplot(matrix,
 ```
 Users can get the following figure.
 
-<img src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%203.1.png" alt="Section 3.1.png" width="200" />
+<div style="text-align: center; margin: 20px 0;">
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%203.1.png"
+        width="800px"
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
+</div>
+
 
 ### Section 3.2: Predictive effect of different features in cancer classification
 
@@ -833,7 +904,17 @@ pheatmap(heatmap_data_lung,
 ```
 Users can get the following figure.
 
-<img src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%203.2.png" alt="Section 3.2.png" width="200" />
+<div style="text-align: center; margin: 20px 0;">
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%203.2.png"
+        width="800px"
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
+</div>
 
 
 ## Section 4: multi-modality
