@@ -331,7 +331,7 @@ Users can get the following figure.
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
         src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.3.png"
-        width="500px"
+        width="400px"
     >
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </div>
@@ -435,7 +435,7 @@ Users can get the following figure.
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
         src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.4.png"
-        width="500px"
+        width="400px"
     >
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </div>
@@ -648,7 +648,7 @@ Users can get the following figure.
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
         src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.6.png"
-        width="500px"
+        width="400px"
     >
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </div>
@@ -775,7 +775,7 @@ Users can get the following figure.
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
         src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%202.2.png"
-        width="600px"
+        width="500px"
     >
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </div>
@@ -911,7 +911,7 @@ Users can get the following figure.
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
         src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%203.2.png"
-        width="600px"
+        width="700px"
     >
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </div>
