@@ -104,7 +104,7 @@ cancer_color <- ifelse(healthy_color == "blue", "red", healthy_color)
 color = c(cancer_color,healthy_color)
 ```
 
-Finally, plot for healthy and cancer samples
+Finally, visualize the results.
 ``` R
 # bind the healthy and cancer data frames, setting the condition column as factor.
 df = rbind(df_cancer, df_healthy)
@@ -203,7 +203,7 @@ meanValue$meanRatio = as.numeric(meanValue$meanRatio)
 rst$centeredRatio <- rst$meanRatio - meanValue$meanRatio
 ```
 
-Finally, plot for healthy and cancer samples
+Finally, visualize the results.
 ```R
 # establish the condition and color columns
 rst$condition <- c(rep("Healthy", 1042),rep("Cancer", 4689))
@@ -296,7 +296,7 @@ mean_healthy = mean(healthy_mds$MDS)
 sd_healthy = sd(healthy_mds$MDS)
 ```
 
-Finally, plot for healthy and cancer samples
+Finally, visualize the results.
 ```R
 # merge the data from both healthy and cancer samples and rank the motifs based on their frequency
 FREQ = merge(df_cancer, df_healthy, by = c("motif"))
@@ -340,7 +340,7 @@ Users can get the following figure.
 ### Section 1.4: Compare feature similarities and find redundant information with feature NOF, WPS, OCF, EMR and FPR
 In this section, users can compare feature similarities and choose features with no redundant information using features in `/Features/NOF_meanfuziness.csv` , `/Features/NOF_occupancy.csv` , `/Features/WPS_long.csv` , `/Features/OCF.csv` , `/Features/EMR_region_mds.csv` , `/Features/FPR_fragmentation_profile_regions.csv`.
 
-First, load all the data and transform them (Take NO as example)
+First, load all the data and transform them (Take NO as example).
 ```R
 library(tidyr)
 library(corrplot)
@@ -395,7 +395,7 @@ for (i in basename) {
 }
 ```
 
-Finally, plot for samples
+Finally, visualize the results.
 ```R
 # get all the correlation matrices' names and check is there any matrix with NA.
 matrix_names <- ls(pattern = "^correlation_matrix_")
@@ -528,7 +528,7 @@ healthy_over <- normalized_df_healthy[rows_to_keep, ]
 average_healthy_over = healthy_over$normalized_PFE
 ```
 
-Finally, plot for healthy and cancer samples.
+Finally, visualize the results.
 ```R
 # create a data frame in long format that combines the PFE of the under-expressed genes
 df_under <- data.frame(
@@ -592,7 +592,7 @@ Users can get the following figure.
 ### Section 1.6: Analyze differences in nucleosome organization with feature NP
 In this section, users can analyze differences in nucleosome organization in cancer and healthy samples using feature NP in the directory `/Features/NP_site_list/`. (Take file `/Features/NP_site_list/site_list1.txt` as an exmaple)
 
-First, load data from output directory
+First, load data from output directory.
 ```R
 library(ggplot2)
 library(reshape2)
@@ -616,7 +616,7 @@ site_number = sample[1,c(3:134)]
 site_number <- as.vector(t(site_number))
 ```
 
-Finally, plot for healthy and cancer samples
+Finally, visualize the results.
 ```R
 # put the coverage data of healthy and cancer samples into a data frame and transform it into long data frame form.
 df = data.frame(
@@ -656,37 +656,51 @@ Users can get the following figure.
 
 ## Section 2: Optimizing feature selection for machine learning models
 
-Users can make an initial evaluation by leveraging cfDNAanalyzer's powerful feature extraction module, which is essential for the analysis of genomic and fragomic features from cfDNA sequencing data. After an initial exploration of the features,cfDNAanalyzer was used to identify the most discriminative features using four main classes of feature selection methods: filters, embedders, wrappers, and hybrid methods (25 methods in total supported).
+Users can make an initial evaluation by leveraging cfDNAanalyzer's powerful feature extraction module, which is essential for the analysis of genomic and fragomic features from cfDNA sequencing data. After an initial exploration of the features, cfDNAanalyzer was used to identify the most discriminative features using four main classes of feature selection methods: filters, embedders, wrappers, and hybrid methods (25 methods in total supported).
 
 ### Section 2.1: Methods of feature selection
 
-The feature selection methods in cfDNAanalyzer include four categories: embedded, filter, wrapper, and hybrid, implemented across five scripts: embedded_methods.py, filter_methods.py, wrapper_methods.py, hybrid_methods_filter_embedded_batch.py, hybrid_methods_filter_wrapper_batch.py. Users can select and run the appropriate script based on their preferred method.
+The feature selection methods in cfDNAanalyzer include four categories: embedded, filter, wrapper, and hybrid, implemented across three scripts: embedded_methods.py, filter_methods.py, wrapper_methods.py. Users can select and run the appropriate script based on their preferred method.
 
 ```python
 # Take embedded_methods.py as an example.
-python /cfDNAanalyzer/04_feature_selection/embedded_methods.py 
+python /cfDNAanalyzer/Feature_Selection/embedded_methods.py 
 --input_dir /output_directory/Feature_Processing_and_Selection/Feature_Processing 
 --output_dir /directory 
 --methods LASSO RIDGE ELASTICNET RF 
---percentage 0.2 
+--percentages 0.2 
 ```
 
 #### Parameters:
 --input_dir: Path to the folder containing input files. \
 --output_dir: Path to save the processed results. \
 --methods: Methods for feature selection. \
---percentage: Percentage of features to retain after filtering. 
+--percentages: Percentage of features to retain after filtering. 
 
 
 ### Section 2.2: Visualization of feature selection effect before and after optimization
 
-In this part, user can perform binary and multi-class PCA analysis on the optimized features. The breast cancer genome-wide dataset was used as an example to compare the results of PCA before and after the application of feature selection.
+In this section, user can perform binary and multi-class PCA analysis on the optimized features. The breast cancer genome-wide dataset was used as an example to compare the results of PCA before and after the application of feature selection.
 
-First, load the filtered features and process the data. Files in the directory `/Feature_Processing_and_Selection/Feature_Selection` of output directory will be used. 
+First, load the filtered features and process the data. Files in the directory `/Feature_Processing_and_Selection/Feature_Selection` will be used. 
 
 ```python
+import os
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib
+# Ensure matplotlib uses non-interactive Agg backend
+matplotlib.use('Agg')
+os.environ["DISPLAY"] = ":0"  # Disable X server related environment variables
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+import argparse
+from matplotlib.patches import Ellipse
+
 file = "/output_directory/Feature_Processing_and_Selection/Feature_Selection/[FeatureName]_[Method]_selectd.csv"
 df = pd.read_csv(file)
+
 # Identify the sample column
 sample_col = None
 for col in df.columns:
@@ -695,10 +709,12 @@ for col in df.columns:
         break
 if sample_col is None:
     raise ValueError(f"No sample column found in file {file}. Expected a column named 'sample' (case-insensitive).")
+
 # Drop label columns
 if 'label' not in df.columns:
     raise ValueError(f"No 'label' column found in file {file}.")
 X = df.drop(columns=[sample_col, 'label'])
+
 # Standardize the data
 X_scaled = StandardScaler().fit_transform(X)
 ```
@@ -708,11 +724,13 @@ Next, perform PCA analysis.
 ```python
 pca = PCA()
 X_pca = pca.fit_transform(X_scaled)
+
 # Create a DataFrame for PCA results
 pca_columns = [f'PC{i+1}' for i in range(X_pca.shape[1])]
 pca_df = pd.DataFrame(data=X_pca, columns=pca_columns)
 pca_df[sample_col] = df[sample_col]
 pca_df['label'] = df['label']
+
 # Calculate explained variance and cumulative variance
 explained_variance = pca.explained_variance_ratio_cumulative_variance = np.cumsum(explained_variance)
 ```
@@ -730,6 +748,7 @@ plt.ylim(0, 0.9)
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 plt.close()
+
 # Only plot PC1 vs PC2 if at least 2 PCs are available
 if X_pca.shape[1] < 2:
     print("Only one principal component available. Skipping PC1 vs PC2 plot.")
@@ -789,22 +808,24 @@ In this part, user can test the performance of different features in single-moda
 
 In this section, user can evaluate the cancer prediction probability of different features and calculate the correlation.
 
-Firstly, the user needs to extract the probability that each feature predicts the sample to be cancer through different classifiers in the cancer prediction results of the binary classification model, and then integrate the prediction results of all features. The user can also calculate and visualize the correlation of the probability of 11 features predicted to be cancer samples in different classifiers to obtain corplot. (Take CNA as an example, the result file of probability of predicting cancer for samples based on features is at `/Machine_Learning/single_modality/[FeatureName]_[Method]_selected_[classifierSingle]_predictions.csv`)
+Firstly, user needs to extract the probability that each feature predicts the sample to be cancer through different classifiers in the cancer prediction results of the binary classification model, and then integrate the prediction results of all features. The user can also calculate and visualize the correlation of the probability of 11 features predicted to be cancer samples in different classifiers to obtain corplot. (Take CNA as an example, the result file of probability of predicting cancer for samples based on features is at `/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`)
 
 ```R
-all_probability <- read.csv("/output_directory/Machine_Learning/single_modality/[FeatureName]_[Method]_selected_[classifierSingle]_predictions.csv", header = TRUE, sep = ",")
-all_probability = all_probability[,1,drop =F]
-merged_df <- read.csv("/output_directory/Machine_Learning/single_modality/[FeatureName]_[Method]_selected_[classifierSingle]_predictions.csv", header = TRUE, sep = ",")
-merged_df = merged_df[,1,drop =F]
-for (i in c("GaussianNB","KNN","LogisticRegression","RandomForest","SVM","XGB")) {
-  data = read.table(paste0("/output_directory/Machine_Learning/single_modality/CNA_[Method]_selected_",i,"_predictions.csv"), header = TRUE, sep = ",")
-  data = data[,c(-2,-3)]
-  merged_df <- merge(merged_df, data,by = c("Sample"))
-}
-merged_df$CNA <- rowMeans(merged_df[,-1],na.rm = TRUE)
-CNA_probability = merged_df[,c("Sample","CNA")]
-all_probability = merge(all_probability,CNA_probability,by = c("Sample"))
-all_probability = all_probability[order(all_probability$Sample),]
+all_probability = read.csv("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
+all_probability <- all_probability[
+  all_probability$Classifier == "SVM" & 
+    all_probability$FS_Combination == "wrapper_BOR_0.023618328", 
+]
+all_probability = all_probability[,c("SampleID"),drop = F]
+
+# Take CNA as an example
+CNA = read.csv(paste0("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv"))
+CNA <- CNA[CNA$Classifier == "XGB" & CNA$FS_Combination == "wrapper_BOR_0.023618328",]
+CNA_probability = CNA[,c("SampleID","Prob_Class1")]
+colnames(CNA_probability) <- c("SampleID", "CNA")
+all_probability = merge(all_probability,CNA_probability,by = "SampleID")
+
+all_probability = all_probability[order(all_probability$SampleID),]
 all_probability = all_probability[,-1]
 matrix = cor(all_probability)
 library(corrplot)
@@ -839,41 +860,33 @@ Users can get the following figure.
 
 In this section, user can evaluate the predicted probability of different features predicting the same sample as a certain cancer.
 
-First, user needs to extract the probability that each feature predicts each sample to be each cancer in the cancer prediction result of the multi-classification model, and then integrate the prediction results of all features. "probability_0" represents breast cancer, "probability_1" represents lung cancer, and "probability_2" represents pancreatic cancer. In the following example, the data extraction and processing step takes the CNA feature as an example, and the feature selection method takes the BOR as an example. The visualization result is the probability heat map of the lung cancer sample predicted into each cancer type.
+First, user needs to extract the probability that each feature predicts each sample to be each cancer in the cancer prediction result of the multi-classification model, and then integrate the prediction results of all features. "probability_0" represents breast cancer, "probability_1" represents lung cancer, and "probability_2" represents pancreatic cancer. In the following example, the data extraction and processing step takes the CNA feature as an example, and the result file of probability for samples based on features is at `/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`. The visualization result is the probability heatmap of the lung cancer sample predicted into each cancer type.
 
 ```R
-all_probability = read.csv("~/projects/202402_cfDNAIntegratedTool/250402_downstream_result/multi-class/03ML/single_modality_5fold/1/CNA/BOR/single_modality/std_filtered_CNA/all_fs_results.csv")
-all_probability <- all_probability[all_probability$Classifier == "SVM" & all_probability$FS_Combination == "wrapper_BOR_0.021070375", ]
+all_probability = read.csv("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
+all_probability <- all_probability[
+  all_probability$Classifier == "SVM" & 
+    all_probability$FS_Combination == "wrapper_BOR_0.023618328", 
+]
 all_probability = all_probability[,c("SampleID"),drop = F]
 all_probability_0 = all_probability_1 = all_probability_2 = all_probability
 
-merge_df_raw = read.csv("~/projects/202402_cfDNAIntegratedTool/250402_downstream_result/multi-class/03ML/single_modality_5fold/1/CNA/BOR/single_modality/std_filtered_CNA/all_fs_results.csv")
-merge_df_raw <- merge_df_raw[merge_df_raw$Classifier == "XGB" & merge_df_raw$FS_Combination == "wrapper_BOR_0.021070375",]
-merge_df_raw = merge_df_raw[,c("SampleID"),drop = F]
+# Take CNA as an example
+CNA = read.csv(paste0("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv"))
+CNA <- CNA[CNA$Classifier == "XGB" & CNA$FS_Combination == "wrapper_BOR_0.023618328",]
 
-merge_df_0 = merge_df_1 = merge_df_2 = merge_df_raw
-for (i in c(1:10)) {
-  CNA = read.csv(paste0("~/projects/202402_cfDNAIntegratedTool/250402_downstream_result/multi-class/03ML/single_modality_5fold/", i, "/CNA/ELASTICNET/single_modality/std_filtered_CNA/all_fs_results.csv"))
-  CNA <- CNA[CNA$Classifier == "RandomForest",]
-  probability_0 = CNA[,c("SampleID","Prob_Class0")]
-  merge_df_0 = merge(merge_df_0, probability_0, by = c("SampleID"))
-  probability_1 = CNA[,c("SampleID","Prob_Class1")]
-  merge_df_1 = merge(merge_df_1, probability_1, by = c("SampleID")) 
-  probability_2 = CNA[,c("SampleID","Prob_Class2")]
-  merge_df_2 = merge(merge_df_2, probability_2, by = c("SampleID"))
-}
-merge_df_0$CNA = rowMeans(merge_df_0[,-1])
-CNA_probability_0 = merge_df_0[,c("SampleID","CNA")]
+CNA_probability_0 = CNA[,c("SampleID","Prob_Class0")]
+colnames(CNA_probability_0) <- c("SampleID", "CNA")
 all_probability_0 = merge(all_probability_0,CNA_probability_0,by = "SampleID")
-merge_df_1$CNA = rowMeans(merge_df_1[,-1])
-CNA_probability_1 = merge_df_1[,c("SampleID","CNA")]
+
+CNA_probability_1 = CNA[,c("SampleID","Prob_Class0")]
+colnames(CNA_probability_1) <- c("SampleID", "CNA")
 all_probability_1 = merge(all_probability_1,CNA_probability_1,by = "SampleID")
-merge_df_2$CNA = rowMeans(merge_df_2[,-1])
-CNA_probability_2 = merge_df_2[,c("SampleID","CNA")]
+
+CNA_probability_2 = CNA[,c("SampleID","Prob_Class0")]
+colnames(CNA_probability_2) <- c("SampleID", "CNA")
 all_probability_2 = merge(all_probability_2,CNA_probability_2,by = "SampleID")
-all_probability_0 <- all_probability_0[order(all_probability_0$SampleID), ]
-all_probability_1 <- all_probability_1[order(all_probability_1$SampleID), ]
-all_probability_2 <- all_probability_2[order(all_probability_2$SampleID), ]
+
 
 lung_probability_0 = all_probability_0[c(7:15),]
 lung_probability_0$type = "probability_0"
@@ -882,6 +895,7 @@ lung_probability_1$type = "probability_1"
 lung_probability_2 = all_probability_2[c(7:15),]
 lung_probability_2$type = "probability_2"
 lung_probability = rbind(lung_probability_0,lung_probability_1,lung_probability_2)
+
 # Visualization
 library(pheatmap)
 annotation_df <- data.frame(type = lung_probability$type)
