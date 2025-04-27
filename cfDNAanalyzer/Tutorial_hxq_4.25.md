@@ -130,16 +130,19 @@ g <- ggplot(df, aes(x = combine, y = average, group = sample, color = color)) +
 ```
 Users can get the following figure.
 
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.1.png" width="800">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;"></div>
-</center>
+<div style="text-align: center; margin: 20px 0;">
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+            max-width: 100%;
+        " 
+        src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.1.png"
+        alt=""
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
+</div>
+
 
 ### Section 1.2: Analyze the genomic fragment size difference with feature FP
 In this section, users can analyze genomic fragment size differences between cancer and healthy samples using the FP feature in `/Features/FP_fragmentation_profile.csv`.
