@@ -1,8 +1,9 @@
 ---
 title: cfDNAanalyzer
-layout: post
-group: news
+layout: cfDNAanalyzer
+group: tutorial
 ---
+
 
 
 <h2>Table of Contents</h2>
