@@ -821,8 +821,7 @@ Firstly, user needs to extract the probability that each feature predicts the sa
 all_probability = read.csv("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
 all_probability <- all_probability[
   all_probability$Classifier == "SVM" & 
-    all_probability$FS_Combination == "wrapper_BOR_0.023618328", 
-]
+    all_probability$FS_Combination == "wrapper_BOR_0.023618328", ]
 all_probability = all_probability[,c("SampleID"),drop = F]
 
 # Take CNA as an example
