@@ -138,7 +138,7 @@ Users can get the following figure.
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">Section 1.1.png</div>
+    padding: 2px;"></div>
 </center>
 
 ### Section 1.2: Analyze the genomic fragment size difference with feature FP
