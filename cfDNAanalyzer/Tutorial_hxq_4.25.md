@@ -1,4 +1,11 @@
-<summary><h2>Table of Contents</h2></summary>
+---
+title: cfDNAanalyzer
+layout: post
+group: news
+---
+
+
+<h2>Table of Contents</h2>
 
 * [Section 1: Visualization for the extracted features](#section-1-Visualization-for-the-extracted-features)
     * [Section 1.1: Analyze genomic copy number differences with feature CNA](#section-11-Analyze-genomic-copy-number-differences-with-feature-CNA)
