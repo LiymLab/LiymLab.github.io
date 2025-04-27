@@ -1,6 +1,6 @@
 ---
 title: cfDNAanalyzer
-layout: post
+layout: cfDNAanalyzer
 group: news
 ---
 
