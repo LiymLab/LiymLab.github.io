@@ -1,7 +1,7 @@
 ---
 title: cfDNAanalyzer
-layout: cfDNAanalyzer
-group: tutorial
+layout: post
+group: news
 ---
 
 
