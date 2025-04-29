@@ -6,6 +6,10 @@
 #   link: "/research"
 #   group: research
 
+- name: Tutorials  
+  link: "/tutorial"          
+  group: tutorial
+  
 - name: Publications
   link: "/publications"
   group: publications
