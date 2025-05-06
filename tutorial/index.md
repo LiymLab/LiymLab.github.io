@@ -1,9 +1,4 @@
 
----
-title: Tutorials from the LYM Lab
-layout: default
-group: tutorials
----
 
 ## **Tutorials**
 
