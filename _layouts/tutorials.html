@@ -1,1 +1,43 @@
-{{content}}
+<div class="container"> 
+  <div class="row">
+    <div class="col-xs-12 col-md-10 col-md-offset-1"> 
+      <div class="page-header text-center"> 
+        <h1>{{ page.title }}</h1>
+      </div>
+      
+      <div class="meta text-center">
+        <p class="lead">
+          <span class="author">
+            <a target=_blank href="/members#{{post.author}}" class="text-primary">{{page.author}}</a>
+          </span><br>
+          <span class="date text-muted">
+            <em>{{ page.date | date_to_long_string }}</em>
+          </span>
+        </p>
+      </div>
+
+      <div class="content-body text-justify">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.content-body {
+  max-width: 800px;   
+  margin: 0 auto;   
+  line-height: 1.6;  
+  text-align: justify;
+  hyphens: auto;     
+}
+
+
+@media (max-width: 767px) {
+  .content-body {
+    padding: 0 15px; 
+    text-align: left; 
+    hyphens: none;
+  }
+}
+</style>
