@@ -35,8 +35,8 @@
 			<li>ChemRxiv Preprint: <a href=" https://doi.org/10.26434/chemrxiv.{{tutorial.chemrxiv}}" alt = "chemrxiv preprint link: {{tutorial.chemrxiv}}"> {{tutorial.chemrxiv}}</a></li>
 			{% endif %}
 
-			<!-- PDF -->
-			<li><a href="{{tutorial.pdf}}" alt = "PDF"> Full Text</a></li>
+			<!-- URL -->
+			<li><a href="{{tutorial.url}}" alt = "URL"> Full Text</a></li>
 
 			<!-- Datasets - optional -->
 			{% if tutorial.data %}
