@@ -37,7 +37,7 @@ h2, h3 {
 }
 
 
-code {
+.language-plaintext {
     color: #0caeee;
     font-size: 15px
 }
