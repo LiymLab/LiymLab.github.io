@@ -1,12 +1,13 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");html {
-    font-family: Open Sans;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+html {
+    font-family: Open+Sans;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
 
 pre {
-    font-family: Open Sans;
     background-color: #ede6e6;
     margin-top: 15px;
     margin-bottom: 15px;
