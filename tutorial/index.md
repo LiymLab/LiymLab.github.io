@@ -5,10 +5,10 @@ group: tutorials
 ---
 
 
-<h2><b>Tutorials</b></h2>
+<h1><b>Featured Tutorials</b></h1>
 <br>
 
-<h3>cfDNAanalyzer</h3>
+<h2>cfDNAanalyzer</h2>
 
 <p>cfDNAanalyzer: a tool</p>
 
