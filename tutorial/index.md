@@ -11,7 +11,7 @@ group: join
 
 <p>cfDNAanalyzer: a tool</p>
 
-<a href=''></a>
+<a href='https://github.com/LiymLab/cfDNAanalyzer' class="btn btn-primary">View on GitHub</a> 
 
 <div style="text-align: center; margin: 20px 0;">
     <img 
