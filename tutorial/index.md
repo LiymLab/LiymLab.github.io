@@ -16,7 +16,7 @@ group: tutorials
 
 <div style="text-align: center; margin: 20px 0;">
     <img width="800px" 
-     src="https://raw.githubusercontent.com/LiymLab/LiymLab.github.io/master/cfDNAanalyzer/Figures/Section%201.1.png" 
+     src="/cfDNAanalyzer/Figures/Section%201.1.png" 
      style="border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);">
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </div>
