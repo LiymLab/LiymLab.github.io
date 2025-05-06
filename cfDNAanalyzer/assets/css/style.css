@@ -8,9 +8,11 @@
 .highlight {
     width: 100%;
     background-color: #beb7b7;
-    margin: 200px;
-    border: 1px;
-    word-wrap: break-word;
-    word-break: normal
+    margin: 200px
+}
+
+p {
+     margin-top: 30px;    /* 上间距 */
+     margin-bottom: 30px; /* 下间距 */
 }
 
