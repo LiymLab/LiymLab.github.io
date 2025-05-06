@@ -5,7 +5,7 @@ group: tutorials
 ---
 
 
-<h1><b>Featured Tutorials</b></h1>
+<h1>Featured Tutorials</h1>
 <br>
 
 <h2>cfDNAanalyzer</h2>
