@@ -1,7 +1,7 @@
 ---
 title: Tutorials
 layout: default  
-permalink: tutorials
+permalink: /tutorials/
 ---
 
 <div class="tutorial-content">
