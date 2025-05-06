@@ -8,7 +8,8 @@ html {
 }
 
 pre {
-    background-color: #ede6e6;
+    background-color: #f3f6fa;
+    border: solid 1px #dce6f0;
     margin-top: 15px;
     margin-bottom: 15px;
     overflow-x: scroll; /* 始终显示横向滚动条 */
