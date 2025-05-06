@@ -14,12 +14,12 @@ pre {
     margin-bottom: 15px;
     overflow-x: scroll; /* 始终显示横向滚动条 */
     overflow-y: hidden;
-    padding-left: 5px;
-    padding-bottom: 5px
+    padding-left: 10px;
+    padding-bottom: 10px
 }
   
 p {
-     margin-top: 15px;
+    margin-top: 15px;
     margin-bottom: 15px
 }
 
