@@ -25,19 +25,4 @@ group: join
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </div>
 
-<div style="text-align: center; margin: 20px 0;">
-    <img 
-        style="
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
-            max-width: 100%;  <!-- Responsive image scaling -->
-            height: auto;    <!-- Maintain aspect ratio -->
-        " 
-        src="https://raw.githubusercontent.com/LiymLab/LiymLab.github.io/master/cfDNAanalyzer/Figures/Section%201.1.png"  <!-- Corrected GitHub raw URL -->
-        alt="cfDNAanalyzer workflow diagram"  <!-- Added required alt text -->
-        width="800"
-    >
-    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px; font-size: 0.9em; color: #666;">
-        Figure 1: cfDNA analysis workflow  <!-- Added proper caption -->
-    </div>
-</div>
+
