@@ -33,6 +33,12 @@ h1 {
 
 h2, h3 {
     color: #159957;
+   
 }
 
+
+.language-plaintext highlighter-rouge {
+    color: #0caeee;
+    font-size: 15px
+}
 
