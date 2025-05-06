@@ -1,40 +1,26 @@
 ---
+title: Tutorials of the LYM Lab
 layout: default
+group: join
 ---
+
 
 <h2><b>Tutorials</b></h2>
 
-<div class="wrapper row3">
-  <div id="container">
-    <div class="full_width clear">
-      <ol>
-          {% for project in site.data.tutorials %}
-          <hr>
-          <div id="{{ project.title | slugify }}" class="row" style="padding-top: 60px; margin-top: -60px;">
+<h3>cfDNAanalyzer</h3>
 
-              <div class="col-sm-7">
-                  <h3>{{ project.title | markdownify }}</h3>
-                  <div class="text-justify">
-                      {{ project.description | markdownify }}
-                      {% if project.url %}
-                      <p><a href="{{ project.url }}" class="btn btn-primary">View Tutorial</a></p>
-                      {% endif %}
-                  </div>
-              </div>
-              
+<p>cfDNAanalyzer: a tool</p>
 
-              <div class="col-sm-5">
-                  <img class="img-responsive" 
-                       src="{{ project.image }}" 
-                       {% if project.altimage %}
-                       onmouseover="this.src='{{ project.altimage }}';" 
-                       onmouseout="this.src='{{ project.image }}';"
-                       {% endif %}
-                       alt="{{ project.title | escape }}">
-              </div>
-          </div>
-          {% endfor %}
-      </ol>
-    </div>
-  </div>
+<a href=''></a>
+
+<div style="text-align: center; margin: 20px 0;">
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="https://github.com/LiymLab/LiymLab.github.io/blob/master/cfDNAanalyzer/Figures/Section%201.1.png"
+        width="800px"
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </div>
