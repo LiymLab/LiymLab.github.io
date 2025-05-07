@@ -448,7 +448,7 @@ Users can get the following figure.
 </center>
 
 
-### Section 1.5: Infer genes' expression levels with feature PFE
+### Section 1.5: Explore the correlation between fragmentation entropy of cfDNA and gene expression
 In this section, users can infer genes' expression levels using features in `/Features/PFE.csv`.
 
 First, load the genes. Then load data from output directory and transform it. 
