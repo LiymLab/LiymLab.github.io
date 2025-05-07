@@ -17,7 +17,7 @@ group: tutorials
     * [Section 2.2: Visualize the genomic fragment size difference](#section-22-visualize-the-genomic-fragment-size-difference)
     * [Section 2.3: Find genomic motif differences](#section-23-find-genomic-motif-differences)
     * [Section 2.4: Compare feature similarities and find redundant information](#section-24-compare-feature-similarities-and-find-redundant-information)
-    * [Section 2.5: Explore the correlation between fragmentation entropy of cfDNA and gene expression](#section-25-explore-the-correlation-between-fragmentation-entropy-of-cfDNA-and-gene-expression)
+    * [Section 2.5: Explore the correlation between fragmentation entropy of cfDNA and gene expression](#section-25-explore-the-correlation-between-fragmentation-entropy-of-cfdna-and-gene-expression)
     * [Section 2.6: Visualize differences in nucleosome organization](#section-26-visualize-differences-in-nucleosome-organization)
 * [Section 3: Optimizing feature selection for machine learning models](#section-3-optimizing-feature-selection-for-machine-learning-models)
     * [Section 3.1: Methods of feature selection](#section-31-methods-of-feature-selection)
