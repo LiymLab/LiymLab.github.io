@@ -6,7 +6,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
-
+/*
 pre {
     background-color: #f3f6fa;
     border: solid 1px #dce6f0;
@@ -17,7 +17,15 @@ pre {
     padding-left: 10px;
     padding-bottom: 10px
 }
-  
+*/
+pre {
+  background-color: transparent;  /* 移除背景色 */
+  border-radius: 4px;            /* 圆角半径 4 像素 */
+  padding: 12px;                 /* 内边距 12 像素 */
+  border: 1px solid #e1e4e8;     /* 1 像素浅灰色边框 */
+  overflow: auto;                /* 内容溢出时显示滚动条 */
+}
+
 p {
     margin-top: 15px;
     margin-bottom: 15px
