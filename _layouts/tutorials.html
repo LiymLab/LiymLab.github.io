@@ -24,6 +24,39 @@
 }
 
 
+<div class="container px-2" style="max-width: 100%">
+    <div class="row g-4"> <!-- 使用 Bootstrap 的 gutter 间距 -->
+        <!-- 主内容区域 -->
+        <main class="col-lg-9 pe-lg-4"> <!-- 添加右侧 padding -->
+            {{ content }}
+        </main>
+
+        <!-- 图片侧边栏 -->
+        <aside class="col-lg-3">
+            <img src="/cfDNAanalyzer/Figures/cfDNAanalyzer.png" 
+                 class="img-fluid rounded-3 shadow-sm" 
+                 alt="cfDNAanalyzer"
+                 loading="lazy"> <!-- 延迟加载优化 -->
+        </aside>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="mt-5">
+        <hr class="my-4">
+        <p class="text-muted small text-center">
+            <a href="https://github.com/LiymLab/cfDNAanalyzer" 
+               class="text-decoration-none link-dark">cfDNAanalyzer</a> 
+            is maintained by 
+            <a href="https://liymlab.github.io/cfDNAanalyzer/Tutorial"
+               class="text-decoration-none link-dark">LYMLab</a>.
+        </p>
+    </footer>
+</div>
+
+
+
+
+
 @media (max-width: 767px) {
   .content-body {
     padding: 0 15px; 
@@ -32,3 +65,5 @@
   }
 }
 </style>
+
+
