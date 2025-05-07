@@ -7,22 +7,17 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-
-.highlight {
-  margin: 1rem 0; // 上下边距
-  padding: 1rem;  // 内边距
-  border-radius: 4px; // 圆角
-  
-  pre {
-    margin: 0; // 移除 pre 的默认边距
-    padding: 0.5rem; // 代码内边距
+pre {
     background-color: #f3f6fa;
     border: solid 1px #dce6f0;
-  }
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow-x: scroll; /* 始终显示横向滚动条 */
+    overflow-y: hidden;
+    padding-left: 15px;
+    padding-bottom: 15px
 }
-
-
-
 
 p {
     margin-top: 15px;
@@ -41,7 +36,6 @@ h2, h3 {
     color: #159957;
    
 }
-
 
 .language-plaintext {
     color: #2a8bb1;
