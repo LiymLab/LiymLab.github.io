@@ -36,11 +36,8 @@ pre {
   pre {
     margin: 0; // 移除 pre 的默认边距
     padding: 0.5rem; // 代码内边距
-    background-color: #f6f8fa; // 背景色
-    
-    code {
-      background-color: transparent; // 使代码背景透明
-    }
+    background-color: #f3f6fa;
+    border: solid 1px #dce6f0;
   }
 }
 
