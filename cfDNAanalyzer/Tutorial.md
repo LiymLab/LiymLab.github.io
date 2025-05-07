@@ -10,30 +10,44 @@ group: tutorials
 
  
 <h2>Table of Contents</h2>
-
-* [Section 1: Visualization for the extracted features](#section-1-visualization-for-the-extracted-features)
-    * [Section 1.1: Analyze genomic copy number differences with feature CNA](#section-11-analyze-genomic-copy-number-differences-with-feature-cna)
-    * [Section 1.2: Analyze the genomic fragment size difference with feature FP](#section-12-analyze-the-genomic-fragment-size-difference-with-feature-fp)
-    * [Section 1.3: Find genomic motif differences with feature EM](#section-13-find-genomic-motif-differences-with-feature-em)
-    * [Section 1.4: Compare feature similarities and find redundant information with feature NOF, WPS, OCF, EMR and FPR](#section-14-compare-feature-similarities-and-find-redundant-information-with-feature-nof-wps-ocf-emr-and-fpr)
-    * [Section 1.5: Infer genes' expression levels with feature PFE](#section-15-infer-genes-expression-levels-with-feature-pfe)
-    * [Section 1.6: Analyze differences in nucleosome organization with feature NP](#section-16-analyze-differences-in-nucleosome-organization-with-feature-np)
-* [Section 2: Optimizing feature selection for machine learning models](#section-2-optimizing-feature-selection-for-machine-learning-models)
-    * [Section 2.1: Methods of feature selection](#section-21-methods-of-feature-selection)
-    * [Section 2.2: Visualization of feature selection effect before and after optimization](#section-22-visualization-of-feature-selection-effect-before-and-after-optimization)
-* [Section 3: Performance of different features in cancer detection and classification](#section-3-performance-of-different-features-in-cancer-detection-and-classification)
-    * [Section 3.1: Predictive effect of different features in cancer detection](#section-31-predictive-effect-of-different-features-in-cancer-detection)
-    * [Section 3.2: Predictive effect of different features in cancer classification](#section-32-predictive-effect-of-different-features-in-cancer-classification)
+* [Section 1: Introduction](#section-1-introduction)
+* [Section 2: Visualization for the extracted features](#section-2-visualization-for-the-extracted-features)
+    * [Section 2.1: Visualize genomic copy number differences](#section-21-visualize-genomic-copy-number-differences)
+    * [Section 2.2: Visualize the genomic fragment size difference with feature FP](#section-22-visualize-the-genomic-fragment-size-difference)
+    * [Section 2.3: Find genomic motif differences with feature EM](#section-23-find-genomic-motif-differences)
+    * [Section 2.4: Compare feature similarities and find redundant information](#section-24-compare-feature-similarities-and-find-redundant-information)
+    * [Section 2.5: Infer genes' expression levels](#section-25-infer-genes-expression-levels)
+    * [Section 2.6: Visualize differences in nucleosome organization](#section-26-visualize-differences-in-nucleosome-organization)
+* [Section 3: Optimizing feature selection for machine learning models](#section-3-optimizing-feature-selection-for-machine-learning-models)
+    * [Section 3.1: Methods of feature selection](#section-31-methods-of-feature-selection)
+    * [Section 3.2: Visualize feature selection effect](#section-32-visualize-feature-selection-effect)
+* [Section 4: Performance of different features in cancer detection and classification](#section-4-performance-of-different-features-in-cancer-detection-and-classification)
+    * [Section 4.1: Predictive effect of different features in cancer detection](#section-41-predictive-effect-of-different-features-in-cancer-detection)
+    * [Section 4.2: Predictive effect of different features in cancer classification](#section-42-predictive-effect-of-different-features-in-cancer-classification)
   
 
+## Section 1: Introduction
 
-## Section 1: Visualization for the extracted features
+Liquid biopsy, powered by the analysis of plasma cell-free DNA (cfDNA), is revolutionizing diagnostic medicine by providing a non-invasive window into the genomic and epigenomic landscapes of human diseases, particularly cancers. cfDNA, which enters the bloodstream through cellular turnover across various tissues, offers an unprecedented opportunity for early detection, monitoring, and personalized treatment of diseases. Despite its promise, the field lacks a unified and comprehensive toolkit tailored for the systematic analysis of cfDNA sequencing data. cfDNAanalyzer addresses this critical gap by offering an integrated, user-friendly platform for feature extraction, filtering, selection, and machine learning model development for disease detection and classification. This toolkit empowers researchers and clinicians with the ability to perform customizable analyses, evaluate the performance of predictive models, and extract valuable insights from cfDNA-derived data. By facilitating precise, scalable, and reproducible cfDNA analysis, cfDNAanalyzer is poised to accelerate advancements in disease detection, monitoring, and research.
+
+<center>
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="/cfDNAanalyzer/Figures/cfDNAanalyzer.png"
+        width="800px"
+    >
+</center>
+
+## Section 2: Visualization for the extracted features
 
 cfDNAanalyzer can extract a variety of features. In this section, users can visualize these features to better explore the full landscape of cfDNA characteristics.
 
-### Section 1.1: Analyze genomic copy number differences with feature CNA
-In this section, users can analyze genomic copy number differences between cancer and healthy samples using the CNA feature in `/Features/CNA.csv`.
+### Section 2.1: Visualize genomic copy number differences
 
+In this section, users can analyze genomic copy number differences between cancer and healthy samples using the CNA feature in `/ouput_directory/Features/CNA.csv`.
 
 To begin, load the data from output directory and transform it. 
 ```R
@@ -153,8 +167,8 @@ Users can get the following figure.
 </center>
 
 
-### Section 1.2: Analyze the genomic fragment size difference with feature FP
-In this section, users can analyze genomic fragment size differences between cancer and healthy samples using the FP feature in `/Features/FP_fragmentation_profile.csv`.
+### Section 2.2: Visualize the genomic fragment size difference
+In this section, users can analyze genomic fragment size differences between cancer and healthy samples using the FP feature in `/ouput_directory/Features/FP_fragmentation_profile.csv`.
 
 First, load the data from output directory and transform it.
 ```R
@@ -251,8 +265,8 @@ Users can get the following figure.
 </center>
 
 
-### Section 1.3: Find genomic motif differences with feature EM
-In this section, users can find the top motifs with the most significant differences between cancer and healthy samples using the EM feature in `/Features/EM_motifs_frequency.csv` and `/Features/EM_motifs_mds.csv`.
+### Section 2.3: Find genomic motif differences
+In this section, users can find the top motifs with the most significant differences between cancer and healthy samples using the EM feature in `/ouput_directory/Features/EM_motifs_frequency.csv` and `/ouput_directory/Features/EM_motifs_mds.csv`.
 
 First , load the data and transform it.
 ```R
@@ -345,8 +359,8 @@ Users can get the following figure.
 </center>
 
 
-### Section 1.4: Compare feature similarities and find redundant information with feature NOF, WPS, OCF, EMR and FPR
-In this section, users can compare feature similarities and choose features with no redundant information using features in `/Features/NOF_meanfuziness.csv` , `/Features/NOF_occupancy.csv` , `/Features/WPS_long.csv` , `/Features/OCF.csv` , `/Features/EMR_region_mds.csv` , `/Features/FPR_fragmentation_profile_regions.csv`.
+### Section 2.4: Compare feature similarities and find redundant information
+In this section, users can compare feature similarities and choose features with no redundant information using features in `/ouput_directory/Features/NOF_meanfuziness.csv` , `/ouput_directory/Features/NOF_occupancy.csv` , `/ouput_directory/Features/WPS_long.csv` , `/ouput_directory/Features/OCF.csv` , `/ouput_directory/Features/EMR_region_mds.csv` , `/ouput_directory/Features/FPR_fragmentation_profile_regions.csv`.
 
 First, load all the data and transform them (Take NO as example).
 ```R
@@ -448,8 +462,8 @@ Users can get the following figure.
 </center>
 
 
-### Section 1.5: Explore the correlation between fragmentation entropy of cfDNA and gene expression
-In this section, users can infer genes' expression levels using features in `/Features/PFE.csv`.
+### Section 2.5: Explore the correlation between fragmentation entropy of cfDNA and gene expression
+In this section, users can infer genes' expression levels using features in `/ouput_directory/Features/PFE.csv`.
 
 First, load the genes. Then load data from output directory and transform it. 
 ```R
@@ -595,8 +609,8 @@ Users can get the following figure.
 </center>
 
 
-### Section 1.6: Analyze differences in nucleosome organization with feature NP
-In this section, users can analyze differences in nucleosome organization in cancer and healthy samples using feature NP in the directory `/Features/NP_site_list/`. (Take file `/Features/NP_site_list/site_list1.txt` as an exmaple)
+### Section 2.6: Visualize differences in nucleosome organization
+In this section, users can analyze differences in nucleosome organization in cancer and healthy samples using feature NP in the directory `/ouput_directory/Features/NP_site_list/`. (Take file `/ouput_directory/Features/NP_site_list/site_list1.txt` as an exmaple)
 
 First, load data from output directory.
 ```R
@@ -659,11 +673,11 @@ Users can get the following figure.
 </center>
 
 
-## Section 2: Optimizing feature selection for machine learning models
+## Section 3: Optimizing feature selection for machine learning models
 
-Users can make an initial evaluation by leveraging cfDNAanalyzer's powerful feature extraction module, which is essential for the analysis of genomic and fragomic features from cfDNA sequencing data. After an initial exploration of the features, cfDNAanalyzer was used to identify the most discriminative features using four main classes of feature selection methods: filters, embedders, wrappers, and hybrid methods (25 methods in total supported).
+Users can make an initial evaluation by leveraging cfDNAanalyzer's powerful feature extraction module, which is essential for the analysis of genomic and fragmentomic features from cfDNA sequencing data. After an initial exploration of the features, cfDNAanalyzer was used to identify the most discriminative features using four main classes of feature selection methods: filters, embedders, wrappers, and hybrid methods (25 methods in total supported).
 
-### Section 2.1: Methods of feature selection
+### Section 3.1: Methods of feature selection
 
 The feature selection methods in cfDNAanalyzer include four categories: embedded, filter, wrapper, and hybrid, implemented across three scripts: embedded_methods.py, filter_methods.py, wrapper_methods.py. Users can select and run the appropriate script based on their preferred method.
 
@@ -683,11 +697,11 @@ python /cfDNAanalyzer/Feature_Selection/embedded_methods.py
 --percentages: Percentage of features to retain after filtering. 
 
 
-### Section 2.2: Visualization of feature selection effect before and after optimization
+### Section 3.2: Visualize feature selection effect
 
 In this section, user can perform binary and multi-class PCA analysis on the optimized features. The breast cancer genome-wide dataset was used as an example to compare the results of PCA before and after the application of feature selection.
 
-First, load the filtered features and process the data. Files in the directory `/Feature_Processing_and_Selection/Feature_Selection` will be used. 
+First, load the filtered features and process the data. Files in the directory `/ouput_directory/Feature_Processing_and_Selection/Feature_Selection` will be used. 
 
 ```python
 import os
@@ -804,15 +818,15 @@ Users can get the following figure.
 </center>
 
 
-## Section 3: Performance of different features in cancer detection and classification
+## Section 4: Performance of different features in cancer detection and classification
 
 In this part, user can test the performance of different features in single-modality models and visualize them. This facilitates informed decision-making when selecting modalities for the subsequent integration of multiple features.
 
-### Section 3.1: Predictive effect of different features in cancer detection
+### Section 4.1: Predictive effect of different features in cancer detection
 
 In this section, user can evaluate the cancer prediction probability of different features and calculate the correlation.
 
-Firstly, user needs to extract the probability that each feature predicts the sample to be cancer through different classifiers in the cancer prediction results of the binary classification model, and then integrate the prediction results of all features. The user can also calculate and visualize the correlation of the probability of 11 features predicted to be cancer samples in different classifiers to obtain corplot. (Take CNA as an example, the result file of probability of predicting cancer for samples based on features is at `/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`)
+Firstly, user needs to extract the probability that each feature predicts the sample to be cancer through different classifiers in the cancer prediction results of the binary classification model, and then integrate the prediction results of all features. The user can also calculate and visualize the correlation of the probability of 11 features predicted to be cancer samples in different classifiers to obtain corplot. (Take CNA as an example, the result file of probability of predicting cancer for samples based on features is at `/ouput_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`)
 
 ```R
 all_probability = read.csv("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
@@ -858,11 +872,11 @@ Users can get the following figure.
 </center>
 
 
-### Section 3.2: Predictive effect of different features in cancer classification
+### Section 4.2: Predictive effect of different features in cancer classification
 
 In this section, user can evaluate the predicted probability of different features predicting the same sample as a certain cancer.
 
-First, user needs to extract the probability that each feature predicts each sample to be each cancer in the cancer prediction result of the multi-classification model, and then integrate the prediction results of all features. "probability_0" represents breast cancer, "probability_1" represents lung cancer, and "probability_2" represents pancreatic cancer. In the following example, the data extraction and processing step takes the CNA feature as an example, and the result file of probability for samples based on features is at `/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`. The visualization result is the probability heatmap of the lung cancer sample predicted into each cancer type.
+First, user needs to extract the probability that each feature predicts each sample to be each cancer in the cancer prediction result of the multi-classification model, and then integrate the prediction results of all features. "probability_0" represents breast cancer, "probability_1" represents lung cancer, and "probability_2" represents pancreatic cancer. In the following example, the data extraction and processing step takes the CNA feature as an example, and the result file of probability for samples based on features is at `/ouput_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`. The visualization result is the probability heatmap of the lung cancer sample predicted into each cancer type.
 
 ```R
 all_probability = read.csv("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
@@ -933,7 +947,7 @@ Users can get the following figure.
 </center>
 
 
-## Section 4: multi-modality
+## Section 5: multi-modality
 
 
 
