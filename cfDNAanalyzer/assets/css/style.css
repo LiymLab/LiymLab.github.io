@@ -15,6 +15,7 @@ pre {
     margin-bottom: 15px;
     overflow-x: scroll; /* 始终显示横向滚动条 */
     overflow-y: hidden;
+    padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 15px
 }
