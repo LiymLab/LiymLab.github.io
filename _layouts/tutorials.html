@@ -1,76 +1,33 @@
-<div class="container px-2" style="max-width: 100%">
-    <div class="row g-4">
-        <!-- 主内容区域 -->
-        <main class="col-lg-9 pe-lg-4">
-            <article>
-                <header class="mb-4">
-                    <h3>
-                        <a href="https://liymlab.github.io/cfDNAanalyzer/Tutorial" 
-                           class="text-decoration-none">
-                            cfDNAanalyzer: a comprehensive toolkit for analyzing cell-free DNA genomic sequencing data in liquid biopsy
-                        </a>
-                    </h3>
-                </header>
-
-                <div class="content-body">
-                    <p class="lead">Liquid biopsy, powered by the analysis of plasma cell-free DNA (cfDNA)...</p>
-                    <!-- 保持原有段落内容 -->
-                    <p>Liquid biopsy, powered by the analysis of plasma cell-free DNA (cfDNA)...</p>
-                </div>
-            </article>
-        </main>
-
-        <!-- 图片侧边栏 -->
-        <aside class="col-lg-3">
-            <div class="sticky-top pt-3"> <!-- 添加粘性定位 -->
-                <img src="/cfDNAanalyzer/Figures/cfDNAanalyzer.png" 
-                     class="img-fluid rounded-3 shadow-lg" 
-                     alt="cfDNAanalyzer Toolkit Overview"
-                     loading="lazy"
-                     style="min-width: 200px"> <!-- 保持最小宽度 -->
-            </div>
-        </aside>
+<div class="container"> 
+  <div class="row">
+    <div class="col-xs-12 col-md-10 col-md-offset-1"> 
+      <div class="page-header text-center"> 
+        <h1>{{ page.title }}</h1>
+      </div>
+      
+      <div class="content-body text-justify">
+        {{ content }}
+      </div>
     </div>
-
-    <!-- 页脚 -->
-    <footer class="mt-5">
-        <hr class="my-4">
-        <p class="text-muted small text-center">
-            <a href="https://github.com/LiymLab/cfDNAanalyzer" 
-               class="text-decoration-none link-dark">cfDNAanalyzer</a> 
-            is maintained by 
-            <a href="https://liymlab.github.io/cfDNAanalyzer/Tutorial"
-               class="text-decoration-none link-dark">LYMLab</a>.
-        </p>
-    </footer>
+  </div>
 </div>
 
 <style>
 .content-body {
-    line-height: 1.7;
-    text-align: justify;
-    hyphens: auto;
-    font-size: 1rem;
+  max-width: 900px;   
+  margin: 0 auto;   
+  line-height: 1.6;  
+  text-align: justify;
+  hyphens: auto;     
 }
 
-.content-body p {
-    margin-bottom: 1.25rem;
-}
 
-.content-body .lead {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #4a5568;
-}
 
-@media (max-width: 992px) {
-    .sticky-top {
-        position: static !important;
-    }
-    
-    .content-body {
-        text-align: left;
-        hyphens: none;
-    }
+@media (max-width: 767px) {
+  .content-body {
+    padding: 0 15px; 
+    text-align: left; 
+    hyphens: none;
+  }
 }
 </style>
