@@ -17,6 +17,25 @@ group: tutorials
      style="border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);">
 </center>
 
+-----------------------------------------------------------------------------------------
 
+<div style="display: flex; gap: 30px; align-items: flex-start; margin: 20px 0;">
 
+<div style="flex: 3;">
+### [cfDNAanalyzer: a comprehensive toolkit for analyzing cell-free DNA genomic sequencing data in liquid biopsy](https://liymlab.github.io/cfDNAanalyzer/Tutorial)
+
+Liquid biopsy, powered by the analysis of plasma cell-free DNA (cfDNA), is revolutionizing diagnostic medicine by providing a non-invasive window into the genomic and epigenomic landscapes of human diseases, particularly cancers. cfDNA, which enters the bloodstream through cellular turnover across various tissues, offers an unprecedented opportunity for early detection, monitoring, and personalized treatment of diseases. Despite its promise, the field lacks a unified and comprehensive toolkit tailored for the systematic analysis of cfDNA sequencing data. cfDNAanalyzer addresses this critical gap by offering an integrated, user-friendly platform for feature extraction, filtering, selection, and machine learning model development for disease detection and classification. This toolkit empowers researchers and clinicians with the ability to perform customizable analyses, evaluate the performance of predictive models, and extract valuable insights from cfDNA-derived data. By facilitating precise, scalable, and reproducible cfDNA analysis, cfDNAanalyzer is poised to accelerate advancements in disease detection, monitoring, and research.
+</div>
+
+<div style="flex: 1; min-width: 300px;">
+<img 
+    style="border-radius: 5px; 
+           box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+           width: 100%;
+           height: auto;"
+    src="/cfDNAanalyzer/Figures/cfDNAanalyzer.png" 
+    alt="cfDNAanalyzer toolkit diagram">
+</div>
+
+</div>
 
