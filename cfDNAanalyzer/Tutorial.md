@@ -10,6 +10,7 @@ group: tutorials
 
  
 <h2>Table of Contents</h2>
+
 * [Section 1: Introduction](#section-1-introduction)
 * [Section 2: Visualization for the extracted features](#section-2-visualization-for-the-extracted-features)
     * [Section 2.1: Visualize genomic copy number differences](#section-21-visualize-genomic-copy-number-differences)
