@@ -868,7 +868,7 @@ Users can get the following figure.
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
         src="/cfDNAanalyzer/Figures/Section%203.1.png"
-        width="600px"
+        width="500px"
     >
 </center>
 
@@ -942,7 +942,7 @@ Users can get the following figure.
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
         src="/cfDNAanalyzer/Figures/Section%203.2.png"
-        width="700px"
+        width="500px"
     >
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </center>
