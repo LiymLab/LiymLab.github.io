@@ -17,7 +17,7 @@ pre {
     padding-left: 10px;
     padding-bottom: 10px
 }
-*/
+
 pre {
   background-color: transparent;  /* 移除背景色 */
   border-radius: 4px;            /* 圆角半径 4 像素 */
@@ -25,6 +25,27 @@ pre {
   border: 1px solid #e1e4e8;     /* 1 像素浅灰色边框 */
   overflow: auto;                /* 内容溢出时显示滚动条 */
 }
+
+*/
+
+.highlight {
+  margin: 1rem 0; // 上下边距
+  padding: 1rem;  // 内边距
+  border-radius: 4px; // 圆角
+  
+  pre {
+    margin: 0; // 移除 pre 的默认边距
+    padding: 0.5rem; // 代码内边距
+    background-color: #f6f8fa; // 背景色
+    
+    code {
+      background-color: transparent; // 使代码背景透明
+    }
+  }
+}
+
+
+
 
 p {
     margin-top: 15px;
