@@ -4,9 +4,7 @@ layout: tutorials
 group: tutorials
 ---
 
-<head>
-  <link rel="stylesheet" href="/cfDNAanalyzer/assets/css/style.css">
-</head>
+
 
  
 <h2>Table of Contents</h2>
