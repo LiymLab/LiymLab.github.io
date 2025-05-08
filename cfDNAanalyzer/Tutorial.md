@@ -54,7 +54,7 @@ cfDNAanalyzer can extract a variety of features. In this section, users can visu
 
 ### Section 2.1: Visualize genomic copy number differences
 
-In this section, users can analyze genomic copy number differences between cancer and healthy samples using the CNA feature in `/ouput_directory/Features/CNA.csv`.
+In this section, users can visualize genomic copy number differences between cancer and healthy samples using the CNA feature in `/ouput_directory/Features/CNA.csv`.
 
 To begin, load the data from output directory and transform it. 
 ```R
@@ -171,7 +171,7 @@ Users can get the following figure that shows genomic copy number differences be
 
 
 ### Section 2.2: Visualize the genomic fragment size difference
-In this section, users can analyze genomic fragment size differences between cancer and healthy samples using the FP feature in `/ouput_directory/Features/FP_fragmentation_profile.csv`.
+In this section, users can visualize genomic fragment size differences between cancer and healthy samples using the FP feature in `/ouput_directory/Features/FP_fragmentation_profile.csv`.
 
 First, load the data from output directory and transform it.
 ```R
@@ -466,7 +466,7 @@ Users can get the following figure that compares feature similarities.
 
 
 ### Section 2.5: Explore the correlation between fragmentation entropy of cfDNA and gene expression
-In this section, users can infer genes' expression levels using features in `/ouput_directory/Features/PFE.csv`.
+In this section, users can explore the correlation between fragmentation entropy of cfDNA and gene expression using features in `/ouput_directory/Features/PFE.csv`.
 
 First, load the genes. Then load data from output directory and transform it. 
 ```R
@@ -614,7 +614,7 @@ Users can get the following figure that shows the correlation between fragmentat
 
 
 ### Section 2.6: Visualize differences in nucleosome organization
-In this section, users can analyze differences in nucleosome organization around TF in cancer and healthy samples using feature NP in the directory `/ouput_directory/Features/NP_site_list/`. (Take file `/ouput_directory/Features/NP_site_list/site_list1.txt` as an exmaple)
+In this section, users can visualize differences in nucleosome organization around TF in cancer and healthy samples using feature NP in the directory `/ouput_directory/Features/NP_site_list/`. (Take file `/ouput_directory/Features/NP_site_list/site_list1.txt` as an exmaple)
 
 First, load data from output directory.
 ```R
