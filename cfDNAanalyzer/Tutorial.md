@@ -154,17 +154,18 @@ g <- ggplot(df, aes(x = combine, y = average, group = sample, color = color)) +
   geom_hline(yintercept = 2, linetype = "dashed", linewidth = 0.3, color = "gray") + 
   scale_color_identity()
 ```
-Users can get the following figure.
+Users can get the following figure that shows genomic copy number differences between cancer and healthy samples.
 
 <center>
-    <img 
-        style="
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
-        " 
-        src="/cfDNAanalyzer/Figures/Section%201.1.png"
-        width="800px"
-    >
+    <img style="border-radius: 5px; 
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);" 
+         src="/cfDNAanalyzer/Figures/Section%201.1.png"
+         width="800px">
+    <br>
+    <div style="border-bottom: 1px solid #d9d9d9;
+                display: inline-block;
+                color: #999;
+                padding: 2px;">cfDNAanalyzer Functions</div>
 </center>
 
 
@@ -252,7 +253,7 @@ g <- ggplot(rst, aes(x=combine, y=centeredRatio, group=sample, color=color)) +
   my_theme
 ```
 
-Users can get the following figure.
+Users can get the following figure that shows genomic fragment size differences between cancer and healthy samples.
 
 <center>
     <img 
@@ -346,7 +347,7 @@ g <- ggplot(FREQ, aes(x = average_cancer, y = average_healthy)) +
         axis.ticks = element_line(colour = "black"),  
         axis.ticks.length = unit(0.25, "cm"))  
 ```
-Users can get the following figure.
+Users can get the following figure that shows top motifs with the most significant differences between cancer and healthy samples.
 
 <center>
     <img 
@@ -449,7 +450,7 @@ corrplot(average_matrix,
          tl.cex = 0.8,                       
          number.cex = 1)                   
 ```
-Users can get the following figure.
+Users can get the following figure that compares feature similarities.
 
 <center>
     <img 
@@ -596,7 +597,8 @@ p = ggplot(df_over, aes(x = group, y = value)) +
     size = 5
   )
 ```
-Users can get the following figure.
+
+Users can get the following figure that shows the correlation between fragmentation entropy of cfDNA and gene expression.
 
 <center>
     <img 
@@ -660,7 +662,8 @@ g <- ggplot(data = df_long, aes(x = Column1, y = Value, color = Group)) +
         axis.ticks = element_line(colour = "black"),  
         axis.ticks.length = unit(0.25, "cm"))  
 ```
-Users can get the following figure.
+
+Users can get the following figure that shows differences in nucleosome organization in cancer and healthy samples.
 
 <center>
     <img 
@@ -680,22 +683,37 @@ Users can make an initial evaluation by leveraging cfDNAanalyzer's powerful feat
 
 ### Section 3.1: Methods of feature selection
 
-The feature selection methods in cfDNAanalyzer include four categories: embedded, filter, wrapper, and hybrid, implemented across three scripts: embedded_methods.py, filter_methods.py, wrapper_methods.py. Users can select and run the appropriate script based on their preferred method.
+The feature selection methods in cfDNAanalyzer include four categories: embedded, filter, wrapper, and hybrid, implemented across four major parameters: `--filterMethod`, `--wrapperMethod`, `--embeddedMethod`, `--hybridType`. Users can select the appropriate parametres and run the cfDNAanalyzer based on their preferred method.
 
-```python
-# Take embedded_methods.py as an example.
-python /cfDNAanalyzer/Feature_Selection/embedded_methods.py 
---input_dir /output_directory/Feature_Processing_and_Selection/Feature_Processing 
---output_dir /directory 
---methods LASSO RIDGE ELASTICNET RF 
---percentages 0.2 
+```shell
+bash cfDNAanalyzer.sh \
+-I ./example/bam_input.txt \
+-F CNA \
+--noML \
+--filterMethod 'IG CHI' \
+--filterNum 0.2 \
+--wrapperMethod 'BOR' \
+--wrapperNum 0.2 \
+--embeddedMethod 'LASSO RIDGE' \
+--embeddedNum 0.2 \
+--hybridType FE \
+--hybridMethod1 'CHI' \
+--hybridMethod2 'LASSO' \
+--hybridNum1 0.2 \
+--hybridNum2 0.2
 ```
 
 #### Parameters:
---input_dir: Path to the folder containing input files. \
---output_dir: Path to save the processed results. \
---methods: Methods for feature selection. \
---percentages: Percentage of features to retain after filtering. 
+--noML: Skip machine learning model building, only feature processing and selection will be conducted. \
+--filterMethod: Filter methods employed for feature selection (IG CHI FS FCBF PI CC LVF MAD DR MI RLF SURF MSURF TRF). \
+--filterNum: Number of features to retain when employing the filter method. \
+--wrapperMethod: Wrapper methods employed for feature selection (FFS BFS EFS RFS BOR). \
+--wrapperNum: Number of features to retain when employing the wrapper method. \
+--embeddedMethod: Embedded methods employed for feature selection (LASSO RIDGE ELASTICNET RF). \
+--embeddedNum: Number of features to retain when employing the embedded method. \
+--hybridType: Two methods used for hybrid method (FW/FE). \
+--hybridMethod1,hybridMethod2: Subtype methods designated for method 1 and method 2 in the "--hybridType". \
+--hybridNum1,hybridNum2: Number of features to retain for method 1 and method 2 in the "--hybridType".  
 
 
 ### Section 3.2: Visualize feature selection effect
@@ -805,7 +823,8 @@ else:
     plt.tight_layout()
     plt.close()
 ```
-Users can get the following figure.
+
+Users can get the following figure that visualizes the feature selection effect before and after optimization.
 
 <center>
     <img 
@@ -859,7 +878,8 @@ corrplot(matrix,
          number.cex = 1,
          col = col) 
 ```
-Users can get the following figure.
+
+Users can get the following figure that shows the predictive effect of different features in cancer detection.
 
 <center>
     <img 
@@ -933,7 +953,8 @@ pheatmap(heatmap_data_lung,
          annotation_colors = annotation_colors,
          border_color = NA) 
 ```
-Users can get the following figure.
+
+Users can get the following figure that shows predictive effect of different features in cancer classification.
 
 <center>
     <img 
@@ -948,8 +969,92 @@ Users can get the following figure.
 </center>
 
 
-## Section 5: multi-modality
+## Section 5: Compare the performance metrics of single modality and multiple modality
 
+After building the multiple modality model, users want to know if the performance of multiple modality model is improved compared to single modality model.
+
+In this section, user can compare the performance metrics of single modality and multiple modality. Files `output_directory/Machine_Learning/single_modality/EM/single_modality_metrics.csv` and `output_directory/Machine_Learning/multiple_modality/Concatenation_based/multiple_modality_metrics.csv` will be used.
+
+First, load the multiple modality and single modality metrics data.
+```R
+library(fmsb)
+metrics_df = data.frame()
+concat = read.csv("output_directory/Machine_Learning/multiple_modality/Concatenation_based/multiple_modality_metrics.csv")
+concat_best = concat[concat$FS_Combination== "filter_SURF_50.0" & concat$Classifier== "XGB",]
+concat_best$method = "Concatenation-based_integration"
+metrics_df = rbind(metrics_df, concat_best)
+metrics_df = metrics_df[, c("auc", "accuracy", "precision", "recall", "f1", "method")]
+EM = read.csv("output_directory/Machine_Learning/single_modality/EM/single_modality_metrics.csv")
+single_modality = EM[EM$FS_Combination== "filter_FCBF_50.0" & EM$Classifier== "LogisticRegression",]
+single_modality$method = "single_modality"
+single_modality  = single_modality[, c("auc", "accuracy", "precision", "recall", "f1", "method")]
+metrics_df = rbind(metrics_df, single_modality)
+```
+
+Then, visualize the results.
+```R
+generate_colors <- function(n) {
+  if (n <= 15) {
+    return(c("#6095C8", "#77BA62", "#E2C66A", "#AA81AF", "#DB6A67", "#8A9CC8", "#E6E1F5", "#C9B8E6", "#A38FCF", "#DB6A67", "#FFD1D0", "#F4A6A4",  "#C04A47", "#A3312E", "#EDBBB9")[1:n])
+  } else {
+    return(colorRampPalette(brewer.pal(8, "Set2"))(n))
+  }
+}
+
+metrics_df = as.data.frame(metrics_df)
+rownames(metrics_df) <- metrics_df$method
+metrics_df$method <- NULL
+
+colors_use <- generate_colors(nrow(metrics_df))
+
+radar_ready <- rbind(
+  rep(1, ncol(metrics_df)),
+  rep(0.8, ncol(metrics_df)),
+  metrics_df
+)
+
+colnames(radar_ready) <- c("AUC", "Accuracy", "Precision", "Recall", "F1 Score")
+
+radarchart(
+    radar_ready,
+    axistype    = 1,
+    pcol        = colors_use,
+    plwd        = 3,
+    plty        = 1,
+    pty         = 19,
+    pcex        = 2.5,
+    cglcol      = "grey70",
+    cglty       = 1,
+    cglwd       = 1.2,
+    axislabcol  = "black",
+    caxislabels = seq(0.8, 1, 0.05),
+    seg = 4, 
+    vlcex       = 1.8
+  )
+  
+  legend("topright",
+         legend = rownames(metrics_df),
+         col = colors_use,
+         lty = 1,
+         lwd = 3,
+         cex = 1.2,
+         title = "Method",
+         bty = "n")
+```
+
+Users can get the following figure that compares the performance metrics of single modality and multiple modality.
+
+<center>
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="/cfDNAanalyzer/Figures/Section%205.png"
+        width="500px"
+    >
+    <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
+</center>
 
 
 
