@@ -25,6 +25,7 @@ group: softwares
 * [Section 4: Performance of different features in cancer detection and classification](#section-4-performance-of-different-features-in-cancer-detection-and-classification)
     * [Section 4.1: Predictive effect of different features in cancer detection](#section-41-predictive-effect-of-different-features-in-cancer-detection)
     * [Section 4.2: Predictive effect of different features in cancer classification](#section-42-predictive-effect-of-different-features-in-cancer-classification)
+* [Section 5: Compare the performance metrics of single modality and multiple modality](#Section-5-compare-the-performance-metrics-of-single-modality-and-multiple-modality) 
   
 
 ## Section 1: Introduction
@@ -704,6 +705,7 @@ bash cfDNAanalyzer.sh \
 ```
 
 #### Parameters:
+```shell
 --noML: Skip machine learning model building, only feature processing and selection will be conducted. \
 --filterMethod: Filter methods employed for feature selection (IG CHI FS FCBF PI CC LVF MAD DR MI RLF SURF MSURF TRF). \
 --filterNum: Number of features to retain when employing the filter method. \
@@ -714,6 +716,7 @@ bash cfDNAanalyzer.sh \
 --hybridType: Two methods used for hybrid method (FW/FE). \
 --hybridMethod1,hybridMethod2: Subtype methods designated for method 1 and method 2 in the "--hybridType". \
 --hybridNum1,hybridNum2: Number of features to retain for method 1 and method 2 in the "--hybridType".  
+```
 
 
 ### Section 3.2: Visualize feature selection effect
