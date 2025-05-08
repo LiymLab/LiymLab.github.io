@@ -13,13 +13,13 @@ group: softwares
 
 <!-- <a href='https://github.com/LiymLab/cfDNAanalyzer' class="btn btn-primary">View on GitHub</a> -->
 
-Liquid biopsy, powered by the analysis of plasma cell-free DNA (cfDNA), is revolutionizing diagnostic medicine by providing a non-invasive window into the genomic and epigenomic landscapes of human diseases, particularly cancers. cfDNA, which enters the bloodstream through cellular turnover across various tissues, offers an unprecedented opportunity for early detection, monitoring, and personalized treatment of diseases. Despite its promise, the field lacks a unified and comprehensive toolkit tailored for the systematic analysis of cfDNA sequencing data. cfDNAanalyzer addresses this critical gap by offering an integrated, user-friendly platform for feature extraction, filtering, selection, and machine learning model development for disease detection and classification. This toolkit empowers researchers and clinicians with the ability to perform customizable analyses, evaluate the performance of predictive models, and extract valuable insights from cfDNA-derived data. By facilitating precise, scalable, and reproducible cfDNA analysis, cfDNAanalyzer is poised to accelerate advancements in disease detection, monitoring, and research.
+cfDNAanalyzer is an integrated toolkit designed for systematic analysis of cfDNA sequencing data. It offers a user-friendly platform for feature extraction, filtering, selection, and machine learning model development to enable disease detection and classification. Empowering researchers and clinicians, the toolkit supports customizable analyses, performance evaluation of predictive models, and extraction of actionable insights from cfDNA-derived data. By enabling precise, scalable, and reproducible analysis, cfDNAanalyzer accelerates advancements in disease detection and research.
 </div>
 
 <div style="flex: 1; min-width: 300px;">
 <img 
     style="border-radius: 5px; 
-           box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+           box-shadow: 4px 2px 4px rgba(0,0,0,0.1), 4px 4px 10px rgba(0,0,0,0.05);
            width: 100%;
            height: auto;"
     src="/cfDNAanalyzer/Figures/cfDNAanalyzer.png" 
