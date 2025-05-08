@@ -41,6 +41,11 @@ Liquid biopsy, powered by the analysis of plasma cell-free DNA (cfDNA), is revol
         src="/cfDNAanalyzer/Figures/cfDNAanalyzer.png"
         width="800px"
     >
+    <br>
+    <div style="border-bottom: 1px solid #d9d9d9;
+                display: inline-block;
+                color: #999;
+                padding: 2px;">cfDNAanalyzer Functions</div>
 </center>
 
 ## Section 2: Visualization for the extracted features
@@ -162,11 +167,6 @@ Users can get the following figure that shows genomic copy number differences be
                 box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);" 
          src="/cfDNAanalyzer/Figures/Section%201.1.png"
          width="800px">
-    <br>
-    <div style="border-bottom: 1px solid #d9d9d9;
-                display: inline-block;
-                color: #999;
-                padding: 2px;">cfDNAanalyzer Functions</div>
 </center>
 
 
