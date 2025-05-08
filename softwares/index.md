@@ -1,7 +1,7 @@
 ---
 title: Tutorials of the LYM Lab
 layout: default
-group: tutorials
+group: softwares
 ---
 
 
