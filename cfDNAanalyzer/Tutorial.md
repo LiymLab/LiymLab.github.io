@@ -1,7 +1,7 @@
 ---  
 title: cfDNAanalyzer
-layout: tutorials
-group: tutorials
+layout: softwares
+group: softwares
 ---
 
 <head>
