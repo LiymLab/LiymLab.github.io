@@ -605,7 +605,7 @@ Users can get the following figure.
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
         src="/cfDNAanalyzer/Figures/Section%201.5.png"
-        width="500px"
+        width="300px"
     >
 </center>
 
