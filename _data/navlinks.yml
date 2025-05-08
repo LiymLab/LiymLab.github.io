@@ -7,8 +7,8 @@
 #   group: research
 
 - name: Softwares  
-  link: "/tutorial"          
-  group: tutorial
+  link: "/softwares"          
+  group: softwares
   
 - name: Publications
   link: "/publications"
