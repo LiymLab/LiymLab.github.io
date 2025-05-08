@@ -1058,6 +1058,3 @@ Users can get the following figure that compares the performance metrics of sing
     >
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </center>
-
-
-
