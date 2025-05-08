@@ -614,7 +614,7 @@ Users can get the following figure that shows the correlation between fragmentat
 
 
 ### Section 2.6: Visualize differences in nucleosome organization
-In this section, users can analyze differences in nucleosome organization in cancer and healthy samples using feature NP in the directory `/ouput_directory/Features/NP_site_list/`. (Take file `/ouput_directory/Features/NP_site_list/site_list1.txt` as an exmaple)
+In this section, users can analyze differences in nucleosome organization around TF in cancer and healthy samples using feature NP in the directory `/ouput_directory/Features/NP_site_list/`. (Take file `/ouput_directory/Features/NP_site_list/site_list1.txt` as an exmaple)
 
 First, load data from output directory.
 ```R
