@@ -183,7 +183,7 @@ library(readxl)
 library(ggbreak)
 library(reshape2)
 
-raw_data = read.csv("/output_directory/Features/filtered_FP_fragmentation_profile.csv")
+raw_data = read.csv("output_directory/Features/filtered_FP_fragmentation_profile.csv")
 raw_data <- as.data.frame(t(raw_data))
 colnames(raw_data) <- raw_data[1, ]
 raw_data <- raw_data[c(-1,-2), ]
@@ -276,7 +276,7 @@ First , load the data and transform it.
 library(tidyr)
 library(ggplot2)
 
-raw_data = read.csv("/output_directory/Features/EM_motifs_frequency.csv")
+raw_data = read.csv("output_directory/Features/EM_motifs_frequency.csv")
 raw_data <- as.data.frame(t(raw_data))
 colnames(raw_data) <- raw_data[1, ]
 raw_data <- raw_data[-1, ] 
@@ -311,7 +311,7 @@ df_healthy = df_healthy[,c("motif","average_healthy")]
 
 Then, get the mean value and standard deviation of end motif diversity score of every group.
 ```R
-raw_data_mds = read.csv("/output_directory/Features/EM_motifs_mds.csv")
+raw_data_mds = read.csv("output_directory/Features/EM_motifs_mds.csv")
 cancer_mds = raw_data_mds[raw_data_mds$label == 1, ]
 healthy_mds = raw_data_mds[raw_data_mds$label == 0, ]
 
@@ -370,7 +370,7 @@ First, load all the data and transform them (Take NO as example).
 library(tidyr)
 library(corrplot)
 
-NO_data = read.csv("/output_directory/Features/NOF_occupancy.csv")
+NO_data = read.csv("output_directory/Features/NOF_occupancy.csv")
 NO_data <- as.data.frame(t(NO_data))
 colnames(NO_data) <- NO_data[1, ] 
 NO_data <- NO_data[c(-1,-2), ] 
@@ -739,7 +739,7 @@ from sklearn.preprocessing import StandardScaler
 import argparse
 from matplotlib.patches import Ellipse
 
-file = "/output_directory/Feature_Processing_and_Selection/Feature_Selection/[FeatureName]_[Method]_selectd.csv"
+file = "output_directory/Feature_Processing_and_Selection/Feature_Selection/[FeatureName]_[Method]_selectd.csv"
 df = pd.read_csv(file)
 
 # Identify the sample column
@@ -852,14 +852,14 @@ In this section, user can evaluate the cancer prediction probability of differen
 Firstly, user needs to extract the probability that each feature predicts the sample to be cancer through different classifiers in the cancer prediction results of the binary classification model, and then integrate the prediction results of all features. The user can also calculate and visualize the correlation of the probability of 11 features predicted to be cancer samples in different classifiers to obtain corplot. (Take CNA as an example, the result file of probability of predicting cancer for samples based on features is at `output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`)
 
 ```R
-all_probability = read.csv("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
+all_probability = read.csv("output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
 all_probability <- all_probability[
   all_probability$Classifier == "SVM" & 
     all_probability$FS_Combination == "wrapper_BOR_0.023618328", ]
 all_probability = all_probability[,c("SampleID"),drop = F]
 
 # Take CNA as an example
-CNA = read.csv(paste0("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv"))
+CNA = read.csv(paste0("output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv"))
 CNA <- CNA[CNA$Classifier == "XGB" & CNA$FS_Combination == "wrapper_BOR_0.023618328",]
 CNA_probability = CNA[,c("SampleID","Prob_Class1")]
 colnames(CNA_probability) <- c("SampleID", "CNA")
@@ -903,7 +903,7 @@ In this section, user can evaluate the predicted probability of different featur
 First, user needs to extract the probability that each feature predicts each sample to be each cancer in the cancer prediction result of the multi-classification model, and then integrate the prediction results of all features. "probability_0" represents breast cancer, "probability_1" represents lung cancer, and "probability_2" represents pancreatic cancer. In the following example, the data extraction and processing step takes the CNA feature as an example, and the result file of probability for samples based on features is at `output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`. The visualization result is the probability heatmap of the lung cancer sample predicted into each cancer type.
 
 ```R
-all_probability = read.csv("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
+all_probability = read.csv("output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
 all_probability <- all_probability[
   all_probability$Classifier == "SVM" & 
     all_probability$FS_Combination == "wrapper_BOR_0.023618328", 
@@ -912,7 +912,7 @@ all_probability = all_probability[,c("SampleID"),drop = F]
 all_probability_0 = all_probability_1 = all_probability_2 = all_probability
 
 # Take CNA as an example
-CNA = read.csv(paste0("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv"))
+CNA = read.csv(paste0("output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv"))
 CNA <- CNA[CNA$Classifier == "XGB" & CNA$FS_Combination == "wrapper_BOR_0.023618328",]
 
 CNA_probability_0 = CNA[,c("SampleID","Prob_Class0")]
