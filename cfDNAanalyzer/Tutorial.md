@@ -827,7 +827,7 @@ else:
     plt.close()
 ```
 
-Users can get the following figure that visualizes the feature selection effect before and after optimization.
+Users can get the following figure that visualizes the feature selection effect before (left) and after (right) optimization.
 
 <center>
     <img 
