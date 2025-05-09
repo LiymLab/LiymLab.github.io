@@ -54,14 +54,14 @@ cfDNAanalyzer can extract a variety of features. In this section, users can visu
 
 ### Section 2.1: Visualize genomic copy number differences
 
-In this section, users can visualize genomic copy number differences between cancer and healthy samples using the CNA feature in `/ouput_directory/Features/CNA.csv`.
+In this section, users can visualize genomic copy number differences between cancer and healthy samples using the CNA feature in `ouput_directory/Features/CNA.csv`.
 
 To begin, load the data from output directory and transform it. 
 ```R
 library(ggplot2)
 library(tidyr)
 
-raw_data = read.csv("/ouput_directory/Features/CNA.csv")
+raw_data = read.csv("ouput_directory/Features/CNA.csv")
 raw_data <- as.data.frame(t(raw_data))
 colnames(raw_data) <- raw_data[1, ]
 raw_data <- raw_data[-1, ] 
@@ -171,7 +171,7 @@ Users can get the following figure that shows genomic copy number differences be
 
 
 ### Section 2.2: Visualize the genomic fragment size difference
-In this section, users can visualize genomic fragment size differences between cancer and healthy samples using the FP feature in `/ouput_directory/Features/FP_fragmentation_profile.csv`.
+In this section, users can visualize genomic fragment size differences between cancer and healthy samples using the FP feature in `ouput_directory/Features/FP_fragmentation_profile.csv`.
 
 First, load the data from output directory and transform it.
 ```R
@@ -269,7 +269,7 @@ Users can get the following figure that shows genomic fragment size differences 
 
 
 ### Section 2.3: Find genomic motif differences
-In this section, users can find the top motifs with the most significant differences between cancer and healthy samples using the EM feature in `/ouput_directory/Features/EM_motifs_frequency.csv` and `/ouput_directory/Features/EM_motifs_mds.csv`.
+In this section, users can find the top motifs with the most significant differences between cancer and healthy samples using the EM feature in `ouput_directory/Features/EM_motifs_frequency.csv` and `ouput_directory/Features/EM_motifs_mds.csv`.
 
 First , load the data and transform it.
 ```R
@@ -363,7 +363,7 @@ Users can get the following figure that shows top motifs with the most significa
 
 
 ### Section 2.4: Compare feature similarities and find redundant information
-In this section, users can compare feature similarities and choose features with no redundant information using features in `/ouput_directory/Features/NOF_meanfuziness.csv` , `/ouput_directory/Features/NOF_occupancy.csv` , `/ouput_directory/Features/WPS_long.csv` , `/ouput_directory/Features/OCF.csv` , `/ouput_directory/Features/EMR_region_mds.csv` , `/ouput_directory/Features/FPR_fragmentation_profile_regions.csv`.
+In this section, users can compare feature similarities and choose features with no redundant information using features in `ouput_directory/Features/NOF_meanfuziness.csv` , `ouput_directory/Features/NOF_occupancy.csv` , `ouput_directory/Features/WPS_long.csv` , `ouput_directory/Features/OCF.csv` , `ouput_directory/Features/EMR_region_mds.csv` , `ouput_directory/Features/FPR_fragmentation_profile_regions.csv`.
 
 First, load all the data and transform them (Take NO as example).
 ```R
@@ -466,7 +466,7 @@ Users can get the following figure that compares feature similarities.
 
 
 ### Section 2.5: Explore the correlation between fragmentation entropy of cfDNA and gene expression
-In this section, users can explore the correlation between fragmentation entropy of cfDNA and gene expression using features in `/ouput_directory/Features/PFE.csv`.
+In this section, users can explore the correlation between fragmentation entropy of cfDNA and gene expression using features in `ouput_directory/Features/PFE.csv`.
 
 First, load the genes. Then load data from output directory and transform it. 
 ```R
@@ -480,7 +480,7 @@ under_genes <- under_genes[[1]]
 over_genes <- read.table("/path/to/over_genes.txt", header = F, sep = "\t")
 over_genes <- over_genes[[1]]
 
-raw_data = read.csv("/ouput_directory/Features/PFE.csv")
+raw_data = read.csv("ouput_directory/Features/PFE.csv")
 raw_data <- as.data.frame(t(raw_data))
 colnames(raw_data) <- raw_data[1, ]
 raw_data <- raw_data[-1, ] 
@@ -614,7 +614,7 @@ Users can get the following figure that shows the correlation between fragmentat
 
 
 ### Section 2.6: Visualize differences in nucleosome organization
-In this section, users can visualize differences in nucleosome organization around TF in cancer and healthy samples using feature NP in the directory `/ouput_directory/Features/NP_site_list/`. (Take file `/ouput_directory/Features/NP_site_list/site_list1.txt` as an exmaple)
+In this section, users can visualize differences in nucleosome organization around TF in cancer and healthy samples using feature NP in the directory `ouput_directory/Features/NP_site_list/`. (Take file `ouput_directory/Features/NP_site_list/site_list1.txt` as an exmaple)
 
 First, load data from output directory.
 ```R
@@ -723,7 +723,7 @@ bash cfDNAanalyzer.sh \
 
 In this section, user can perform binary and multi-class PCA analysis on the optimized features. The breast cancer genome-wide dataset was used as an example to compare the results of PCA before and after the application of feature selection.
 
-First, load the filtered features and process the data. Files in the directory `/ouput_directory/Feature_Processing_and_Selection/Feature_Selection` will be used. 
+First, load the filtered features and process the data. Files in the directory `ouput_directory/Feature_Processing_and_Selection/Feature_Selection` will be used. 
 
 ```python
 import os
@@ -849,7 +849,7 @@ In this part, user can test the performance of different features in single-moda
 
 In this section, user can evaluate the cancer prediction probability of different features and calculate the correlation.
 
-Firstly, user needs to extract the probability that each feature predicts the sample to be cancer through different classifiers in the cancer prediction results of the binary classification model, and then integrate the prediction results of all features. The user can also calculate and visualize the correlation of the probability of 11 features predicted to be cancer samples in different classifiers to obtain corplot. (Take CNA as an example, the result file of probability of predicting cancer for samples based on features is at `/ouput_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`)
+Firstly, user needs to extract the probability that each feature predicts the sample to be cancer through different classifiers in the cancer prediction results of the binary classification model, and then integrate the prediction results of all features. The user can also calculate and visualize the correlation of the probability of 11 features predicted to be cancer samples in different classifiers to obtain corplot. (Take CNA as an example, the result file of probability of predicting cancer for samples based on features is at `ouput_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`)
 
 ```R
 all_probability = read.csv("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
@@ -900,7 +900,7 @@ Users can get the following figure that shows the predictive effect of different
 
 In this section, user can evaluate the predicted probability of different features predicting the same sample as a certain cancer.
 
-First, user needs to extract the probability that each feature predicts each sample to be each cancer in the cancer prediction result of the multi-classification model, and then integrate the prediction results of all features. "probability_0" represents breast cancer, "probability_1" represents lung cancer, and "probability_2" represents pancreatic cancer. In the following example, the data extraction and processing step takes the CNA feature as an example, and the result file of probability for samples based on features is at `/ouput_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`. The visualization result is the probability heatmap of the lung cancer sample predicted into each cancer type.
+First, user needs to extract the probability that each feature predicts each sample to be each cancer in the cancer prediction result of the multi-classification model, and then integrate the prediction results of all features. "probability_0" represents breast cancer, "probability_1" represents lung cancer, and "probability_2" represents pancreatic cancer. In the following example, the data extraction and processing step takes the CNA feature as an example, and the result file of probability for samples based on features is at `ouput_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`. The visualization result is the probability heatmap of the lung cancer sample predicted into each cancer type.
 
 ```R
 all_probability = read.csv("/Output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
@@ -972,13 +972,13 @@ Users can get the following figure that shows predictive effect of different fea
 </center>
 
 
-## Section 5: Compare the performance metrics of single modality and multiple modality
+## Section 5: Compare the performance metrics of single-modality and multi-modality models
 
-After building the multiple modality model, users want to know if the performance of multiple modality model is improved compared to single modality model.
+After building the multi-modality model, users want to know if the performance of multi-modality model is improved compared to single-modality model.
 
-In this section, user can compare the performance metrics of single modality and multiple modality. Files `output_directory/Machine_Learning/single_modality/EM/single_modality_metrics.csv` and `output_directory/Machine_Learning/multiple_modality/Concatenation_based/multiple_modality_metrics.csv` will be used.
+In this section, user can compare the performance metrics of single-modality and multi-modality models. Files `output_directory/Machine_Learning/single_modality/EM/single_modality_metrics.csv` and `output_directory/Machine_Learning/multiple_modality/Concatenation_based/multiple_modality_metrics.csv` will be used.
 
-First, load the multiple modality and single modality metrics data.
+First, load the multi-modality and single-modality metrics data.
 ```R
 library(fmsb)
 metrics_df = data.frame()
@@ -1045,7 +1045,7 @@ radarchart(
          bty = "n")
 ```
 
-Users can get the following figure that compares the performance metrics of single modality and multiple modality.
+Users can get the following figure that compares the performance metrics of single-modality and multi-modality models.
 
 <center>
     <img 
