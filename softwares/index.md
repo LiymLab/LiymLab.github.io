@@ -1,5 +1,5 @@
 ---
-title: Tutorials of the LYM Lab
+title: Softwares of the LYM Lab
 layout: default
 group: softwares
 ---
