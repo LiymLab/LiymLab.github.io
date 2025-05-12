@@ -14,7 +14,7 @@ pre {
     border-radius: 4px;
     margin-top: 15px;
     margin-bottom: 15px;
-    overflow-x: scroll; /* 始终显示横向滚动条 */
+    overflow-x: scroll; 
     overflow-y: hidden;
     padding-top: 20px;
     padding-left: 30px;
@@ -44,11 +44,11 @@ h2, h3 {
     font-size: 15px
 }
 
-.main-content code {
-    color: #567482;
-}
-
 .highlight .c1 {
     color: #999988;
     font-style: italic;
+}
+
+.main-content pre>code {
+    color: #567482;
 }
