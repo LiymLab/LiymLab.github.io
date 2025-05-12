@@ -49,6 +49,65 @@ h2, h3 {
     font-style: italic;
 }
 
-.main-content pre>code {
+// 代码块基础样式
+.highlight {
+  background-color: #f6f8fa; // 代码背景色
+  padding: 1rem;
+  border-radius: 6px;
+  pre {
+    overflow-x: auto;
+    margin: 0;
+  }
+}
+
+// 语法高亮颜色设置
+.highlight {
+  // 通用文本颜色
+  color: #567482;
+
+  // 关键字
+  .k,  // 关键字
+  .kd, // 声明关键字 (function, var等)
+  .kr { // 保留字
+    color: #d73a49;
+  }
+
+  // 函数名
+  .nf { 
+    color: #6f42c1; 
+  }
+
+  // 字符串
+  .s, 
+  .s1, 
+  .s2 {
+    color: #032f62;
+  }
+
+  // 数值
+  .mi {
+    color: #005cc5;
+  }
+
+  // 参数/变量
+  .nv, // 变量名
+  .vc, // 类变量
+  .vg { // 全局变量
+    color: #e36209;
+  }
+
+  // 操作符
+  .o {
+    color: #d73a49;
+  }
+
+  // 类型
+  .kt {
+    color: #d73a49;
+  }
+  
+  // 标点符号
+  .p {
     color: #567482;
+  }
 }
