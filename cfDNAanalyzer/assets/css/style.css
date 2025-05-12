@@ -73,7 +73,10 @@ h2, h3 {
   color: #45494e;
 }
 
-.highlight .s, 
+.highlight .s {
+  color: #507adb;
+} 
+
 .highlight .s2 {
   color: #507adb;
 }
