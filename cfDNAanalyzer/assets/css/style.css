@@ -65,6 +65,15 @@ h2, h3 {
   color: #185470;
 }
 
+.highlight .nf {
+  color: #185470;
+}
+
+.highlight .mi {
+  color: #185470;
+}
+
+.highlight .s, 
 .highlight .s2 {
   color: #507adb;
 }
@@ -73,3 +82,10 @@ h2, h3 {
     color: #507adb;
 }
 
+.highlight .nb{
+    color: #507adb;
+}
+
+.highlight .bp {
+  color: #507adb;
+}
