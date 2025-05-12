@@ -49,7 +49,7 @@ h2, h3 {
     font-style: italic;
 }
 
-code {
+.highlight .n {
   color: #567482;
 }
 
