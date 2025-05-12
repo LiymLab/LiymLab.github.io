@@ -50,7 +50,15 @@ h2, h3 {
 }
 
 .highlight .n {
-  color: #567482;
+  color: #083463;
+}
+
+.highlight .p {
+  color: #083463;
+}
+
+.highlight .s2 {
+  color: #083463;
 }
 
 .highlight .kc{
