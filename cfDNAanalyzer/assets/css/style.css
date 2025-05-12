@@ -44,3 +44,7 @@ h2, h3 {
     font-size: 15px
 }
 
+.highlight .c1 {
+    color: #999988;
+    font-style: italic;
+}
