@@ -705,7 +705,7 @@ bash cfDNAanalyzer.sh \
 ```
 
 #### Parameters:
-```shell
+```
 --noML: Skip machine learning model building, only feature processing and selection will be conducted. \
 --filterMethod: Filter methods employed for feature selection (IG CHI FS FCBF PI CC LVF MAD DR MI RLF SURF MSURF TRF). \
 --filterNum: Number of features to retain when employing the filter method. \
