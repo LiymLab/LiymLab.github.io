@@ -58,7 +58,17 @@ h2, h3 {
 }
 
 .highlight .kc{
-    color: #b64545;
+    color: royalblue;
 }
 
+.main-content code {
+    color: #567482;
+}
 
+.main-content pre {
+    color: #567482;
+}
+
+.main-content pre>code {
+    color: #456b7d;
+}
