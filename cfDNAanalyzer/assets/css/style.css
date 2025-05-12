@@ -50,23 +50,11 @@ h2, h3 {
 }
 
 .highlight {
-    .n,  
-    .m,  
-    .o,  
-    .p,  
-    .nf, 
-    .mi,
-    .k
-    .ow
-    .mf {
-        color: #45494e;
+    .n, .m, .o, .p, .nf, .mi, .k, .ow, .mf {
+        color: #414549;
     }
     
-    .s,
-    .s2,
-    .kc,
-    .nb,
-    .bp {
+    .s, .s2, .kc, .nb, .bp {
         color: #507adb;
     }
 }
