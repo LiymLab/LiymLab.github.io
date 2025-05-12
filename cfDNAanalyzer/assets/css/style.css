@@ -40,7 +40,7 @@ h2, h3 {
 }
 
 .language-plaintext {
-    color: #2a8bb1;
+    color: #507adb;
     font-size: 15px
 }
 
@@ -50,7 +50,7 @@ h2, h3 {
 }
 
 .highlight {
-    .n, .m, .o, .p, .nf, .mi, .k, .ow, .mf {
+    .n, .m, .o, .p, .nf, .mi, .k, .ow, .mf, .sa {
         color: #414549;
     }
     
