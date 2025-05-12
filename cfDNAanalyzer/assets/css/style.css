@@ -54,7 +54,11 @@ h2, h3 {
         color: #414549;
     }
     
-    .s, .s2, .kc, .nb, .bp {
+    .s, .s2 {
         color: #507adb;
+    }
+
+    .kc, .nb, .bp {
+        color: #861919;
     }
 }
