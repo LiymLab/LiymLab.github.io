@@ -49,7 +49,7 @@ h2, h3 {
     font-style: italic;
 }
 
-.main-content pre>code {
+.main-content code {
   color: #567482;
 }
 
