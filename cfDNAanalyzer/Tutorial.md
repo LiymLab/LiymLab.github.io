@@ -56,6 +56,8 @@ cfDNAanalyzer can extract a variety of features. In this section, users can visu
 
 In this section, users can visualize genomic copy number differences between cancer and healthy samples using the CNA feature in `output_directory/Features/CNA.csv`.
 
+File `output_directory/Features/CNA.csv` consists of rows representing different samples. The `sample` column holds the sample's file name, followed by a `label` column that indicates the sample's classification. For example, label "1" represents the cancer samples, while label "0" represents the healthy samples.
+
 To begin, load the data from output directory and transform it. 
 ```R
 library(ggplot2)
@@ -173,6 +175,8 @@ Users can get the following figure that shows genomic copy number differences be
 ### Section 2.2: Visualize the genomic fragment size difference
 In this section, users can visualize genomic fragment size differences between cancer and healthy samples using the FP feature in `output_directory/Features/FP_fragmentation_profile.csv`.
 
+File `output_directory/Features/FP_fragmentation_profile.csv` consists of rows representing different samples. The `sample` column holds the sample's file name, followed by a `label` column that indicates the sample's classification. For example, label "1" represents the cancer samples, while label "0" represents the healthy samples.
+
 First, load the data from output directory and transform it.
 ```R
 library(tidyr)
@@ -271,6 +275,8 @@ Users can get the following figure that shows genomic fragment size differences 
 ### Section 2.3: Find genomic motif differences
 In this section, users can find the top motifs with the most significant differences between cancer and healthy samples using the EM feature in `output_directory/Features/EM_motifs_frequency.csv` and `output_directory/Features/EM_motifs_mds.csv`.
 
+File `output_directory/Features/EM_motifs_frequency.csv` and `output_directory/Features/EM_motifs_mds.csv` consist of rows representing different samples. The `sample` column holds the sample's file name, followed by a `label` column that indicates the sample's classification. For example, label "1" represents the cancer samples, while label "0" represents the healthy samples.
+
 First , load the data and transform it.
 ```R
 library(tidyr)
@@ -364,6 +370,8 @@ Users can get the following figure that shows top motifs with the most significa
 
 ### Section 2.4: Compare feature similarities and find redundant information
 In this section, users can compare feature similarities and choose features with no redundant information using features in `output_directory/Features/NOF_meanfuziness.csv` , `output_directory/Features/NOF_occupancy.csv` , `output_directory/Features/WPS_long.csv` , `output_directory/Features/OCF.csv` , `output_directory/Features/EMR_region_mds.csv` , `output_directory/Features/FPR_fragmentation_profile_regions.csv`.
+
+Files `output_directory/Features/NOF_meanfuziness.csv` , `output_directory/Features/NOF_occupancy.csv` , `output_directory/Features/WPS_long.csv` , `output_directory/Features/OCF.csv` , `output_directory/Features/EMR_region_mds.csv` , `output_directory/Features/FPR_fragmentation_profile_regions.csv` consist of rows representing different samples. The `sample` column holds the sample's file name, followed by a `label` column that indicates the sample's classification. For example, label "1" represents the cancer samples, while label "0" represents the healthy samples.
 
 First, load all the data and transform them (Take NO as example).
 ```R
@@ -465,8 +473,11 @@ Users can get the following figure that compares feature similarities.
 </center>
 
 
-### Section 2.5: Explore the correlation between fragmentation entropy of cfDNA and gene expression
-In this section, users can explore the correlation between fragmentation entropy of cfDNA and gene expression using features in `output_directory/Features/PFE.csv`.
+### Section 2.5: Find the differences of PFE for genes differentially expressed between different conditions
+In this section, users can find the differences of PFE for genes differentially expressed between different conditions using features in `output_directory/Features/PFE.csv`.
+
+File `output_directory/Features/PFE.csv` consists of rows representing different samples. The `sample` column holds the sample's file name, followed by a `label` column that indicates the sample's classification. For example, label "1" represents the cancer samples, while label "0" represents the healthy samples.
+
 
 First, load the genes. Then load data from output directory and transform it. 
 ```R
@@ -599,7 +610,7 @@ p = ggplot(df_over, aes(x = group, y = value)) +
   )
 ```
 
-Users can get the following figure that shows the correlation between fragmentation entropy of cfDNA and gene expression.
+Users can get the following figure that shows the differences of PFE for genes differentially expressed between different conditions.
 
 <center>
     <img 
@@ -615,6 +626,8 @@ Users can get the following figure that shows the correlation between fragmentat
 
 ### Section 2.6: Visualize differences in nucleosome organization
 In this section, users can visualize differences in nucleosome organization around TF in cancer and healthy samples using feature NP in the directory `output_directory/Features/NP_site_list/`. (Take file `output_directory/Features/NP_site_list/site_list1.txt` as an exmaple)
+
+Files in the directory `output_directory/Features/NP_site_list/` consist of rows representing different samples. The `sample` column holds the sample's file name, followed by a `label` column that indicates the sample's classification. For example, label "1" represents the cancer samples, while label "0" represents the healthy samples.
 
 First, load data from output directory.
 ```R
@@ -724,6 +737,8 @@ bash cfDNAanalyzer.sh \
 In this section, user can perform binary and multi-class PCA analysis on the optimized features. The breast cancer genome-wide dataset was used as an example to compare the results of PCA before and after the application of feature selection.
 
 First, load the filtered features and process the data. Files in the directory `output_directory/Feature_Processing_and_Selection/Feature_Selection` will be used. 
+
+Files in the directory `output_directory/Feature_Processing_and_Selection/Feature_Selection` consist of rows representing different samples. The `sample` column holds the sample's file name, followed by a `label` column that indicates the sample's classification. For example, label "1" represents the cancer samples, while label "0" represents the healthy samples.
 
 ```python
 import os
@@ -851,6 +866,8 @@ In this section, user can evaluate the cancer prediction probability of differen
 
 Firstly, user needs to extract the probability that each feature predicts the sample to be cancer through different classifiers in the cancer prediction results of the binary classification model, and then integrate the prediction results of all features. The user can also calculate and visualize the correlation of the probability of 11 features predicted to be cancer samples in different classifiers to obtain corplot. (Take CNA as an example, the result file of probability of predicting cancer for samples based on features is at `output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`)
 
+File `output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv` contains the classifier and feature selection method used, followed by various performance metrics such as accuracy, precision, recall, F1 score, AUC (Area Under the Curve), computation time and memory usage (peak memory).
+
 ```R
 all_probability = read.csv("output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
 all_probability <- all_probability[
@@ -901,6 +918,8 @@ Users can get the following figure that shows the predictive effect of different
 In this section, user can evaluate the predicted probability of different features predicting the same sample as a certain cancer.
 
 First, user needs to extract the probability that each feature predicts each sample to be each cancer in the cancer prediction result of the multi-classification model, and then integrate the prediction results of all features. "probability_0" represents breast cancer, "probability_1" represents lung cancer, and "probability_2" represents pancreatic cancer. In the following example, the data extraction and processing step takes the CNA feature as an example, and the result file of probability for samples based on features is at `output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv`. The visualization result is the probability heatmap of the lung cancer sample predicted into each cancer type.
+
+File `output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv` contains samples IDs and their true labels, followed by the classifier, feature selection method used and predicted probabilities for each class.
 
 ```R
 all_probability = read.csv("output_directory/Machine_Learning/single_modality/CNA/single_modality_metrics.csv")
@@ -977,6 +996,8 @@ Users can get the following figure that shows predictive effect of different fea
 After building the multi-modality model, users want to know if the performance of multi-modality model is improved compared to single-modality model.
 
 In this section, user can compare the performance metrics of single-modality and multi-modality models. Files `output_directory/Machine_Learning/single_modality/EM/single_modality_metrics.csv` and `output_directory/Machine_Learning/multiple_modality/Concatenation_based/multiple_modality_metrics.csv` will be used.
+
+File `output_directory/Machine_Learning/multiple_modality/Concatenation_based/multiple_modality_metrics.csv` contains the fusion type, fusion method, classifier and feature selection method used, followed by various performance metrics such as accuracy, macro-precision, macro-recall, macro-f1 score, computation time and memory usage (peak memory).
 
 First, load the multi-modality and single-modality metrics data.
 ```R
