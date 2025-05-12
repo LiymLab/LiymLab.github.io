@@ -49,26 +49,11 @@ h2, h3 {
     font-style: italic;
 }
 
-// 语法高亮颜色设置
-.highlight .n,
-.highlight .w,
-.highlight .o,
-.highlight .p {
+.main-content pre>code {
   color: #567482;
 }
 
 .highlight .kc{
-    color: royalblue;
+    color: #507adb;
 }
 
-.main-content code {
-    color: #567482;
-}
-
-.main-content pre {
-    color: #567482;
-}
-
-.main-content pre>code {
-    color: #456b7d;
-}
