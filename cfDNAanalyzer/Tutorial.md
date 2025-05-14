@@ -12,7 +12,7 @@ group: softwares
     * [Section 2.2: Visualize the genomic fragment size difference](#section-22-visualize-the-genomic-fragment-size-difference)
     * [Section 2.3: Find genomic motif differences](#section-23-find-genomic-motif-differences)
     * [Section 2.4: Compare feature similarities and find redundant information](#section-24-compare-feature-similarities-and-find-redundant-information)
-    * [Section 2.5: Explore the correlation between fragmentation entropy of cfDNA and gene expression](#section-25-explore-the-correlation-between-fragmentation-entropy-of-cfdna-and-gene-expression)
+    * [Section 2.5: Find the differences of PFE for genes differentially expressed between different conditions](#section-25-find-the-differences-of-pfe-for-genes-differentially-expressed-between-different-conditions)
     * [Section 2.6: Visualize differences in nucleosome organization](#section-26-visualize-differences-in-nucleosome-organization)
 * [Section 3: Optimizing feature selection for machine learning models](#section-3-optimizing-feature-selection-for-machine-learning-models)
     * [Section 3.1: Methods of feature selection](#section-31-methods-of-feature-selection)
@@ -20,7 +20,7 @@ group: softwares
 * [Section 4: Performance of different features in cancer detection and classification](#section-4-performance-of-different-features-in-cancer-detection-and-classification)
     * [Section 4.1: Predictive effect of different features in cancer detection](#section-41-predictive-effect-of-different-features-in-cancer-detection)
     * [Section 4.2: Predictive effect of different features in cancer classification](#section-42-predictive-effect-of-different-features-in-cancer-classification)
-* [Section 5: Compare the performance metrics of single modality and multiple modality](#section-5-compare-the-performance-metrics-of-single-modality-and-multiple-modality) 
+* [Section 5: Compare the performance metrics of single-modality and multi-modality models](#section-5-compare-the-performance-metrics-of-single-modality-and-multi-modality-models) 
   
 
 ## Section 1: Introduction
