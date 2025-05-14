@@ -5,8 +5,8 @@
     <style>
         /* 新增的顶部背景块样式 */
         .header-banner {
-            background-color: #CFD5E8; /* 背景色 */
-            padding: 3rem;
+            background-color: #D7CEB2; /* 背景色 */
+            padding: 6rem;
             color: black;
             text-align: center;
             margin-bottom: 2rem;
@@ -110,6 +110,18 @@
                 color: #861919;
             }
         }
+
+        .btn {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 0.3rem;
+            transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        }
         
         @media (max-width: 767px) {
           .content-body {
@@ -128,8 +140,7 @@
 <body>
     <!-- 新增的顶部背景块 -->
     <div class="header-banner">
-        <h1>{{ page.title }}</h1> <!-- 显示页面标题 -->
-        <h2>{{cfDNAanalyzer: a comprehensive toolkit for analyzing cell-free DNA genomic sequencing data in liquid biopsy}}</h2>
+        <h1>{{ page.title | cfDNAanalyzer: a comprehensive toolkit for analyzing cell-free DNA genomic sequencing data in liquid biopsy}}</h1> <!-- 显示页面标题 -->
         <a href="https://github.com/LiymLab/cfDNAanalyzer" class="btn">View on GitHub</a>
     </div>
 
