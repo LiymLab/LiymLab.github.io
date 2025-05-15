@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- 原有head内容 -->
+    <title>cfDNAanalyzer | cfDNAanalyzer: a comprehensive toolkit for analyzing cell-free DNA genomic sequencing data in liquid biopsy</title>
     <style>
-        /* 新增的顶部背景块样式 */
         .header-banner {
-            background-color: #159957; /* 背景色 */
+            background-color: #159957; 
             background-image: linear-gradient(120deg, #1D7AD7, #159957);
-            padding: 2rem;
             color: white;
             text-align: center;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
-        /* 防止内容被遮挡 */
-        body {
-            padding-top: 0px;
         }
 
-        /* 保留原有内容样式 */
+        body {
+            padding-top: 0;  
+            margin: 0;   
+        }
+
         .content-body {
             max-width: 900px;   
             margin: 0 auto;   
@@ -126,6 +122,7 @@
         }
 
         .page-header {
+            margin: 0;
             padding: 4rem 4rem;
             text-align: center;
             background-color: #159957;
@@ -148,16 +145,23 @@
         }
         
         @media (max-width: 767px) {
-          .content-body {
-            padding: 0 15px; 
-            text-align: left; 
-            hyphens: none;
-          }
- 
-          footer {
-            font-size: 12px;
-            padding: 15px;
-          }
+            .content-body {
+                padding: 0 15px; 
+                text-align: left; 
+                hyphens: none;
+            }
+     
+            footer {
+                font-size: 12px;
+                padding: 15px;
+            }
+    
+            .page-header {
+                padding: 4rem 1rem 2rem;
+            }
+            .project-name {
+                padding-top: 1rem;
+            }
         }
 
         @media screen and (min-width: 64em) {
@@ -181,11 +185,9 @@
         <a href="https://github.com/LiymLab/cfDNAanalyzer" class="btn">View on GitHub</a>
     </header>
 
-    <!-- 原有容器结构（保持原有Bootstrap布局） -->
     <div class="container"> 
         <div class="row">
             <div class="col-xs-12 col-md-10 col-md-offset-1"> 
-                <!-- 移除原有page-header（已被header-banner替代） -->
                 
                 <div class="content-body text-justify">
                     {{ content }}
