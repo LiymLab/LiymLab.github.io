@@ -20,6 +20,7 @@ group: softwares
 * [Section 4: Performance of different features in cancer detection and classification](#section-4-performance-of-different-features-in-cancer-detection-and-classification)
     * [Section 4.1: Predictive effect of different features in cancer detection](#section-41-predictive-effect-of-different-features-in-cancer-detection)
     * [Section 4.2: Predictive effect of different features in cancer classification](#section-42-predictive-effect-of-different-features-in-cancer-classification)
+    * [Section 4.3: Composite scoring system for single-modality models](#section-43-composite-scoring-system-for-single-modality-models)
 * [Section 5: Compare the performance metrics of single-modality and multi-modality models](#section-5-compare-the-performance-metrics-of-single-modality-and-multi-modality-models) 
   
 
