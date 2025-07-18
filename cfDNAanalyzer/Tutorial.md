@@ -172,7 +172,7 @@ Users can get the following figure that shows genomic copy number differences be
 <center>
     <img style="border-radius: 5px; 
                 box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);" 
-         src="/cfDNAanalyzer/Figures/Section%201.1.png"
+         src="/cfDNAanalyzer/Figures/Section%202.1.png"
          width="800px">
 </center>
 
@@ -271,7 +271,7 @@ Users can get the following figure that shows genomic fragment size differences 
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
-        src="/cfDNAanalyzer/Figures/Section%201.2.png"
+        src="/cfDNAanalyzer/Figures/Section%202.2.png"
         width="800px"
     >
 </center>
@@ -367,7 +367,7 @@ Users can get the following figure that shows top motifs with the most significa
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
-        src="/cfDNAanalyzer/Figures/Section%201.3.png"
+        src="/cfDNAanalyzer/Figures/Section%202.3.png"
         width="350px"
     >
 </center>
@@ -472,7 +472,7 @@ Users can get the following figure that compares feature similarities.
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
-        src="/cfDNAanalyzer/Figures/Section%201.4.png"
+        src="/cfDNAanalyzer/Figures/Section%202.4.png"
         width="320px"
     >
 </center>
@@ -623,7 +623,7 @@ Users can get the following figure that shows the differences of PFE for genes d
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
-        src="/cfDNAanalyzer/Figures/Section%201.5.png"
+        src="/cfDNAanalyzer/Figures/Section%202.5.png"
         width="350px"
     >
 </center>
@@ -690,7 +690,7 @@ Users can get the following figure that shows differences in nucleosome organiza
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
-        src="/cfDNAanalyzer/Figures/Section%201.6.png"
+        src="/cfDNAanalyzer/Figures/Section%202.6.png"
         width="350px"
     >
 </center>
@@ -874,7 +874,7 @@ Users can get the following figure that visualizes the feature selection effect 
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
-        src="/cfDNAanalyzer/Figures/Section%202.2.png"
+        src="/cfDNAanalyzer/Figures/Section%203.2.png"
         width="700px"
     >
 </center>
@@ -942,7 +942,7 @@ Users can get the following figure that shows the predictive effect of different
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
-        src="/cfDNAanalyzer/Figures/Section%203.1.png"
+        src="/cfDNAanalyzer/Figures/Section%204.1.png"
         width="450px"
     >
 </center>
@@ -1019,7 +1019,7 @@ Users can get the following figure that shows predictive effect of different fea
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
-        src="/cfDNAanalyzer/Figures/Section%203.2.png"
+        src="/cfDNAanalyzer/Figures/Section%204.2.png"
         width="500px"
     >
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
