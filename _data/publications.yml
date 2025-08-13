@@ -51,6 +51,13 @@
 #       url: https://twitter.com/mctucsf/status/1172334750205218816
 
 # 
+- citation: "Tongyue Sun^, Jinqi Yuan^, Yacheng Zhu, Jingqi Li, Shen Yang, Junpeng Zhou, Xinzhou Ge, Susu Qu, Wei Li#, Jingyi Jessica Li#, <u>Yumei Li#</u>. Systematic evaluation of methylation-based cell type deconvolution methods for plasma cell-free DNA'. *Genome Biology*"
+  date: '2024'
+  image: '/static/img/pub/GenomeBiology.png'
+  pmid: '39702273'
+  pdf: 'https://genomebiology.biomedcentral.com/counter/pdf/10.1186/s13059-024-03456-8.pdf'
+
+
 - citation: "Xinzhou Ge^, <u>Yumei Li^</u>, Wei Li#, Jingyi Jessica Li#. Response to 'Neglecting normalization impact in semi-synthetic RNA-seq data simulation generates artificial false positives' and 'Winsorization greatly reduces false positives by popular differential expression methods when analyzing human population samples'. *Genome Biology*"
   date: '2024'
   image: '/static/img/pub/GenomeBiology.png'
