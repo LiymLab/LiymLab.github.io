@@ -23,6 +23,9 @@ group: softwares
     * [Section 4.3: Composite scoring system for single-modality models](#section-43-composite-scoring-system-for-single-modality-models)
 * [Section 5: Compare the performance metrics of single-modality and multi-modality models](#section-5-compare-the-performance-metrics-of-single-modality-and-multi-modality-models) 
 * [Section 6: Independent Validation Batch effect analysis](#section-6-independent-validation-batch-effect-analysis)
+    * [Section 6.1: Batch-effect assessment: PCA + regression on principal components](#batch-effect-assessment:-pca-+-regression-on-principal-components)
+    * [Section 6.2: Single-modality independent validation](#single-modality-independent-validation)
+    * [Section 6.3: Multi-modality independent validation](#Multi-modality-independent-validation)
 
 ## Section 1: Introduction
 
