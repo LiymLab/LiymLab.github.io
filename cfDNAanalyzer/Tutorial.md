@@ -1218,3 +1218,446 @@ Users can get the following figure that compares the performance metrics of sing
     >
     <div style="border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px;"></div>
 </center>
+
+
+## Section 6: Independent Validation Batch effect analysis
+
+In many real-world scenarios, cfDNAanalyzer users want to **train a model on one cohort** (e.g., a discovery dataset) and **evaluate it on an external cohort** (e.g., an independent validation cohort or a different sequencing batch).
+
+To assist users, we have:
+
+1. Expanded this tutorial to include **batch-effect analysis** for independent validation;
+2. Clarified **how batch effects influence cross-cohort prediction**;
+3. Added **practical guidance** for applying cfDNAanalyzer models to external datasets.
+
+**Recommended workflow**
+
+1. Prepare harmonized feature matrices for each cohort.
+2. **Assess batch effects** between cohorts (Section 6.1).
+3. If batch effects are acceptable or at least interpretable, run **single- or multi-modality independent validation** (Sections 6.2–6.3).
+
+---
+
+### Section 6.1 Batch-effect assessment: PCA + regression on principal components
+
+Before performing independent validation, we strongly recommend assessing whether **training and external cohorts differ strongly due to technical factors** (batch effects), such as different library preparation protocols, different sequencing platforms / depths, and different pre-processing pipelines.
+
+This section illustrates how to:
+
+Perform **PCA** on the combined training + external feature matrix and visualize separation along PC1–PC2;
+
+1. Fit a **multiple linear regression model** on top PCs to quantify the contributions of **batch (cohort)** and **disease group**;
+2. Compute a **partial R²** for batch, i.e., the proportion of variance in each PC that can be attributed to cohort after controlling for disease.
+
+The example below uses **End Motif features** (EM.csv) but the same logic applies to any other feature type (WPS, NP, PFE, etc.), as long as:
+
+- training and external CSV files share the same set of feature columns;
+- both contain a label column and (optionally) a sample column.
+
+#### **PCA visualization (PC1–PC2)**
+
+PCA is performed on all feature variables. A **PC1 vs. PC2 scatterplot** is generated with:
+
+- **Color** indicating the cohort (e.g., train vs. test);
+- **Point shape** indicating the biological group (e.g., disease class 0/1/2);
+- **95% confidence ellipses** drawn for each cohort–group combination.
+
+This visualization allows users to quickly evaluate whether different datasets or batches separate in low-dimensional space, providing an intuitive indication of possible batch effects.
+
+<img src="/Users/zkey/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/yaoyao809171291_8bdc/temp/RWTemp/2025-12/bd30591235f8ffe988b6e8ceda496d87/32d433ceefbe2af2951434a1f6a2fa2e.png" alt="32d433ceefbe2af2951434a1f6a2fa2e" style="zoom:50%;" />
+
+#### **Multiple linear regression (contribution of batch vs. disease to PCs)**
+
+For the top principal components (e.g., PC1–PC5), the following linear regression model is fitted:
+
+$PC_k = β0 + β1 * cohort + β2 * disease + ε$
+
+where:
+
+- **cohort** represents dataset or batch (e.g., train = 0, test = 1);
+- **disease** represents biological grouping (e.g., 0/1 or 0/1/2).
+
+From the regression output, users can inspect:
+
+- **coef_batch(cohort)** and **p_batch(cohort)**: magnitude and statistical significance of batch effects;
+- **coef_group(disease)** and **p_group(disease)**: effect size and significance of biological grouping;
+- **R²** and **partial R² (batch | disease)**: proportion of variance in each PC explained independently by batch, after controlling for disease.
+
+#### **Integrated interpretation**
+
+By combining:
+
+- the **PCA scatterplot (PC1–PC2)**, which visualizes potential cohort or batch separation, and
+- the **multiple regression results**, which quantify batch contributions to each principal component,
+
+users can **both qualitatively and quantitatively** determine whether a batch effect exists, and how strongly it influences the overall variation structure of their datasets.
+
+#### **Example code: PCA + regression + partial R² (WPS feature)**
+
+```
+import os
+import pandas as pd
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import Ellipse
+import statsmodels.api as sm
+
+# ======== pathway ========
+train_path = "/std_train/WPS.csv"
+test_path  = "/std_test/WPS.csv"
+out_dir = "/WPS_3class_std/"
+os.makedirs(out_dir, exist_ok=True)
+
+train = pd.read_csv(train_path)
+test = pd.read_csv(test_path)
+
+print("[INFO] Train shape:", train.shape)
+print("[INFO] Test shape:", test.shape)
+
+train_cols = list(train.columns)
+test_cols  = list(test.columns)
+
+if set(train_cols) != set(test_cols):
+    missing_in_test  = list(set(train_cols) - set(test_cols))
+    missing_in_train = list(set(test_cols) - set(train_cols))
+    raise ValueError(
+        f"Train/Test diff！\n"
+        f"Train : {missing_in_test}\n"
+        f"Test : {missing_in_train}"
+    )
+
+test = test[train_cols]
+
+def add_group_column(df, prefix):
+    df = df.copy()
+    if "label" not in df.columns:
+        raise ValueError(f"{prefix} no 'label' col！")
+    df["label"] = df["label"].astype(int)
+    df["group"] = df["label"].map(lambda x: f"{prefix}_{x}")
+    return df
+
+train_tagged = add_group_column(train, "train")
+test_tagged  = add_group_column(test, "test")
+
+combined = pd.concat([train_tagged, test_tagged], axis=0, ignore_index=True)
+print("[INFO] Combined shape:", combined.shape)
+
+combined_out_path = os.path.join(out_dir, "WPS_train_test_combined_with_group.csv")
+combined.to_csv(combined_out_path, index=False)
+
+
+drop_cols = ["sample", "label", "group"]
+feature_cols = [c for c in combined.columns if c not in drop_cols]
+
+X = combined[feature_cols].values
+
+n_components = 10
+pca = PCA(n_components=n_components)
+X_pca = pca.fit_transform(X)
+
+explained = pca.explained_variance_ratio_
+pc1_var = explained[0] * 100
+pc2_var = explained[1] * 100
+pc3_var = explained[2] * 100
+cum2_var = (explained[0] + explained[1]) * 100
+
+print("[INFO] PCA explained variance ratio:")
+for i, v in enumerate(explained, start=1):
+    print(f"  PC{i}: {v:.4f} ({v*100:.2f}%)")
+print(f"[INFO] PC1+PC2: {cum2_var:.2f}%")
+
+pc_names = [f"PC{i+1}" for i in range(X_pca.shape[1])]
+pca_df = pd.DataFrame(X_pca, columns=pc_names)
+pca_df.insert(0, "sample", combined["sample"].values)
+pca_df.insert(1, "group", combined["group"].values)
+
+pca_out_path = os.path.join(out_dir, "WPS_PCA_scores.csv")
+pca_df.to_csv(pca_out_path, index=False)
+print(f"[INFO] PCA out: {pca_out_path}")
+
+def cohort_from_group(g):
+    if isinstance(g, str) and g.startswith("train"):
+        return 0
+    elif isinstance(g, str) and g.startswith("test"):
+        return 1
+    else:
+        return None
+
+pca_df["cohort"] = pca_df["group"].map(cohort_from_group)        # 0=train, 1=test
+pca_df["disease"] = combined["label"].values.astype(int)         # 0 / 1
+
+def plot_ellipse(ax, x, y, edgecolor="k", n_std=2.0, **kwargs):
+     
+    if len(x) < 2: 
+        return  
+
+    points = np.vstack((x, y))
+    cov = np.cov(points)
+    vals, vecs = np.linalg.eigh(cov)
+    order = vals.argsort()[::-1]
+    vals, vecs = vals[order], vecs[:, order]
+
+    theta = np.degrees(np.arctan2(*vecs[:, 0][::-1]))
+    width, height = 2 * n_std * np.sqrt(vals)
+
+    mean_x, mean_y = np.mean(x), np.mean(y)
+    ellipse = Ellipse(
+        (mean_x, mean_y),
+        width=width,
+        height=height,
+        angle=theta,
+        fill=False,
+        edgecolor=edgecolor,
+        linewidth=1.5,
+        **kwargs,
+    )
+    ax.add_patch(ellipse)
+
+plt.figure(figsize=(8, 6))
+ax = plt.gca()
+
+cohort_colors = {
+    0: "tab:blue",   # train
+    1: "tab:orange"  # test
+}
+
+
+disease_markers = {
+    0: "o",  
+    1: "^",   
+    2: "s",   
+}
+
+for cohort_val in sorted(pca_df["cohort"].dropna().unique()):
+    for disease_val in sorted(pca_df["disease"].dropna().unique()):
+        sub = pca_df[(pca_df["cohort"] == cohort_val) &
+                     (pca_df["disease"] == disease_val)]
+        if sub.empty:
+            continue
+
+        c = cohort_colors.get(cohort_val, "tab:gray")
+        m = disease_markers.get(disease_val, "o")
+
+        label_txt = f"{'train' if cohort_val == 0 else 'test'}, label={disease_val}"
+
+        ax.scatter(
+            sub["PC1"],
+            sub["PC2"],
+            label=label_txt,
+            alpha=0.7,
+            s=30,
+            c=c,
+            marker=m,
+            edgecolors="none",
+        )
+
+
+        plot_ellipse(ax, sub["PC1"].values, sub["PC2"].values,
+                     edgecolor=c, n_std=2.0)
+
+
+ax.set_xlabel(f"PC1 ({pc1_var:.2f}% variance)")
+ax.set_ylabel(f"PC2 ({pc2_var:.2f}% variance)")
+
+
+ax.set_title(f"PCA of WPS (PC1 vs PC2, cum. {cum2_var:.2f}% variance)")
+
+ax.legend(title="Cohort & Label", loc="best")
+plt.tight_layout()
+
+fig_path = os.path.join(out_dir, "WPS_PCA_PC1_PC2_with_ellipses_explained.pdf")
+plt.savefig(fig_path)
+plt.close()
+print(f"[INFO] PCA plot: {fig_path}")
+
+# ======== 7. PCk = β0 + β1 * cohort(batch) + β2 * disease(group) + Partial R² ========
+
+pcs_to_analyze = ["PC1", "PC2", "PC3", "PC4", "PC5"]
+
+summary_rows = []
+
+for pc in pcs_to_analyze:
+    print("\n" + "=" * 60)
+    print(f"[INFO] ：{pc} ~ cohort + disease")
+
+    y = pca_df[pc]
+
+    # Full model: PC ~ cohort + disease
+    X_full = pca_df[["cohort", "disease"]].copy()
+    X_full = sm.add_constant(X_full)
+    model_full = sm.OLS(y, X_full).fit()
+
+    # Reduced model: PC ~ disease（remove cohort）
+    X_reduced = pca_df[["disease"]].copy()
+    X_reduced = sm.add_constant(X_reduced)
+    model_reduced = sm.OLS(y, X_reduced).fit()
+
+    SS_full = sum(model_full.resid ** 2)
+    SS_reduced = sum(model_reduced.resid ** 2)
+
+    # Partial R² for batch
+    partial_R2_batch = (SS_reduced - SS_full) / SS_reduced
+
+    print(model_full.summary())
+    print("\n[INFO] Partial R² (batch | group) =", partial_R2_batch)
+
+    summary_rows.append({
+        "PC": pc,
+        "coef_batch(cohort)": model_full.params["cohort"],
+        "p_batch(cohort)": model_full.pvalues["cohort"],
+        "coef_group(disease)": model_full.params["disease"],
+        "p_group(disease)": model_full.pvalues["disease"],
+        "coef_const": model_full.params["const"],
+        "p_const": model_full.pvalues["const"],
+        "R2_full": model_full.rsquared,
+        "partial_R2_batch": partial_R2_batch,
+        "SS_full": SS_full,
+        "SS_reduced": SS_reduced,
+        "n": int(model_full.nobs),
+    })
+
+summary_df = pd.DataFrame(summary_rows)
+summary_out_path = os.path.join(out_dir, "WPS_PCA_regression_summary_PC_batch_group_partialR2.csv")
+summary_df.to_csv(summary_out_path, index=False)
+print(f"\n[INFO] output: {summary_out_path}")
+print(summary_df)
+```
+
+An example of the output is:
+
+![89c0576c5f24431b53848765afdd309d](/Users/zkey/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/yaoyao809171291_8bdc/temp/RWTemp/2025-12/89c0576c5f24431b53848765afdd309d.png)
+
+### Section 6.2 **Single-modality independent validation**
+
+Once batch effects have been diagnosed and judged acceptable (or at least interpretable), you can perform **single-modality independent validation** using `run_single_independent_validation.py`.
+
+This script:
+
+- Loads single-modality datasets from --input_dir;
+- Trains models using the selected feature-selection methods and classifiers;
+- Supports a special **Independent** mode for external validation:
+  - cvSingle = Independent trains on **all samples** in the training cohort;
+  - optionally saves the final model for each FS–classifier combination;
+- If --external_input_dir is provided:
+  - applies the trained models to the external cohort;
+  - outputs predicted probabilities and evaluation metrics for external samples.
+
+#### **Input format**
+
+Both training (--input_dir) and external (--external_input_dir) directories should contain:
+
+- One or more .csv files, each corresponding to a **single modality** (e.g., WPS.csv, EM.csv, NP.csv, …);
+- Each file must include:
+  - label (required): class label (e.g., 0/1/2);
+  - sample (optional): sample ID; if missing, row index is used;
+  - all other columns: feature columns.
+
+For a given modality, **feature names must be identical** between training and external datasets.
+
+#### **Example command: single-modality independent validation**
+
+```bash
+nohup python run_single_independent_validation.py \
+  --modality single \
+  --input_dir ./train_data_for_independent_validation/WPS/std_train \
+  --external_input_dir ./test_data_for_independent_validation/WPS/std_test \
+  --classNum 2 \
+  --classifierSingle KNN SVM \
+  --cvSingle Independent \
+  --nsplitSingle 1 \
+  --filterMethod IG \
+  --filterFrac 0.99999 \
+  --embeddedMethod RF \
+  --embeddedNum 50 \
+  --DA_output_dir ./Independent_validation/single_WPS \
+  --save_model \
+  > independent_single_WPS.out &
+```
+
+#### **Output structure (single-modality Independent mode)**
+
+For each modality <name>:
+
+- internal (Independent mode):
+
+  - <DA_output_dir>/<name>/<FS_Combination>/models/<Classifier>/final_model.joblib
+
+    (saved model bundle with FS indices and feature names)
+
+- external evaluation (only if external_input_dir is provided):
+
+  - <DA_output_dir>/<name>/external_eval_probabilities.csv
+
+    **Per-sample probabilities** on the external dataset, with columns:
+
+    - SampleID, TrueLabel, FS_Combination, Classifier
+    - Prob_Class0, Prob_Class1, … (up to classNum − 1)
+
+  - <DA_output_dir>/<name>/external_eval_metrics.csv
+
+    Classification metrics for each FS–classifier combination, including:
+
+    - AUROC, accuracy, precision, recall, specificity, F1
+    - (binary) TN, FP, FN, TP
+    - plus any additional aggregated metrics
+
+### **Section 6.3 Multi-modality independent validation**
+
+For multi-modal integration scenarios, cfDNAanalyzer provides `run_multi_independent_validation.py`, which implements **multi-modality independent validation**:
+
+- Training set: --input_dir
+- Independent test set: --external_input_dir
+- For each configuration, the script performs **one full-data training + external evaluation** (no internal KFold/LOO inside this script).
+
+#### **Input format**
+
+Both training and external directories should contain **matching sets of files**:
+
+- One file per modality (e.g., CNA.csv, EM.csv, WPS.csv, …);
+- Each file includes:
+  - label (required),
+  - sample (optional),
+  - feature columns.
+
+File names (without extension) define the **modality names**, and feature names must match between training and external datasets.
+
+#### **Example command: multi-modality independent validation**
+
+```bash
+nohup python run_multi_independent_validation.py \
+  --modality multi \
+  --input_dir ./train_data_for_independent_validation/raw_two/std_train \
+  --external_input_dir ./test_data_for_independent_validation/raw_two/std_test \
+  --classNum 2 \
+  --fusion_type concat model trans \
+  --model_method average weighted stack \
+  --trans_method pca rbf snf \
+  --classifierMulti KNN SVM \
+  --cvMulti Independent \
+  --filterMethod IG \
+  --filterFrac 0.99999 \
+  --DA_output_dir ./Independent_validation/multi_fusion \
+  > independent_multi.out &
+```
+
+#### **Output structure (multi-modality Independent mode)**
+
+All multi-modal independent validation results are saved under:
+
+<DA_output_dir>/external_validation/<fusion_type>/<fs_label>/<method>/
+
+For each (fusion_type, fusion_method, FS_Combination, Classifier) combination:
+
+- .../<Classifier>_predictions.csv
+
+  Per-sample predicted probabilities for the **external** dataset.
+
+- .../<Classifier>_metrics.csv
+
+  Metrics including:
+
+  - Accuracy, precision, recall, F1, AUROC, etc.
+  - TN / FP / FN / TP (for binary problems, if supported by evaluate_classification)
+  - Runtime and memory usage for this combination (TotalTime_sec, FinalMemory_MB, PeakMemory_MB)
+
