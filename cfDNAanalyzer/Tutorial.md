@@ -1549,7 +1549,7 @@ An example of the output is:
     >
 </center>
 
-### Section 6.2 **Single-modality independent validation**
+### Section 6.2 **Single modality independent validation**
 
 Once batch effects have been diagnosed and judged acceptable (or at least interpretable), you can perform **single-modality independent validation** using `run_single_independent_validation.py`.
 
@@ -1623,7 +1623,7 @@ For each modality <name>:
     - (binary) TN, FP, FN, TP
     - plus any additional aggregated metrics
 
-### **Section 6.3 Multi-modality independent validation**
+### **Section 6.3 Multi modality independent validation**
 
 For multi-modal integration scenarios, cfDNAanalyzer provides `run_multi_independent_validation.py`, which implements **multi-modality independent validation**:
 
