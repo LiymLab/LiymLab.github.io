@@ -1542,7 +1542,7 @@ An example of the output is:
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
         src="/cfDNAanalyzer/Figures/Section%206.2.png"
-        width="600px"
+        width="800px"
     >
 </center>
 
