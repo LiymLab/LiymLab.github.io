@@ -1264,7 +1264,16 @@ PCA is performed on all feature variables. A **PC1 vs. PC2 scatterplot** is gene
 
 This visualization allows users to quickly evaluate whether different datasets or batches separate in low-dimensional space, providing an intuitive indication of possible batch effects.
 
-<img src="/Users/zkey/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/yaoyao809171291_8bdc/temp/RWTemp/2025-12/bd30591235f8ffe988b6e8ceda496d87/32d433ceefbe2af2951434a1f6a2fa2e.png" alt="32d433ceefbe2af2951434a1f6a2fa2e" style="zoom:50%;" />
+<center>
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="/cfDNAanalyzer/Figures/Section%602.1.png"
+        width="800px"
+    >
+</center>
 
 #### **Multiple linear regression (contribution of batch vs. disease to PCs)**
 
@@ -1526,7 +1535,16 @@ print(summary_df)
 
 An example of the output is:
 
-![89c0576c5f24431b53848765afdd309d](/Users/zkey/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/yaoyao809171291_8bdc/temp/RWTemp/2025-12/89c0576c5f24431b53848765afdd309d.png)
+<center>
+    <img 
+        style="
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
+        " 
+        src="/cfDNAanalyzer/Figures/Section%602.2.png"
+        width="800px"
+    >
+</center>
 
 ### Section 6.2 **Single-modality independent validation**
 
