@@ -1270,7 +1270,7 @@ This visualization allows users to quickly evaluate whether different datasets o
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
-        src="/cfDNAanalyzer/Figures/Section%602.1.png"
+        src="/cfDNAanalyzer/Figures/Section%206.1.png"
         width="800px"
     >
 </center>
@@ -1541,7 +1541,7 @@ An example of the output is:
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
-        src="/cfDNAanalyzer/Figures/Section%602.2.png"
+        src="/cfDNAanalyzer/Figures/Section%206.2.png"
         width="800px"
     >
 </center>
