@@ -1274,7 +1274,7 @@ This visualization allows users to quickly evaluate whether different datasets o
             box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.05);
         " 
         src="/cfDNAanalyzer/Figures/Section%206.1.png"
-        width="400px"
+        width="500px"
     >
 </center>
 
