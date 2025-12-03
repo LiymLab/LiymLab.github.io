@@ -22,7 +22,7 @@ group: softwares
     * [Section 4.2: Predictive effect of different features in cancer classification](#section-42-predictive-effect-of-different-features-in-cancer-classification)
     * [Section 4.3: Composite scoring system for single-modality models](#section-43-composite-scoring-system-for-single-modality-models)
 * [Section 5: Compare the performance metrics of single-modality and multi-modality models](#section-5-compare-the-performance-metrics-of-single-modality-and-multi-modality-models) 
-  
+* [Section 6: Independent Validation Batch effect analysis](#section-6-independent-validation-batch-effect-analysis)
 
 ## Section 1: Introduction
 
